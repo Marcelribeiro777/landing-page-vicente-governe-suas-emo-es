@@ -49,8 +49,9 @@ export function EventHero() {
         </div>
 
         {/* Subtitle tag / Eyebrow */}
-        <span className="text-xs sm:text-sm font-extrabold tracking-widest text-[#5BB7D0] uppercase mb-4 px-3">
-          {eventContent.event.subheadlineTag}
+        <span className="text-xs sm:text-sm font-extrabold tracking-wider text-slate-200 mb-4 px-3 max-w-2xl leading-relaxed">
+          <span className="text-[#5BB7D0]">A MELHOR</span> imersão presencial de{' '}
+          <span className="text-[#5BB7D0]">AUTOGOVERNO EMOCIONAL</span> do ano
         </span>
 
         {/* Main Headline */}
