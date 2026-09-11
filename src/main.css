@@ -13,34 +13,34 @@
   }
 
   :root {
-    /* Modern Indigo / Violet SaaS Design System */
-    --background: 210 40% 98%; /* #f8fafc */
-    --foreground: 222 47% 11%; /* #0f172a */
+    /* Event / Immersion Dark + Vibrant Gold/Amber Theme */
+    --background: 224 71% 4%; /* #090d16 Deep luxury dark */
+    --foreground: 210 40% 98%; /* #f8fafc Bright light */
 
-    --card: 0 0% 100%; /* #ffffff */
-    --card-foreground: 222 47% 11%;
+    --card: 222 47% 8%; /* #0d1424 Dark elevated card */
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 243 75% 59%; /* #4f46e5 - Indigo 600 */
-    --primary-foreground: 0 0% 100%;
+    --primary: 38 92% 50%; /* #f59e0b Vibrant Golden Amber */
+    --primary-foreground: 224 71% 4%;
 
-    --secondary: 245 58% 51%; /* #6366f1 - Indigo 500 */
+    --secondary: 24 94% 53%; /* #f97316 Warm Orange accent */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 214 32% 91%; /* #e2e8f0 */
-    --muted-foreground: 215 16% 47%; /* #64748b */
+    --muted: 222 35% 15%; /* #192238 */
+    --muted-foreground: 215 20% 65%; /* #94a3b8 */
 
-    --accent: 250 90% 96%; /* #eef2ff */
-    --accent-foreground: 243 75% 59%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 224 71% 4%;
 
-    --destructive: 0 84% 60%; /* #ef4444 */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%; /* #e2e8f0 */
-    --input: 214 32% 91%;
-    --ring: 243 75% 59%;
+    --border: 222 30% 18%; /* Dark subtle border */
+    --input: 222 30% 18%;
+    --ring: 38 92% 50%;
 
     --radius: 0.75rem;
 
