@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flame, ArrowRight, Clock } from 'lucide-react'
+import { ArrowRight, Clock } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { CountdownTimer } from './CountdownTimer'
 import { eventContent } from '@/content/event'
@@ -20,8 +20,7 @@ export function EventUrgencyBanner() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         {/* Scarcity badge */}
-        <div className="inline-flex items-center justify-center gap-2 sm:gap-3 md:gap-3.5 px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3.5 rounded-full bg-[#E8A020]/15 border-2 border-[#E8A020]/60 text-white font-afacad text-xs sm:text-base md:text-2xl lg:text-3xl font-black uppercase tracking-wider mb-6 animate-urgency-pulse motion-reduce:animate-none max-w-full text-center">
-          <Flame className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7 text-[#E8A020] shrink-0 fill-[#E8A020]/30" />
+        <div className="inline-flex items-center justify-center gap-2 sm:gap-3 md:gap-3.5 px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3.5 rounded-full bg-[#FFA500] border-2 border-[#FFA500] text-white font-afacad text-xs sm:text-base md:text-2xl lg:text-3xl font-black uppercase tracking-wider mb-6 animate-urgency-pulse motion-reduce:animate-none max-w-full text-center">
           <span className="truncate sm:whitespace-normal">{eventContent.urgency.badge}</span>
         </div>
 

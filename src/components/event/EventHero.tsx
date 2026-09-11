@@ -1,5 +1,5 @@
 import React from 'react'
-import { Calendar, MapPin, Clock, ArrowRight, ShieldCheck, Flame, Users2 } from 'lucide-react'
+import { Calendar, MapPin, Clock, ArrowRight, ShieldCheck, Users2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { eventContent } from '@/content/event'
 
@@ -86,10 +86,9 @@ export function EventHero() {
         </div>
 
         {/* Scarcity / Limited spots banner marquee-like */}
-        <div className="w-full max-w-3xl py-2.5 sm:py-3.5 md:py-4 px-3 sm:px-6 md:px-8 rounded-2xl bg-[#E8A020]/15 border-2 border-[#E8A020]/60 backdrop-blur-md flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 animate-urgency-pulse motion-reduce:animate-none">
-          <span className="flex h-2.5 w-2.5 sm:h-3.5 sm:w-3.5 rounded-full bg-[#E8A020] animate-ping motion-reduce:animate-none" />
+        <div className="w-full max-w-3xl py-2.5 sm:py-3.5 md:py-4 px-3 sm:px-6 md:px-8 rounded-2xl bg-[#FFA500] border-2 border-[#FFA500] backdrop-blur-md flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 animate-urgency-pulse motion-reduce:animate-none">
+          <span className="flex h-2.5 w-2.5 sm:h-3.5 sm:w-3.5 rounded-full bg-white animate-ping motion-reduce:animate-none" />
           <span className="font-afacad uppercase tracking-wider font-extrabold flex items-center justify-center gap-1.5 sm:gap-2 md:gap-3 text-white text-sm sm:text-lg md:text-2xl lg:text-3xl drop-shadow-sm text-center">
-            <Flame className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 text-[#E8A020] shrink-0 fill-[#E8A020]/30" />
             <span>{eventContent.event.limitedSpotsBadge}</span>
           </span>
         </div>
