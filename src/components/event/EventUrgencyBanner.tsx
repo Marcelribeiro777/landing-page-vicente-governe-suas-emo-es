@@ -20,8 +20,8 @@ export function EventUrgencyBanner() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         {/* Scarcity badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#5BB7D0]/20 border border-[#5BB7D0]/40 text-cyan-200 text-xs font-black uppercase tracking-widest mb-6 animate-pulse">
-          <Flame className="w-4 h-4 text-[#5BB7D0]" />
+        <div className="inline-flex items-center justify-center gap-2.5 sm:gap-3.5 px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full bg-[#5BB7D0]/20 border-2 border-[#5BB7D0]/60 text-white font-afacad text-lg sm:text-2xl md:text-3xl font-black uppercase tracking-wider mb-6 animate-urgency-pulse motion-reduce:animate-none">
+          <Flame className="w-6 h-6 sm:w-7 sm:h-7 text-[#5BB7D0] shrink-0 fill-[#5BB7D0]/30" />
           <span>{eventContent.urgency.badge}</span>
         </div>
 
