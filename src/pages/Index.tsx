@@ -31,7 +31,7 @@ export default function Index() {
       {/* 1. Hero (Above the Fold): Título Afacad, Hook principal, badges de data/local */}
       <EventHero />
 
-      {/* 2. Dor / Espelhamento Emocional: "Por que você reage de um jeito que não combina com quem você é?" */}
+      {/* 2. Dor / Realidade Emocional: "Por que você reage de um jeito que não combina com quem você é?" */}
       <EventPainMirroring />
 
       {/* 3. Normalização / Explicação (Quebra com fundo branco): "Isso não quer dizer que você tem um defeito..." + O Custo */}

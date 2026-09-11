@@ -212,7 +212,7 @@ export const eventContent: EventData = {
   },
 
   painMirroring: {
-    eyebrow: 'ESPELHAMENTO',
+    eyebrow: 'A REALIDADE EMOCIONAL',
     title: 'Por que você reage de um jeito que não combina com quem você é?',
     subtitle:
       'Você resolve problema difícil no trabalho o dia inteiro. Mas numa conversa de cinco minutos em casa ou no trabalho, o descontrole toma conta — e depois você se arrepende.',
@@ -221,13 +221,6 @@ export const eventContent: EventData = {
       'Naquele momento você não escolhe. Você repete.',
     ],
     quoteCards: [
-      {
-        quote:
-          '“Você resolve problema difícil no trabalho o dia inteiro, mas perde a paciência numa conversa de cinco minutos em casa — e depois se arrepende.”',
-        elaboration:
-          'No ambiente profissional você mantém o comando e a estratégia. Mas em relações íntimas e importantes, a reação emocional escapa ao seu controle.',
-        tag: 'A REAÇÃO INVOLUNTÁRIA',
-      },
       {
         quote: '“Naquele momento você não escolhe. Você repete.”',
         elaboration:
