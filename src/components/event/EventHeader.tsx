@@ -103,23 +103,23 @@ export function EventHeader() {
           )}
 
           <div className="flex flex-col min-w-0">
-            <span className="font-afacad font-black text-lg sm:text-2xl md:text-3xl tracking-tight text-white leading-none truncate drop-shadow-sm">
+            <span className="font-afacad font-black text-sm sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-white leading-tight truncate drop-shadow-sm">
               {eventContent.event.name}
             </span>
-            <span className="text-[10px] sm:text-xs font-semibold text-[#5BB7D0] tracking-wider uppercase truncate mt-1 font-sans">
+            <span className="text-[9px] sm:text-xs font-semibold text-[#5BB7D0] tracking-wider uppercase truncate mt-0.5 sm:mt-1 font-sans">
               {eventContent.event.editionBadge}
             </span>
           </div>
         </a>
 
         {/* Botão de Destaque Ingressos à direita (sem itens de menu) */}
-        <div className="flex items-center">
+        <div className="flex items-center shrink-0 ml-2">
           <Button
             size="sm"
             onClick={() => scrollToAnchor('#precos')}
-            className="bg-gradient-to-r from-[#5BB7D0] to-[#6A84B7] hover:from-[#6A84B7] hover:to-[#5BB7D0] text-[#31376B] hover:text-white font-extrabold shadow-lg shadow-[#5BB7D0]/25 px-4 sm:px-5 h-9 sm:h-10 rounded-lg text-xs sm:text-sm uppercase tracking-wider hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-2"
+            className="bg-gradient-to-r from-[#5BB7D0] to-[#6A84B7] hover:from-[#6A84B7] hover:to-[#5BB7D0] text-[#31376B] hover:text-white font-extrabold shadow-lg shadow-[#5BB7D0]/25 px-3 sm:px-5 h-8 sm:h-10 rounded-lg text-[11px] sm:text-sm uppercase tracking-wider hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-1.5 sm:gap-2 shrink-0"
           >
-            <Ticket className="w-4 h-4 fill-current" />
+            <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" />
             <span>Ingressos</span>
           </Button>
         </div>

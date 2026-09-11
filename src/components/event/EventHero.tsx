@@ -49,7 +49,7 @@ export function EventHero() {
         </div>
 
         {/* Subtitle tag / Eyebrow */}
-        <span className="inline-block text-lg sm:text-xl md:text-2xl font-extrabold tracking-wide text-slate-100 mb-5 px-4 py-1.5 max-w-3xl leading-snug drop-shadow-sm">
+        <span className="inline-block text-xs sm:text-base md:text-xl lg:text-2xl font-extrabold tracking-wide text-slate-100 mb-5 px-3 sm:px-4 py-1.5 max-w-3xl leading-snug drop-shadow-sm">
           <span className="text-[#5BB7D0]">A MELHOR</span> imersão presencial de{' '}
           <span className="text-[#5BB7D0]">AUTOGOVERNO EMOCIONAL</span> do ano
         </span>
@@ -83,10 +83,10 @@ export function EventHero() {
         </div>
 
         {/* Scarcity / Limited spots banner marquee-like */}
-        <div className="w-full max-w-3xl py-3.5 sm:py-4 px-5 sm:px-8 rounded-2xl bg-[#5BB7D0]/20 border-2 border-[#5BB7D0]/60 backdrop-blur-md flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10 animate-urgency-pulse motion-reduce:animate-none">
-          <span className="flex h-3.5 w-3.5 rounded-full bg-[#5BB7D0] animate-ping motion-reduce:animate-none" />
-          <span className="font-afacad uppercase tracking-wider font-extrabold flex items-center justify-center gap-2 sm:gap-3 text-white text-xl sm:text-2xl md:text-3xl drop-shadow-sm text-center">
-            <Flame className="w-6 h-6 sm:w-8 sm:h-8 text-[#5BB7D0] shrink-0 fill-[#5BB7D0]/30" />
+        <div className="w-full max-w-3xl py-2.5 sm:py-3.5 md:py-4 px-3 sm:px-6 md:px-8 rounded-2xl bg-[#5BB7D0]/20 border-2 border-[#5BB7D0]/60 backdrop-blur-md flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 animate-urgency-pulse motion-reduce:animate-none">
+          <span className="flex h-2.5 w-2.5 sm:h-3.5 sm:w-3.5 rounded-full bg-[#5BB7D0] animate-ping motion-reduce:animate-none" />
+          <span className="font-afacad uppercase tracking-wider font-extrabold flex items-center justify-center gap-1.5 sm:gap-2 md:gap-3 text-white text-sm sm:text-lg md:text-2xl lg:text-3xl drop-shadow-sm text-center">
+            <Flame className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 text-[#5BB7D0] shrink-0 fill-[#5BB7D0]/30" />
             <span>{eventContent.event.limitedSpotsBadge}</span>
           </span>
         </div>

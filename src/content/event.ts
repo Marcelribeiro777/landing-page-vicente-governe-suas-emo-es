@@ -579,7 +579,7 @@ export const eventContent: EventData = {
   },
 
   urgency: {
-    badge: 'VAGAS LIMITADAS PELA SALA',
+    badge: 'Vagas Limitadas pela Capacidade da Sala',
     title: 'O tempo está acabando para garantir no lote atual',
     subtitle:
       'A sala possui capacidade restrita para garantir a qualidade da condução prática do Dr. Vicente Carnero.',
