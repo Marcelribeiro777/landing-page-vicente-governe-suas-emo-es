@@ -1,5 +1,5 @@
 import React from 'react'
-import { Calendar, MapPin, ArrowRight, ShieldCheck, Flame, Users2 } from 'lucide-react'
+import { Calendar, MapPin, Clock, ArrowRight, ShieldCheck, Flame, Users2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { eventContent } from '@/content/event'
 
@@ -34,6 +34,11 @@ export function EventHero() {
           </span>
           <span className="text-[#6A84B7] hidden sm:inline">•</span>
           <span className="flex items-center gap-1.5 text-slate-200">
+            <Clock className="w-4 h-4 text-[#5BB7D0]" />
+            {eventContent.event.schedule}
+          </span>
+          <span className="text-[#6A84B7] hidden sm:inline">•</span>
+          <span className="flex items-center gap-1.5 text-slate-200">
             <MapPin className="w-4 h-4 text-[#6A84B7]" />
             {eventContent.event.locationDisplay}
           </span>
@@ -50,15 +55,12 @@ export function EventHero() {
 
         {/* Main Headline */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 max-w-4xl leading-[1.12] drop-shadow-md">
-          <span className="block font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl mb-3 text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-cyan-100 drop-shadow-sm tracking-tight">
+          {/* Nome do evento com fonte Afacad e gradiente suave */}
+          <span className="block font-afacad font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-cyan-100 drop-shadow-sm tracking-tight">
             {eventContent.event.name}
           </span>
-          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl block font-extrabold text-slate-100">
-            O passo definitivo para{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5BB7D0] via-cyan-200 to-[#6A84B7]">
-              romper bloqueios
-            </span>
-            , ter clareza e transformar sua vida.
+          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl block font-extrabold text-slate-100 leading-snug">
+            {eventContent.event.headline}
           </span>
         </h1>
 
@@ -96,11 +98,11 @@ export function EventHero() {
           </div>
           <div className="flex items-center gap-2">
             <Users2 className="w-4 h-4 text-[#5BB7D0]" />
-            <span>Networking qualificado e presencial</span>
+            <span>Condução presencial com Vicente Carnero</span>
           </div>
           <div className="flex items-center gap-2">
-            <Calendar className="w-4 h-4 text-[#6A84B7]" />
-            <span>36 horas de vivência transformadora</span>
+            <Clock className="w-4 h-4 text-[#6A84B7]" />
+            <span>6 horas de imersão direta e vivencial</span>
           </div>
         </div>
       </div>

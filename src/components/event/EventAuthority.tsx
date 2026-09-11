@@ -1,5 +1,5 @@
 import React from 'react'
-import { Award, CheckCircle2, Globe, Flame } from 'lucide-react'
+import { Award, CheckCircle2 } from 'lucide-react'
 import { AnimatedCounter } from './AnimatedCounter'
 import { eventContent } from '@/content/event'
 
@@ -14,7 +14,7 @@ export function EventAuthority() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Mentor Introduction Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-14">
           {/* Mentor Photo Column */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative group max-w-sm w-full">
@@ -31,7 +31,7 @@ export function EventAuthority() {
                 {/* Photo Badge overlay */}
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#1e2348] via-[#1e2348]/85 to-transparent p-6 pt-12">
                   <span className="text-xs font-black uppercase tracking-wider text-[#5BB7D0] bg-[#5BB7D0]/20 px-2.5 py-1 rounded-md border border-[#5BB7D0]/40 inline-block mb-1">
-                    Mentor & Condução
+                    Condução Presencial
                   </span>
                   <h3 className="text-2xl font-black text-white">
                     {eventContent.authority.mentorName}
@@ -46,10 +46,10 @@ export function EventAuthority() {
           <div className="lg:col-span-7 flex flex-col justify-center">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BB7D0]/15 border border-[#5BB7D0]/30 text-[#5BB7D0] text-xs font-bold uppercase tracking-widest mb-4 w-fit">
               <Award className="w-4 h-4 text-[#5BB7D0]" />
-              <span>Quem vai guiar você nessa jornada?</span>
+              <span>{eventContent.authority.sectionTitle}</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-3">
               {eventContent.authority.mentorName}
             </h2>
 
@@ -57,59 +57,48 @@ export function EventAuthority() {
               {eventContent.authority.mentorRole}
             </p>
 
-            <p className="text-slate-200 text-base sm:text-lg leading-relaxed mb-6 font-normal">
+            <p className="text-slate-100 text-base sm:text-lg leading-relaxed mb-6 font-normal">
               {eventContent.authority.mentorBio}
             </p>
 
+            <div className="p-4 rounded-xl bg-[#1e2348]/80 border border-[#6A84B7]/40 mb-6">
+              <p className="text-sm sm:text-base font-semibold text-cyan-200 italic">
+                “{eventContent.authority.highlightPhrase}”
+              </p>
+            </div>
+
             <div className="space-y-3 pt-4 border-t border-[#6A84B7]/30 text-sm text-slate-200">
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#5BB7D0] shrink-0" />
-                <span>Metodologia vivencial com base em neurociência e comportamento humano</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#5BB7D0] shrink-0" />
-                <span>Ferramentas práticas para aplicar no dia seguinte na vida e carreira</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#5BB7D0] shrink-0" />
-                <span>Auditórios lotados com participantes dos mais diversos estados e países</span>
-              </div>
+              {eventContent.authority.credentials.map((cred, idx) => (
+                <div key={idx} className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#5BB7D0] shrink-0" />
+                  <span>{cred}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Animated Numerical Counters Grid */}
-        <div className="pt-10 border-t border-[#6A84B7]/30">
-          <div className="text-center mb-10">
-            <h3 className="text-xs font-bold uppercase tracking-widest text-[#6A84B7]">
-              Resultados Concretos do Método
-            </h3>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {eventContent.authority.stats.map((stat, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-2xl bg-[#1e2348]/90 border border-[#6A84B7]/30 text-center hover:border-[#5BB7D0]/60 transition-colors flex flex-col justify-between group shadow-lg"
-              >
-                <div>
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-black text-[#5BB7D0] font-mono tracking-tight mb-2 group-hover:scale-105 transition-transform">
-                    <AnimatedCounter
-                      value={stat.value}
-                      prefix={stat.prefix}
-                      suffix={stat.suffix}
-                      duration={2200}
-                    />
-                  </div>
-                  <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wider mb-2">
-                    {stat.label}
-                  </h4>
-                </div>
-                <p className="text-xs text-slate-300 leading-snug">{stat.helper}</p>
+        {/* Animated Numerical Counters Grid — Somente dados reais com respaldo */}
+        {eventContent.authority.stats.length > 0 && (
+          <div className="pt-8 border-t border-[#6A84B7]/30 max-w-xl mx-auto">
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#1e2348]/90 border border-[#6A84B7]/30 text-center hover:border-[#5BB7D0]/60 transition-colors shadow-lg">
+              <div className="text-4xl sm:text-6xl font-black text-[#5BB7D0] font-mono tracking-tight mb-2">
+                <AnimatedCounter
+                  value={eventContent.authority.stats[0].value}
+                  prefix={eventContent.authority.stats[0].prefix}
+                  suffix={eventContent.authority.stats[0].suffix}
+                  duration={2200}
+                />
               </div>
-            ))}
+              <h4 className="text-base sm:text-lg font-bold text-white uppercase tracking-wider mb-2">
+                {eventContent.authority.stats[0].label}
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md mx-auto">
+                {eventContent.authority.stats[0].helper}
+              </p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   )

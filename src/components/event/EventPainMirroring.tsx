@@ -15,7 +15,7 @@ export function EventPainMirroring() {
             <HelpCircle className="w-3.5 h-3.5 text-[#5BB7D0]" />
             {eventContent.painMirroring.eyebrow}
           </span>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-4">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-6">
             {eventContent.painMirroring.title}
           </h2>
           <p className="text-slate-200 text-base sm:text-lg leading-relaxed">
@@ -35,9 +35,9 @@ export function EventPainMirroring() {
               <div>
                 <div className="flex items-center gap-2 mb-4 text-[#5BB7D0] font-mono text-xs">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#5BB7D0]" />
-                  <span>CENÁRIO #{idx + 1}</span>
+                  <span>{card.tag || `CENÁRIO #${idx + 1}`}</span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-[#5BB7D0] transition-colors leading-snug">
+                <h3 className="text-base sm:text-lg font-bold text-white mb-3 group-hover:text-[#5BB7D0] transition-colors leading-snug">
                   {card.quote}
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed">{card.elaboration}</p>
@@ -45,7 +45,7 @@ export function EventPainMirroring() {
 
               <div className="mt-5 pt-4 border-t border-[#6A84B7]/20 flex items-center gap-2 text-xs text-[#6A84B7]">
                 <AlertCircle className="w-3.5 h-3.5 text-[#5BB7D0] shrink-0" />
-                <span>Padrão comportamental sabotador</span>
+                <span>Padrão comportamental repetitivo</span>
               </div>
             </div>
           ))}

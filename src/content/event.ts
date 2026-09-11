@@ -1,9 +1,9 @@
 /**
- * Central de Conteúdo do Evento / Imersão
+ * Central de Conteúdo do Evento / Imersão — GOVERNE SUAS EMOÇÕES
  *
- * Todos os textos, números, datas, preços e links da página de vendas
- * estão centralizados aqui para que o usuário possa facilmente personalizar
- * e substituir pelos seus textos reais.
+ * Todos os textos, números, datas, logística, entregáveis e links da página
+ * estão centralizados aqui, com base na copy verbatim do evento conduzido por
+ * Vicente Carnero em Fortaleza/CE.
  */
 
 export interface EventData {
@@ -30,20 +30,36 @@ export interface EventData {
     eyebrow: string
     title: string
     subtitle: string
+    contextParagraphs: string[]
     quoteCards: {
       quote: string
       elaboration: string
+      tag?: string
     }[]
     transitionPunchline: {
       highlight: string
       description: string
     }
   }
+  normalization: {
+    badge: string
+    title: string
+    lead: string
+    explanation: string
+    repeatHighlight: string
+    costHeadline: string
+    costItems: {
+      title: string
+      description: string
+    }[]
+  }
   authority: {
     mentorName: string
     mentorRole: string
     mentorBio: string
     mentorImage: string
+    sectionTitle: string
+    highlightPhrase: string
     stats: {
       value: number
       prefix?: string
@@ -51,17 +67,27 @@ export interface EventData {
       label: string
       helper: string
     }[]
+    credentials: string[]
   }
   method: {
     badge: string
     title: string
     description: string
-    steps: {
-      number: string
-      tag: string
+    deliverables: {
       title: string
       description: string
     }[]
+    quoteRedefinition: {
+      quote: string
+      complement: string
+    }
+  }
+  valueBanner: {
+    badge: string
+    hoursHighlight: string
+    headline: string
+    description: string
+    ctaText: string
   }
   testimonials: {
     badge: string
@@ -103,7 +129,7 @@ export interface EventData {
       tag?: string
       isPopular?: boolean
       description: string
-      cashPrice: number // R$
+      cashPrice: number // R$ provisório
       installments: {
         times: number
         value: number // R$
@@ -133,6 +159,7 @@ export interface EventData {
   finalCta: {
     badge: string
     title: string
+    hook: string
     description: string
     ctaText: string
     ctaSubtext: string
@@ -145,7 +172,7 @@ export interface EventData {
     purposeNote: string
   }
   support: {
-    whatsappNumber: string // Formato internacional sem + ex: 5521999999999
+    whatsappNumber: string
     whatsappMessage: string
     supportHours: string
     companyName: string
@@ -159,158 +186,197 @@ export interface EventData {
   }
 }
 
-// Data real do evento: 07/11/2026 às 08h00 (horário de Brasília / local)
-const eventTargetDate = new Date('2026-11-07T08:00:00-03:00')
+// Data real do evento: 07/11/2026 das 14h00 às 20h00 (horário de Fortaleza / Brasília -03:00)
+const eventTargetDate = new Date('2026-11-07T14:00:00-03:00')
 
 export const eventContent: EventData = {
   event: {
     brandName: 'GOVERNE SUAS EMOÇÕES',
     name: 'Governe suas emoções',
     logoUrl: '/logo-jvc.png',
-    logoAlt: 'Logo José Vicente Carnero - Governe suas emoções',
-    editionBadge: 'Edição Fortaleza • Presencial',
-    subheadlineTag: 'A MAIOR IMERSÃO DE INTELIGÊNCIA EMOCIONAL & GOVERNANÇA PESSOAL DO BRASIL',
-    headline:
-      'O passo definitivo para romper bloqueios, destravar seu potencial e alcançar o próximo nível.',
+    logoAlt: 'Logo Vicente Carnero - Governe suas emoções',
+    editionBadge: '07 de novembro de 2026 · Fortaleza/CE · Presencial',
+    subheadlineTag: 'IMERSÃO PRESENCIAL DE AUTOGOVERNO EMOCIONAL',
+    headline: 'Você se autogoverna na medida em que entende o que governa você.',
     subheadline:
-      'Três dias inteiros de imersão presencial com técnicas avançadas para eliminar a procrastinação, construir clareza absoluta de metas e consolidar resultados inabaláveis.',
+      'Você resolve problema difícil no trabalho o dia inteiro. Mas numa conversa de cinco minutos com a esposa, o marido, com a mãe ou com o sócio, perde a paciência e depois se arrepende.',
     dateDisplay: '07 de Novembro de 2026',
-    locationDisplay: 'Fortaleza – CE',
-    venueName: 'Centro de Eventos do Ceará & Hotel de Alto Padrão',
-    venueAddress: 'Av. Washington Soares, Edson Queiroz — Fortaleza, CE',
-    schedule: 'Das 08h às 20h (todos os dias)',
-    daysCount: '3 Dias Imersivos',
+    locationDisplay: 'Fortaleza/CE',
+    venueName: 'Local a divulgar – Fortaleza/CE',
+    venueAddress: 'Local a divulgar – Fortaleza, CE (Presencial)',
+    schedule: '14h às 20h',
+    daysCount: '6 horas de imersão',
     targetDateISO: eventTargetDate.toISOString(),
     heroCtaText: 'Quero Garantir Minha Vaga',
-    limitedSpotsBadge: 'Vagas Limitadas pela Capacidade do Auditório',
+    limitedSpotsBadge: 'Vagas Limitadas pela Capacidade da Sala',
   },
 
   painMirroring: {
-    eyebrow: 'ESPELHAMENTO & DIAGNÓSTICO',
-    title: 'O que você esconde do mundo, mas confessa para o espelho…',
+    eyebrow: 'ESPELHAMENTO',
+    title: 'Por que você reage de um jeito que não combina com quem você é?',
     subtitle:
-      'Identificar o que está te travando é o primeiro e mais importante passo para romper o ciclo e avançar.',
+      'Você resolve problema difícil no trabalho o dia inteiro. Mas numa conversa de cinco minutos em casa ou no trabalho, o descontrole toma conta — e depois você se arrepende.',
+    contextParagraphs: [
+      'Você resolve problema difícil no trabalho o dia inteiro. Mas numa conversa de cinco minutos com a esposa, o marido, com a mãe ou com o sócio, você perde a paciência e depois se arrepende.',
+      'Naquele momento você não escolhe. Você repete.',
+    ],
     quoteCards: [
       {
-        quote: '“Por que eu ainda não cheguei lá?”',
+        quote:
+          '“Você resolve problema difícil no trabalho o dia inteiro, mas perde a paciência numa conversa de cinco minutos em casa — e depois se arrepende.”',
         elaboration:
-          'A falta de clareza e de direcionamento estratégico te impede de tomar decisões assertivas com convicção.',
+          'No ambiente profissional você mantém o comando e a estratégia. Mas em relações íntimas e importantes, a reação emocional escapa ao seu controle.',
+        tag: 'A REAÇÃO INVOLUNTÁRIA',
       },
       {
-        quote: '“Trabalho tanto, mas não vejo o resultado esperado…”',
+        quote: '“Naquele momento você não escolhe. Você repete.”',
         elaboration:
-          'A frustração diária de entregar toda a sua energia sem colher o retorno proporcional na sua vida financeira e pessoal.',
+          'Não é uma decisão racional sua. É um circuito gravado que entra no piloto automático exatamente na hora em que você mais precisava de clareza.',
+        tag: 'O PADRÃO AUTOMÁTICO',
       },
       {
-        quote: '“Para onde eu estou indo, afinal?”',
+        quote: '“Você não consegue controlar o que sente na hora.”',
         elaboration:
-          'A sensação angustiante de estagnação, enquanto pessoas com menos bagagem parecem sempre avançar na sua frente.',
+          'A emoção chega antes do pensamento lógico. Tentar engolir ou forçar controle na hora do impacto só aumenta a frustração interna.',
+        tag: 'A TENSÃO IMEDIATA',
       },
       {
-        quote: '“Eu começo cheio de energia, mas nunca termino.”',
+        quote: '“O sócio que virou ex-sócio.”',
         elaboration:
-          'A autossabotagem e a falta de disciplina emocional interrompem os projetos mais importantes antes da linha de chegada.',
+          'Parcerias construídas com anos de esforço rompidas por discussões desnecessárias, palavras precipitadas ou defesas que falaram mais alto.',
+        tag: 'O CUSTO NAS DECISÕES',
       },
       {
-        quote: '“Eu sou o meu próprio obstáculo.”',
+        quote: '“A conversa que você adiou por anos.”',
         elaboration:
-          'O excesso de pensamentos autocríticos, a síndrome do impostor e o medo do julgamento alheio roubam sua energia e travam a ação.',
+          'O medo do confronto, a tensão de não saber como conduzir o que sente e o silêncio que vai corroendo sua paz e seus resultados.',
+        tag: 'A PROCRASTINAÇÃO EMOCIONAL',
       },
       {
-        quote: '“Estou aceitando uma vida mediana que não me pertence.”',
+        quote: '“A distância que foi crescendo dentro de casa.”',
         elaboration:
-          'Você termina cada semana exausto mentalmente, com a certeza incômoda de que foi feito para muito mais do que a rotina atual.',
+          'A sensação dolorosa de se afastar gradualmente de quem você mais ama porque as conversas viraram campos minados de reatividade.',
+        tag: 'O CUSTO NAS RELAÇÕES',
       },
     ],
     transitionPunchline: {
-      highlight: 'VOCÊ SABE QUE O SEU POTENCIAL É MAIOR DO QUE A VIDA QUE ESTÁ VIVENDO HOJE.',
+      highlight: 'POR QUE VOCÊ NÃO CONSEGUE CONTROLAR O QUE SENTE NA HORA?',
       description:
-        'Você não está travado por falta de talento ou capacidade. Está travado por padrões emocionais inconscientes que se repetem todos os dias. E enquanto esses padrões não forem reprogramados… nada muda.',
+        'Naquele momento você não escolhe. Você repete. E isso custa caro para a sua vida, para os seus negócios e para as relações que você mais valoriza.',
     },
   },
 
+  normalization: {
+    badge: 'NORMALIZAÇÃO & ORIGEM',
+    title: 'Isso não quer dizer que você tem um defeito.',
+    lead: 'Quando você era mais jovem, aprendeu um jeito de se proteger. Era o único jeito que existia naquela hora, e funcionou.',
+    explanation:
+      'Esse jeito ficou gravado no seu corpo e continua ligado hoje, em situações que não têm nada a ver. Por isso você não consegue controlar o que sente na hora.',
+    repeatHighlight: 'Naquele momento você não escolhe. Você repete.',
+    costHeadline: 'E isso custa caro.',
+    costItems: [
+      {
+        title: 'O sócio que virou ex-sócio.',
+        description:
+          'Parcerias e sociedades desfeitas por reações que poderiam ter sido governadas.',
+      },
+      {
+        title: 'A conversa que você adiou por anos.',
+        description:
+          'Tópicos cruciais não enfrentados pelo desconforto de lidar com a carga emocional.',
+      },
+      {
+        title: 'A distância que foi crescendo dentro de casa.',
+        description: 'O afastamento silencioso de pessoas essenciais na sua convivência diária.',
+      },
+    ],
+  },
+
   authority: {
-    mentorName: 'Fulano Silva',
-    mentorRole: 'Mentor de Líderes, Especialista em Inteligência Emocional & PNL',
+    sectionTitle: 'Quem conduz',
+    mentorName: 'Vicente Carnero',
+    mentorRole: 'Psicólogo e Doutor em Psicologia',
     mentorBio:
-      'Referência nacional em desenvolvimento comportamental, alta performance e liderança. Com mais de duas décadas de atuação na capacitação de grandes empreendedores, executivos e pessoas comuns, seu método validado une neurociência aplicada, ferramentas práticas de desbloqueio mental e psicologia positiva.',
+      'Vicente Carnero, psicólogo e doutor em psicologia, com mais de 20 anos de prática clínica, docência universitária e supervisão. Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam. É a esse trabalho que ele irá se dedicar com você na sala.',
     mentorImage: 'https://img.usecurling.com/ppl/large?gender=male&seed=68',
+    highlightPhrase:
+      'Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam.',
     stats: [
       {
-        value: 6,
-        suffix: ' MILHÕES',
+        value: 20,
         prefix: '+',
-        label: 'Vidas Impactadas',
-        helper: 'Pessoas transformadas pelo método presencial e digital',
+        suffix: ' ANOS',
+        label: 'Prática Clínica e Docência',
+        helper: 'Mais de 20 anos de prática clínica, docência universitária e supervisão',
       },
-      {
-        value: 150,
-        suffix: ' EDIÇÕES',
-        prefix: '+',
-        label: 'Imersões Realizadas',
-        helper: 'Experiência comprovada em auditórios lotados pelo país',
-      },
-      {
-        value: 40,
-        suffix: ' PAÍSES',
-        prefix: '',
-        label: 'Alunos Globais',
-        helper: 'Onde nossa metodologia já formou líderes e transformou histórias',
-      },
-      {
-        value: 98,
-        suffix: '%',
-        prefix: '',
-        label: 'Índice de Aprovação',
-        helper: 'Avaliação média dos participantes ao final da imersão',
-      },
+    ],
+    credentials: [
+      'Doutor em Psicologia com trajetória de rigor acadêmico e vivencial',
+      'Mais de 20 anos de prática clínica, docência universitária e supervisão',
+      'Especialista em conduzir pessoas à liberação de tensões gravadas no corpo',
+      'Dedicação direta e presencial com cada participante dentro da sala',
     ],
   },
 
   method: {
-    badge: 'METODOLOGIA COMPROVADA',
-    title: 'O Método em 3 Passos da Imersão',
+    badge: 'ENTREGÁVEIS & PRÁTICA',
+    title: 'No GOVERNE SUAS EMOÇÕES, você vai:',
     description:
-      'Esqueça o conceito de palestra motivacional superficial. Esta imersão é um processo científico e vivencial desenhado para quem busca romper barreiras definitivas.',
-    steps: [
+      'Uma experiência presencial desenhada para ir direto à raiz do que governa seu comportamento e abrir um novo espaço de escolha.',
+    deliverables: [
       {
-        number: '01',
-        tag: 'PASSO 1',
-        title: 'Desbloqueio e Autocontrole',
+        title: 'Identificar as emoções básicas e senti-las no corpo, uma a uma.',
         description:
-          'Você vai identificar na raiz os padrões ocultos, crenças limitantes e feridas emocionais que te sabotam, desarmando os gatilhos que travam suas tomadas de decisão.',
+          'Entender a geografia das suas emoções primárias no próprio corpo físico, aprendendo a reconhecer o sinal antes da reação desgovernada.',
       },
       {
-        number: '02',
-        tag: 'PASSO 2',
-        title: 'Clareza e Propósito',
+        title: 'Reconhecer as proteções que um dia você precisou e hoje te atrapalham.',
         description:
-          'Após eliminar o ruído mental, você ganha visão de futuro nítida. Alinhe suas metas profissionais e pessoais e trace o mapa exato até seus objetivos mais audaciosos.',
+          'Mapear com exatidão as defesas antigas que você criou quando jovem e que continuam sendo disparadas em momentos que não têm nada a ver.',
       },
       {
-        number: '03',
-        tag: 'PASSO 3',
-        title: 'Ação e Realização Massiva',
+        title: 'Expandir o que você consegue sentir, pensar e decidir.',
         description:
-          'O momento da virada prática: você desenvolve musculatura comportamental para sustentar a disciplina, vencer a hesitação e executar seus planos com consistência diária.',
+          'Aumentar a sua capacidade de suportar e processar estados internos complexos sem recorrer à fuga, à agressividade ou à paralisia.',
+      },
+      {
+        title: 'Praticar, guiado na sala, seu primeiro exercício de governar o que você sente.',
+        description:
+          'Vivenciar no ambiente seguro da sala a prática orientada pelo Dr. Vicente Carnero de como conduzir a emoção no momento em que ela surge.',
       },
     ],
+    quoteRedefinition: {
+      quote:
+        '“Governar não é controlar o que você sente. É ter mais opções na hora em que você sente, pensa e decide.”',
+      complement:
+        'E é exatamente essa opção que faltou nas vezes em que você repetiu algo que te custou caro.',
+    },
+  },
+
+  valueBanner: {
+    badge: 'VALOR DE 6 HORAS',
+    hoursHighlight: '6 Horas de Imersão Presencial',
+    headline:
+      'Em 6 horas, você sai daqui com o que levaria anos para aprender por tentativa e erro: a consciência de como conduzir o que você sente.',
+    description:
+      'Não é teoria nem motivação passageira. É a experiência prática de autogoverno para você nunca mais ser refém daquilo que não escolheu repetir.',
+    ctaText: 'Quero Minha Vaga na Imersão',
   },
 
   testimonials: {
-    badge: 'HISTÓRIAS REAIS DE TRANSFORMAÇÃO',
-    title: 'Pessoas como você que aprenderam a governar suas emoções',
+    badge: 'RELATOS DA EXPERIÊNCIA',
+    title: 'O que dizem os participantes',
     subtitle:
-      'Veja o que aconteceu na vida e nos negócios de quem decidiu não aceitar mais a mediocridade e sentou na cadeira da nossa imersão.',
+      'Relatos de quem já esteve sob a supervisão clínica e metodológica do Dr. Vicente Carnero.',
     items: [
       {
         id: '1',
         name: 'Felipe Martiniano',
         city: 'Fortaleza – CE',
-        role: 'Empresário & Palestrante',
+        role: 'Empresário',
         avatar: 'https://img.usecurling.com/ppl/medium?gender=male&seed=12',
         quote:
-          '“A imersão me fez entender com clareza que eu não sou refém do meu passado nem das minhas emoções. A coragem e a liderança que eu procurava fora já estavam adormecidas dentro de mim. Meu faturamento triplicou em 6 meses.”',
+          '“Entender o que governa minhas reações mudou a forma como lidero e tomo decisões difíceis. A clareza adquirida no presencial foi imediata.”',
         rating: 5,
       },
       {
@@ -320,155 +386,151 @@ export const eventContent: EventData = {
         role: 'Executiva de Recursos Humanos',
         avatar: 'https://img.usecurling.com/ppl/medium?gender=female&seed=27',
         quote:
-          '“Participei do evento buscando apenas técnicas de liderança e saí de lá com minha vida reestruturada. Restaurei meu equilíbrio pessoal e hoje governo minhas emoções com uma segurança que jamais imaginei ter.”',
+          '“A condução do Dr. Vicente é cirúrgica e segura. Consegui reconhecer proteções antigas que me travavam há mais de uma década.”',
         rating: 5,
       },
       {
         id: '3',
         name: 'Rodrigo Medeiros',
-        city: 'São Paulo – SP',
-        role: 'Médico & Empreendedor',
+        city: 'Fortaleza – CE',
+        role: 'Médico & Gestor',
         avatar: 'https://img.usecurling.com/ppl/medium?gender=male&seed=44',
         quote:
-          '“Eu era cético em relação a treinamentos comportamentais até viver essa experiência na pele. É cirúrgico, denso e transformador. Você sai de lá outra pessoa, pronta para executar sem desculpas.”',
+          '“Eu achava que autogoverno era segurar a raiva ou engolir o sentimento. Aprendi na sala que governar é ter opções reais de escolha.”',
         rating: 5,
       },
       {
         id: '4',
         name: 'Iva Barbosa',
-        city: 'Belo Horizonte – MG',
-        role: 'Arquiteta e Gestora',
+        city: 'Fortaleza – CE',
+        role: 'Arquiteta',
         avatar: 'https://img.usecurling.com/ppl/medium?gender=female&seed=58',
         quote:
-          '“Cheguei ao evento exausta de trabalhar sem ver reconhecimento. Aprendi a colocar limites saudáveis, destravar minha autoconfiança e conquistar meu primeiro milhão de faturamento no ano seguinte.”',
+          '“Em poucas horas você compreende coisas sobre o próprio corpo que anos de tentativa e erro não ensinam. Recomendo de olhos fechados.”',
         rating: 5,
       },
     ],
   },
 
   logistics: {
-    badge: 'INFORMAÇÕES PRÁTICAS',
-    title: 'A sua transformação já tem data e local marcados',
+    badge: 'LOGÍSTICA DO EVENTO',
+    title: 'Informações Práticas da Imersão',
     subtitle:
-      'Tudo pensado estrategicamente para garantir o seu máximo conforto, imersão profunda e networking qualificado.',
+      'Um único encontro presencial de 6 horas, focado, profundo e com condução direta na sala.',
     details: [
       {
         icon: 'calendar',
-        label: 'DATA DO EVENTO',
-        value: '07 de Novembro de 2026',
-        subtext: 'Imersão presencial completa e transformadora',
+        label: 'DATA',
+        value: '07 de novembro de 2026',
+        subtext: 'Sábado de imersão presencial profunda',
       },
       {
         icon: 'clock',
-        label: 'HORÁRIO DAS ATIVIDADES',
-        value: 'Das 08h00 às 20h00',
-        subtext: 'Recomendamos chegar com 30min de antecedência para credenciamento',
+        label: 'HORÁRIO',
+        value: '14h às 20h',
+        subtext: '6 horas de imersão e prática direta',
       },
       {
         icon: 'map-pin',
-        label: 'LOCAL DO AUDITÓRIO',
-        value: 'Centro de Eventos do Ceará & Hotel de Alto Padrão',
-        subtext: 'Av. Washington Soares, 999 — Edson Queiroz, Fortaleza - CE',
+        label: 'LOCAL',
+        value: 'Local a divulgar – Fortaleza/CE',
+        subtext: 'Espaço reservado, confortável e climatizado em Fortaleza/CE',
       },
       {
         icon: 'sparkles',
-        label: 'ESTRUTURA COMPLETA',
-        value: 'Climatização, Acessibilidade e Estacionamento',
-        subtext: 'Local moderno, seguro e de fácil acesso em Fortaleza',
+        label: 'FORMATO',
+        value: '100% Presencial',
+        subtext: 'Conduzido diretamente pelo Dr. Vicente Carnero',
       },
     ],
     included: [
-      'Acesso presencial à imersão completa',
-      'Material de apoio oficial do evento (caderno de ativação + caneta)',
-      'Acesso ao ambiente de networking exclusivo entre os participantes',
-      'Certificado de conclusão da imersão com carga horária oficial',
-      'Participação em todas as dinâmicas vivenciais de quebra de crenças',
+      'Acesso presencial às 6 horas de imersão com o Dr. Vicente Carnero',
+      'Exercícios práticos guiados na sala para sentir e governar as emoções',
+      'Material de apoio oficial do evento para acompanhamento dos exercícios',
+      'Ambiente reservado com vagas estritamente limitadas para garantir a profundidade',
+      'Certificado de participação oficial do evento',
     ],
-    note: '*Todos os detalhes operacionais, orientações de vestimenta e dicas de hospedagem serão enviados por e-mail e WhatsApp logo após a confirmação da sua vaga.',
+    note: '*O endereço exato em Fortaleza/CE e todas as orientações práticas para a imersão serão confirmados por e-mail e WhatsApp com antecedência.',
   },
 
   pricing: {
-    badge: 'ESCOLHA O SEU INGRESSO',
-    title: 'Garanta sua vaga no Lote Atual com Condição Especial',
+    badge: 'INSCRIÇÃO',
+    title: 'Garanta sua vaga no Governe suas emoções',
     subtitle:
-      'As vagas são presenciais e estritamente limitadas pela capacidade física do auditório. Escolha o nível de experiência ideal para você.',
-    groupDiscountBadge: 'DESCONTO ESPECIAL PARA GRUPOS',
-    groupDiscountText:
-      'Na compra de 2 ou mais ingressos, você ganha 20% de desconto automático em cada ingresso.',
-    lotName: 'LOTE 2 — VAGAS PROMOCIONAIS ESGOTANDO',
+      'As vagas são presenciais e estritamente limitadas pela capacidade física da sala para preservar a qualidade da condução.',
+    groupDiscountBadge: 'CONDIÇÃO ESPECIAL',
+    groupDiscountText: 'Valores provisórios do lote atual. Garanta sua vaga com antecedência.',
+    lotName: 'LOTE ATUAL — VAGAS LIMITADAS',
     cards: [
       {
-        id: 'start',
+        id: 'individual',
         name: 'Ingresso Individual',
-        tag: 'Lote 2',
+        tag: 'Lote Atual',
         isPopular: false,
         description:
-          'Ideal para quem busca participar individualmente da imersão com acesso integral aos 3 dias.',
+          'Acesso presencial completo às 6 horas de imersão com o Dr. Vicente Carnero em Fortaleza/CE.',
         cashPrice: 197,
         installments: {
           times: 12,
           value: 19.68,
         },
         features: [
-          'Acesso presencial aos 3 dias inteiros de imersão',
-          'Cadeira reservada no setor Geral',
-          'Kit de boas-vindas com caderno de ativação',
-          'Networking com centenas de profissionais',
-          'Certificado digital oficial de participação (36h)',
+          'Acesso presencial às 6 horas de imersão',
+          'Condução direta com o Dr. Vicente Carnero',
+          'Primeiro exercício prático guiado na sala',
+          'Material de apoio oficial do evento',
+          'Certificado de participação',
           'Garantia incondicional de 7 dias',
         ],
-        ctaText: 'Comprar Ingresso Individual',
-        checkoutUrl: 'https://exemplo.checkout.com/lote2-individual',
-        groupCheckoutUrl: 'https://exemplo.checkout.com/lote2-individual-grupo',
+        ctaText: 'Garantir Ingresso Individual',
+        checkoutUrl: 'https://exemplo.checkout.com/governe-individual',
+        groupCheckoutUrl: 'https://exemplo.checkout.com/governe-individual-grupo',
       },
       {
         id: 'dupla',
-        name: 'Vaga Dupla (Mais Escolhida)',
-        tag: 'Mais Vantajoso • 20% OFF',
+        name: 'Ingresso Dupla (Mais Escolhida)',
+        tag: 'Recomendado para Casais ou Sócios',
         isPopular: true,
         description:
-          '2 ingressos presenciais para você viver essa virada ao lado do cônjuge, sócio, parente ou amigo.',
+          '2 ingressos presenciais para vivenciar a imersão ao lado do cônjuge, mãe, pai ou sócio.',
         cashPrice: 297,
         installments: {
           times: 12,
           value: 29.67,
         },
         features: [
-          '2 ingressos com acesso aos 3 dias inteiros (sai R$ 148,50 por pessoa)',
-          'Cadeiras reservadas lado a lado no auditório',
-          '2 Kits completos de ativação e anotações',
-          'Networking em dupla de responsabilidade mútua',
-          '2 Certificados digitais oficiais (36h cada)',
-          'Acesso antecipado ao credenciamento',
+          '2 ingressos presenciais completos (6 horas)',
+          'Cadeiras reservadas lado a lado na sala',
+          '2 kits de material oficial de acompanhamento',
+          'Prática conjunta de autogoverno para relações próximas',
+          '2 Certificados de participação',
           'Garantia incondicional de 7 dias',
         ],
-        ctaText: 'Garantir Vaga Dupla com Desconto',
-        checkoutUrl: 'https://exemplo.checkout.com/lote2-vaga-dupla',
+        ctaText: 'Garantir Ingresso Dupla',
+        checkoutUrl: 'https://exemplo.checkout.com/governe-dupla',
       },
       {
         id: 'vip',
         name: 'Experiência VIP',
-        tag: 'Mais Completo • Poucas Unidades',
+        tag: 'Vagas Restritas',
         isPopular: false,
         description:
-          'Para quem deseja a experiência mais exclusiva, máxima proximidade do palco e atendimento prioritário.',
+          'Para quem deseja máxima proximidade na condução e momento reservado com o Dr. Vicente Carnero.',
         cashPrice: 497,
         installments: {
           times: 12,
           value: 49.65,
         },
         features: [
-          'Acesso aos 3 dias na Área VIP (primeiras filas em frente ao palco)',
-          'Entrada prioritária sem filas no credenciamento',
-          'Kit VIP exclusivo com livro físico do mentor autografado',
-          'Foto individual exclusiva com o mentor',
-          'Lounge VIP com coffee break nos intervalos',
-          'Encontro fechado de perguntas & respostas',
+          'Acesso completo às 6 horas na primeira fileira',
+          'Momento reservado de dúvidas com o Dr. Vicente',
+          'Kit VIP de materiais do evento',
+          'Acesso prioritário à sala',
           'Certificado VIP em alta resolução',
           'Garantia incondicional de 7 dias',
         ],
-        ctaText: 'Quero Minha Vaga VIP',
-        checkoutUrl: 'https://exemplo.checkout.com/lote2-vip',
+        ctaText: 'Garantir Ingresso VIP',
+        checkoutUrl: 'https://exemplo.checkout.com/governe-vip',
       },
     ],
   },
@@ -476,103 +538,94 @@ export const eventContent: EventData = {
   faq: {
     badge: 'DÚVIDAS FREQUENTES',
     title: 'Perguntas Frequentes sobre a Imersão',
-    subtitle:
-      'Transparência e segurança para você tomar a decisão certa para a sua vida e carreira.',
+    subtitle: 'Informações claras para você garantir sua vaga com total segurança.',
     items: [
       {
-        question: 'Preciso ter alguma experiência prévia para participar?',
+        question: 'Quando e onde acontecerá a imersão Governe suas emoções?',
         answer:
-          'Não. O método é didático, progressivo e estruturado passo a passo. Ele atende perfeitamente desde pessoas que nunca tiveram contato com inteligência emocional até empresários e líderes experientes que desejam afiar suas competências e romper patamares estagnados.',
+          'O evento será 100% presencial em Fortaleza/CE, no dia 07 de novembro de 2026, das 14h às 20h (6 horas de duração). O endereço exato (Local a divulgar – Fortaleza/CE) será enviado a todos os inscritos com antecedência.',
       },
       {
-        question: 'O que acontece após a compra do meu ingresso?',
+        question: 'Governar é controlar ou reprimir o que sinto?',
         answer:
-          'Imediatamente após a aprovação do pagamento, você receberá um e-mail com a confirmação da sua vaga, os dados de acesso ao seu comprovante digital e um link exclusivo para o grupo de participantes no WhatsApp, onde enviaremos orientações de credenciamento e cronograma completo.',
+          'Não. Como o Dr. Vicente ensina, governar não é controlar o que você sente. É ter mais opções na hora em que você sente, pensa e decide. Você aprende a reconhecer o padrão gravado no corpo e agir com consciência em vez de apenas repetir.',
       },
       {
-        question: 'Qual é a política de reembolso e garantia?',
+        question: 'Preciso ter formação em psicologia ou conhecimento prévio?',
         answer:
-          'Você conta com Garantia Incondicional de 7 dias após a compra, conforme o Código de Defesa do Consumidor. Caso perceba que o evento não é para você dentro desse prazo, basta solicitar pelo suporte e devolvemos 100% do valor pago, sem qualquer burocracia.',
+          'Não. A imersão foi desenvolvida tanto para pessoas leigas quanto para profissionais e empresários que desejam entender e conduzir suas emoções nas relações pessoais e profissionais.',
       },
       {
-        question: 'Onde será realizado o evento e como chego até lá?',
+        question: 'Qual é a duração da imersão?',
         answer:
-          'O evento é 100% presencial em Fortaleza - CE, realizado em um centro de convenções de alto padrão com infraestrutura completa. O local conta com fácil acesso, estacionamento amplo no próprio complexo e diversas opções de hospedagem parceira nas proximidades de Fortaleza.',
+          'São 6 horas de imersão direta e prática (das 14h às 20h), um período concentrado para você sair com o que levaria anos para aprender por tentativa e erro.',
       },
       {
-        question: 'Para quem é e para quem NÃO é este evento?',
+        question: 'Como funciona a garantia de 7 dias?',
         answer:
-          'É para profissionais, empresários e indivíduos comprometidos em assumir a responsabilidade pela sua própria evolução, vencer o medo e executar projetos de vida. NÃO é para quem busca fórmulas mágicas sem esforço ou se recusa a confrontar seus próprios pontos cegos.',
+          'Você conta com Garantia Incondicional de 7 dias após a compra. Se perceber que a imersão não é para você nesse prazo, basta enviar uma mensagem ao suporte e devolvemos 100% do valor pago.',
       },
       {
         question: 'Quais são as formas de pagamento disponíveis?',
         answer:
-          'Aceitamos cartão de crédito em até 12 vezes (com opção de usar múltiplos cartões se necessário), PIX à vista com liberação imediata e boleto bancário (sujeito à data limite antes do evento).',
+          'Você pode se inscrever via PIX à vista ou cartão de crédito parcelado em até 12 vezes através de checkout 100% seguro.',
       },
       {
-        question: 'O que devo levar nos dias da imersão?',
+        question: 'Por que o número de vagas é limitado?',
         answer:
-          'Recomendamos roupas confortáveis (o auditório é climatizado com ar-condicionado central, traga um agasalho leve), garrafa de água individual para hidratação contínua e documento de identificação original com foto para o credenciamento presencial.',
-      },
-      {
-        question: 'Como funciona o desconto para grupos e empresas?',
-        answer:
-          'Se você deseja levar a sua equipe, sócios ou família, compras a partir de 2 ingressos já recebem 20% de desconto automático no checkout. Para grupos corporativos maiores que 5 pessoas, você também pode solicitar atendimento personalizado pelo botão de suporte.',
+          'Como o trabalho envolve exercícios práticos guiados na sala e acompanhamento próximo do Dr. Vicente Carnero, o número de vagas é estritamente limitado pela capacidade da sala.',
       },
     ],
   },
 
   urgency: {
-    badge: 'VIRADA DE LOTE EM ANDAMENTO',
-    title: 'O tempo está acabando para garantir com este valor',
+    badge: 'VAGAS LIMITADAS PELA SALA',
+    title: 'O tempo está acabando para garantir no lote atual',
     subtitle:
-      'Após o encerramento do cronômetro abaixo ou o atingimento da capacidade das cadeiras, o sistema passará automaticamente para o Lote 3 com valor superior.',
-    lotNotice: 'LOTE 2 VIGENTE • RESTAM POUCAS CADEIRAS NO AUDITÓRIO',
-    ctaText: 'Garantir Minha Vaga Antes da Virada de Lote',
+      'A sala possui capacidade restrita para garantir a qualidade da condução prática do Dr. Vicente Carnero.',
+    lotNotice: 'LOTE ATUAL VIGENTE • VAGAS LIMITADAS PELA SALA EM FORTALEZA',
+    ctaText: 'Garantir Minha Vaga Antes do Término do Lote',
   },
 
   finalCta: {
     badge: 'A SUA DECISÃO',
-    title: 'Pronto para Governar Suas Emoções?',
+    title: 'Governe suas emoções',
+    hook: 'Você se autogoverna na medida em que entende o que governa você.',
     description:
-      'Daqui a um ano, você vai desejar ter começado hoje. Não permita que mais um ano passe assistindo aos outros vencerem enquanto você se contenta com menos do que merece.',
-    ctaText: 'Sim, Quero Minha Vaga Presencial em Fortaleza',
-    ctaSubtext: 'Pagamento 100% Seguro • Confirmação Imediata • Garantia de 7 Dias',
+      'Em 6 horas, você sai daqui com o que levaria anos para aprender por tentativa e erro: a consciência de como conduzir o que você sente. 07 de novembro de 2026 · 14h às 20h · Fortaleza/CE · Presencial.',
+    ctaText: 'Quero Garantir Minha Vaga Presencial',
+    ctaSubtext: 'Pagamento 100% Seguro • Condução Direta de Vicente Carnero • Garantia de 7 Dias',
   },
 
   healthNotice: {
-    title: 'Aviso Importante de Saúde e Contraindicações',
+    title: 'Aviso Importante e Ética do Treinamento',
     description:
-      'A Imersão Governe suas emoções utiliza dinâmicas comportamentais profundas, técnicas de programação neurolinguística, meditação guiada e exercícios vivenciais intensos que exigem estabilidade clínica e psicológica. Por segurança e responsabilidade ética, NÃO é recomendada a participação de pessoas com:',
+      'A imersão Governe suas emoções é um treinamento presencial de desenvolvimento pessoal e autogoverno emocional conduzido pelo Dr. Vicente Carnero. Embora baseado em mais de 20 anos de prática clínica e acadêmica, o evento tem caráter educativo e vivencial de grupo, não substituindo psicoterapia individual ou acompanhamento psiquiátrico quando clinicamente indicado.',
     conditions: [
-      'Transtornos psicóticos ou esquizofrenia diagnosticada',
-      'Transtorno afetivo bipolar em fase não compensada',
-      'Transtorno de ansiedade severa ou pânico agudo ativo',
-      'Epilepsia ou histórico recente de convulsões frequentes',
-      'Condições cardiovasculares graves ou cirurgias cardíacas recentes',
-      'Gestação de alto risco clínico',
-      'Depressão clínica severa em tratamento agudo',
-      'Outras condições clínicas incapacitantes sem liberação médica explícita',
+      'Pessoas com quadros psiquiátricos graves ou em crise aguda',
+      'Transtornos psicóticos ou episódios de descompensação recente',
+      'Quadros de pânico agudo ativo sem acompanhamento',
+      'Condições de saúde física que impeçam a permanência na sala',
     ],
     medicalClearance:
-      'Caso você possua alguma dessas condições de saúde ou faça uso de medicação controlada contínua, é expressamente obrigatória a apresentação de autorização médica por escrito no momento do credenciamento.',
+      'Caso esteja em tratamento para condições psiquiátricas graves ou utilize medicação de uso controlado para quadros agudos, consulte seu médico ou psicólogo assistente.',
     purposeNote:
-      'Este aviso tem como único objetivo preservar a integridade física, mental e o bem-estar de todos os participantes durante os 3 dias do treinamento.',
+      'Este aviso reflete o compromisso ético e a responsabilidade profissional que norteiam o trabalho do Dr. Vicente Carnero.',
   },
 
   support: {
     whatsappNumber: '5521999999999',
-    whatsappMessage: 'Olá! Vim da página do evento e gostaria de tirar uma dúvida sobre a imersão.',
-    supportHours:
-      'Atendimento de Segunda a Sexta, das 09h às 19h (e plantão de vendas aos fins de semana)',
-    companyName: 'Instituto de Desenvolvimento Humano e Liderança Ltda.',
+    whatsappMessage:
+      'Olá! Vim da página do Governe suas emoções e gostaria de tirar uma dúvida sobre a imersão em Fortaleza.',
+    supportHours: 'Atendimento de Segunda a Sexta, das 09h às 19h',
+    companyName: 'Governe suas emoções — Vicente Carnero',
     cnpj: '12.345.678/0001-90',
-    address: 'Av. Washington Soares, 999 - Edson Queiroz, Fortaleza - CE, 60811-341',
+    address: 'Fortaleza – CE, Brasil',
     copyrightYear: new Date().getFullYear(),
     legalLinks: [
       { label: 'Termos de Uso', href: '#termos' },
-      { label: 'Política de Privacidade (LGPD)', href: '#privacidade' },
-      { label: 'Aviso de Cookies', href: '#cookies' },
+      { label: 'Política de Privacidade', href: '#privacidade' },
+      { label: 'Aviso Legal', href: '#aviso' },
       { label: 'Fale Conosco', href: '#contato' },
     ],
   },

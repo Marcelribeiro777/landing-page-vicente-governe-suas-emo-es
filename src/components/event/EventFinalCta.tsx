@@ -23,15 +23,18 @@ export function EventFinalCta() {
           <span>{eventContent.finalCta.badge}</span>
         </div>
 
-        <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight mb-6 leading-tight">
-          Pronto para{' '}
-          <span className="font-display text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-[#5BB7D0]">
-            Governar Suas Emoções
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight mb-4 leading-tight">
+          <span className="font-afacad font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-[#5BB7D0]">
+            {eventContent.finalCta.title}
           </span>
-          ?
         </h2>
 
-        <p className="text-slate-200 text-base sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+        {/* Subtítulo / Hook verbatim */}
+        <p className="text-xl sm:text-2xl font-bold text-cyan-200 max-w-2xl mx-auto mb-6 leading-snug">
+          “{eventContent.finalCta.hook}”
+        </p>
+
+        <p className="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
           {eventContent.finalCta.description}
         </p>
 
