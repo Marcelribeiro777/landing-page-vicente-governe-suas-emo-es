@@ -66,6 +66,11 @@
     --chart-3: 0 0% 15%;
     --chart-4: 38 70% 40%;
     --chart-5: 40 15% 60%;
+
+    /* Neon Green / Ingressos */
+    --brand-neon: #39ff14;
+    --brand-neon-light: #57ff38;
+    --brand-neon-glow: #2bff00;
   }
 
   .dark {

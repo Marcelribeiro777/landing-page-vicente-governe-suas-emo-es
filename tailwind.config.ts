@@ -94,6 +94,9 @@ export default {
           primary: '#0D0D0D',
           secondary: '#262420',
           accent: '#E8A020',
+          neon: '#39FF14',
+          'neon-light': '#57FF38',
+          'neon-glow': '#2BFF00',
         },
       },
       borderRadius: {
