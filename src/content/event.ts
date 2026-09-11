@@ -157,28 +157,26 @@ export interface EventData {
   }
 }
 
-// Configuração calculada para a data do evento (30 dias no futuro para o contador sempre rodar de forma dinâmica e convincente)
-const defaultEventDate = new Date()
-defaultEventDate.setDate(defaultEventDate.getDate() + 27)
-defaultEventDate.setHours(8, 0, 0, 0)
+// Data real do evento: 07/11/2026 às 08h00 (horário de Brasília / local)
+const eventTargetDate = new Date('2026-11-07T08:00:00-03:00')
 
 export const eventContent: EventData = {
   event: {
-    brandName: 'IMERSÃO DESPERTE',
-    name: 'Desperte Seu Poder',
-    editionBadge: 'Edição Rio de Janeiro • Presencial',
-    subheadlineTag: 'A MAIOR IMERSÃO DE INTELIGÊNCIA EMOCIONAL & DESENVOLVIMENTO PESSOAL DO BRASIL',
+    brandName: 'GOVERNE SUAS EMOÇÕES',
+    name: 'Governe suas emoções',
+    editionBadge: 'Edição Fortaleza • Presencial',
+    subheadlineTag: 'A MAIOR IMERSÃO DE INTELIGÊNCIA EMOCIONAL & GOVERNANÇA PESSOAL DO BRASIL',
     headline:
       'O passo definitivo para romper bloqueios, destravar seu potencial e alcançar o próximo nível.',
     subheadline:
       'Três dias inteiros de imersão presencial com técnicas avançadas para eliminar a procrastinação, construir clareza absoluta de metas e consolidar resultados inabaláveis.',
-    dateDisplay: '18 a 20 de Setembro',
-    locationDisplay: 'Rio de Janeiro – RJ',
-    venueName: 'Grand Hyatt Rio ou Centro de Convenções Barra',
-    venueAddress: 'Av. das Américas, Barra da Tijuca — Rio de Janeiro, RJ',
+    dateDisplay: '07 de Novembro de 2026',
+    locationDisplay: 'Fortaleza – CE',
+    venueName: 'Centro de Eventos do Ceará & Hotel de Alto Padrão',
+    venueAddress: 'Av. Washington Soares, Edson Queiroz — Fortaleza, CE',
     schedule: 'Das 08h às 20h (todos os dias)',
     daysCount: '3 Dias Imersivos',
-    targetDateISO: defaultEventDate.toISOString(),
+    targetDateISO: eventTargetDate.toISOString(),
     heroCtaText: 'Quero Garantir Minha Vaga',
     limitedSpotsBadge: 'Vagas Limitadas pela Capacidade do Auditório',
   },
@@ -297,28 +295,28 @@ export const eventContent: EventData = {
 
   testimonials: {
     badge: 'HISTÓRIAS REAIS DE TRANSFORMAÇÃO',
-    title: 'Pessoas como você que despertaram o seu poder',
+    title: 'Pessoas como você que aprenderam a governar suas emoções',
     subtitle:
       'Veja o que aconteceu na vida e nos negócios de quem decidiu não aceitar mais a mediocridade e sentou na cadeira da nossa imersão.',
     items: [
       {
         id: '1',
         name: 'Felipe Martiniano',
-        city: 'Rio de Janeiro – RJ',
+        city: 'Fortaleza – CE',
         role: 'Empresário & Palestrante',
         avatar: 'https://img.usecurling.com/ppl/medium?gender=male&seed=12',
         quote:
-          '“A imersão me fez entender com clareza que eu não sou refém do meu passado. A coragem e a liderança que eu procurava fora já estavam adormecidas dentro de mim. Meu faturamento triplicou em 6 meses.”',
+          '“A imersão me fez entender com clareza que eu não sou refém do meu passado nem das minhas emoções. A coragem e a liderança que eu procurava fora já estavam adormecidas dentro de mim. Meu faturamento triplicou em 6 meses.”',
         rating: 5,
       },
       {
         id: '2',
         name: 'Gabriela Cardoso',
-        city: 'Niterói – RJ',
+        city: 'Fortaleza – CE',
         role: 'Executiva de Recursos Humanos',
         avatar: 'https://img.usecurling.com/ppl/medium?gender=female&seed=27',
         quote:
-          '“Participei do evento buscando apenas técnicas de liderança e saí de lá com minha vida reestruturada. Restaurei meu equilíbrio pessoal e hoje lidero com uma segurança que jamais imaginei ter.”',
+          '“Participei do evento buscando apenas técnicas de liderança e saí de lá com minha vida reestruturada. Restaurei meu equilíbrio pessoal e hoje governo minhas emoções com uma segurança que jamais imaginei ter.”',
         rating: 5,
       },
       {
@@ -348,13 +346,13 @@ export const eventContent: EventData = {
     badge: 'INFORMAÇÕES PRÁTICAS',
     title: 'A sua transformação já tem data e local marcados',
     subtitle:
-      'Tudo pensado estrategicamente para garantir o seu máximo conforto, imersão profunda e networking qualificado durante os 3 dias.',
+      'Tudo pensado estrategicamente para garantir o seu máximo conforto, imersão profunda e networking qualificado.',
     details: [
       {
         icon: 'calendar',
         label: 'DATA DO EVENTO',
-        value: '18, 19 e 20 de Setembro',
-        subtext: 'Sexta, Sábado e Domingo de imersão completa',
+        value: '07 de Novembro de 2026',
+        subtext: 'Imersão presencial completa e transformadora',
       },
       {
         icon: 'clock',
@@ -365,21 +363,21 @@ export const eventContent: EventData = {
       {
         icon: 'map-pin',
         label: 'LOCAL DO AUDITÓRIO',
-        value: 'Centro de Convenções Barra & Hotel de Alto Padrão',
-        subtext: 'Av. das Américas, 10500 — Barra da Tijuca, Rio de Janeiro - RJ',
+        value: 'Centro de Eventos do Ceará & Hotel de Alto Padrão',
+        subtext: 'Av. Washington Soares, 999 — Edson Queiroz, Fortaleza - CE',
       },
       {
         icon: 'sparkles',
         label: 'ESTRUTURA COMPLETA',
         value: 'Climatização, Acessibilidade e Estacionamento',
-        subtext: 'Próximo a praça de alimentação com diversas opções gastronômicas',
+        subtext: 'Local moderno, seguro e de fácil acesso em Fortaleza',
       },
     ],
     included: [
-      'Acesso presencial a todos os 3 dias inteiros de imersão',
+      'Acesso presencial à imersão completa',
       'Material de apoio oficial do evento (caderno de ativação + caneta)',
       'Acesso ao ambiente de networking exclusivo entre os participantes',
-      'Certificado de conclusão da imersão com carga horária de 36 horas',
+      'Certificado de conclusão da imersão com carga horária oficial',
       'Participação em todas as dinâmicas vivenciais de quebra de crenças',
     ],
     note: '*Todos os detalhes operacionais, orientações de vestimenta e dicas de hospedagem serão enviados por e-mail e WhatsApp logo após a confirmação da sua vaga.',
@@ -495,7 +493,7 @@ export const eventContent: EventData = {
       {
         question: 'Onde será realizado o evento e como chego até lá?',
         answer:
-          'A imersão acontecerá em um centro de convenções de alto padrão na Barra da Tijuca, Rio de Janeiro - RJ. O local conta com fácil acesso via transporte público, estacionamento amplo no próprio complexo e diversas opções de hospedagem parceira nas proximidades.',
+          'O evento é 100% presencial em Fortaleza - CE, realizado em um centro de convenções de alto padrão com infraestrutura completa. O local conta com fácil acesso, estacionamento amplo no próprio complexo e diversas opções de hospedagem parceira nas proximidades de Fortaleza.',
       },
       {
         question: 'Para quem é e para quem NÃO é este evento?',
@@ -531,17 +529,17 @@ export const eventContent: EventData = {
 
   finalCta: {
     badge: 'A SUA DECISÃO',
-    title: 'Pronto para Despertar Seu Verdadeiro Poder?',
+    title: 'Pronto para Governar Suas Emoções?',
     description:
       'Daqui a um ano, você vai desejar ter começado hoje. Não permita que mais um ano passe assistindo aos outros vencerem enquanto você se contenta com menos do que merece.',
-    ctaText: 'Sim, Quero Minha Vaga Presencial',
+    ctaText: 'Sim, Quero Minha Vaga Presencial em Fortaleza',
     ctaSubtext: 'Pagamento 100% Seguro • Confirmação Imediata • Garantia de 7 Dias',
   },
 
   healthNotice: {
     title: 'Aviso Importante de Saúde e Contraindicações',
     description:
-      'A Imersão Desperte Seu Poder utiliza dinâmicas comportamentais profundas, técnicas de programação neurolinguística, meditação guiada e exercícios vivenciais intensos que exigem estabilidade clínica e psicológica. Por segurança e responsabilidade ética, NÃO é recomendada a participação de pessoas com:',
+      'A Imersão Governe suas emoções utiliza dinâmicas comportamentais profundas, técnicas de programação neurolinguística, meditação guiada e exercícios vivenciais intensos que exigem estabilidade clínica e psicológica. Por segurança e responsabilidade ética, NÃO é recomendada a participação de pessoas com:',
     conditions: [
       'Transtornos psicóticos ou esquizofrenia diagnosticada',
       'Transtorno afetivo bipolar em fase não compensada',
@@ -565,7 +563,7 @@ export const eventContent: EventData = {
       'Atendimento de Segunda a Sexta, das 09h às 19h (e plantão de vendas aos fins de semana)',
     companyName: 'Instituto de Desenvolvimento Humano e Liderança Ltda.',
     cnpj: '12.345.678/0001-90',
-    address: 'Av. das Américas, 10500 - Barra da Tijuca, Rio de Janeiro - RJ, 22793-082',
+    address: 'Av. Washington Soares, 999 - Edson Queiroz, Fortaleza - CE, 60811-341',
     copyrightYear: new Date().getFullYear(),
     legalLinks: [
       { label: 'Termos de Uso', href: '#termos' },
