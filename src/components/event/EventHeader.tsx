@@ -38,7 +38,7 @@ export function EventHeader() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-slate-950/90 backdrop-blur-md border-b border-amber-500/20 py-3 shadow-xl shadow-black/40'
+            ? 'bg-[#31376B]/95 backdrop-blur-md border-b border-[#6A84B7]/30 py-3 shadow-xl shadow-black/40'
             : 'bg-transparent py-4 sm:py-5 border-b border-white/5'
         }`}
       >
@@ -52,14 +52,14 @@ export function EventHeader() {
             }}
             className="flex items-center gap-2.5 group"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 via-amber-400 to-orange-500 text-slate-950 font-black flex items-center justify-center shadow-md shadow-amber-500/30 group-hover:scale-105 transition-transform duration-200">
-              <Sparkles className="w-5 h-5" />
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#31376B] via-[#6A84B7] to-[#5BB7D0] text-white font-black flex items-center justify-center shadow-md shadow-[#5BB7D0]/30 group-hover:scale-105 transition-transform duration-200">
+              <Sparkles className="w-5 h-5 text-white" />
             </div>
             <div className="flex flex-col">
               <span className="text-lg sm:text-xl font-extrabold tracking-tight text-white leading-none">
                 {eventContent.event.name}
               </span>
-              <span className="text-[10px] font-bold text-amber-400 tracking-wider uppercase mt-0.5">
+              <span className="text-[10px] font-bold text-[#5BB7D0] tracking-wider uppercase mt-0.5">
                 {eventContent.event.editionBadge}
               </span>
             </div>
@@ -75,10 +75,10 @@ export function EventHeader() {
                   e.preventDefault()
                   scrollToAnchor(link.href)
                 }}
-                className="text-xs font-semibold uppercase tracking-wider text-slate-300 hover:text-amber-400 transition-colors py-1 relative group"
+                className="text-xs font-semibold uppercase tracking-wider text-slate-200 hover:text-[#5BB7D0] transition-colors py-1 relative group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-200 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#5BB7D0] transition-all duration-200 group-hover:w-full" />
               </a>
             ))}
           </nav>
@@ -88,9 +88,9 @@ export function EventHeader() {
             <Button
               size="sm"
               onClick={() => scrollToAnchor('#precos')}
-              className="bg-gradient-to-r from-amber-500 via-amber-400 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-extrabold shadow-lg shadow-amber-500/25 px-5 h-10 rounded-lg text-xs sm:text-sm uppercase tracking-wider hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-2"
+              className="bg-gradient-to-r from-[#5BB7D0] to-[#6A84B7] hover:from-[#6A84B7] hover:to-[#5BB7D0] text-[#31376B] hover:text-white font-extrabold shadow-lg shadow-[#5BB7D0]/25 px-5 h-10 rounded-lg text-xs sm:text-sm uppercase tracking-wider hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-2"
             >
-              <Ticket className="w-4 h-4 fill-slate-950 text-slate-950" />
+              <Ticket className="w-4 h-4 fill-current" />
               <span>Ingressos</span>
             </Button>
 
@@ -98,7 +98,7 @@ export function EventHeader() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 focus:outline-none"
+              className="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none"
               aria-label="Abrir Menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -115,10 +115,10 @@ export function EventHeader() {
             onClick={() => setMobileMenuOpen(false)}
           />
 
-          <div className="relative ml-auto w-full max-w-xs bg-slate-950 border-l border-amber-500/20 h-full shadow-2xl flex flex-col p-6 z-10 animate-slide-up">
-            <div className="flex items-center justify-between pb-5 border-b border-slate-800">
+          <div className="relative ml-auto w-full max-w-xs bg-[#31376B] border-l border-[#6A84B7]/30 h-full shadow-2xl flex flex-col p-6 z-10 animate-slide-up">
+            <div className="flex items-center justify-between pb-5 border-b border-[#6A84B7]/30">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-amber-400 text-slate-950 flex items-center justify-center font-bold">
+                <div className="w-8 h-8 rounded-lg bg-[#5BB7D0] text-[#31376B] flex items-center justify-center font-bold">
                   <Sparkles className="w-4 h-4" />
                 </div>
                 <span className="font-extrabold text-white text-base">
@@ -128,7 +128,7 @@ export function EventHeader() {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-1.5 rounded-md text-slate-400 hover:text-white"
+                className="p-1.5 rounded-md text-slate-300 hover:text-white"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -143,17 +143,17 @@ export function EventHeader() {
                     e.preventDefault()
                     scrollToAnchor(link.href)
                   }}
-                  className="text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 hover:bg-slate-900/60 px-3 py-2.5 rounded-lg transition-colors"
+                  className="text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-[#5BB7D0] hover:bg-white/10 px-3 py-2.5 rounded-lg transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
             </div>
 
-            <div className="pt-5 border-t border-slate-800">
+            <div className="pt-5 border-t border-[#6A84B7]/30">
               <Button
                 onClick={() => scrollToAnchor('#precos')}
-                className="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-extrabold uppercase tracking-wider py-3 shadow-lg shadow-amber-500/30"
+                className="w-full bg-gradient-to-r from-[#5BB7D0] to-[#6A84B7] text-[#31376B] font-extrabold uppercase tracking-wider py-3 shadow-lg shadow-[#5BB7D0]/30 hover:opacity-95"
               >
                 Garantir Ingresso
               </Button>

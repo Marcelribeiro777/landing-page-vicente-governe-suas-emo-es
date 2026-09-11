@@ -81,6 +81,11 @@ export default {
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
         },
+        brand: {
+          primary: '#31376B',
+          secondary: '#6A84B7',
+          accent: '#5BB7D0',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',

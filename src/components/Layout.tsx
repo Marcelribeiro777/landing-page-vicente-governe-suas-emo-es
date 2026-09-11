@@ -6,7 +6,7 @@ import { FloatingWhatsAppButton } from '@/components/event/FloatingWhatsAppButto
 
 export default function Layout() {
   return (
-    <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 font-sans selection:bg-amber-400 selection:text-slate-950">
+    <div className="min-h-screen flex flex-col bg-[#1e2348] text-slate-100 font-sans selection:bg-brand-accent selection:text-[#31376B]">
       {/* Fixed Sticky Header Navigation */}
       <EventHeader />
 

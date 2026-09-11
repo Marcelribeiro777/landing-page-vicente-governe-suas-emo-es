@@ -13,34 +13,34 @@
   }
 
   :root {
-    /* Event / Immersion Dark + Vibrant Gold/Amber Theme */
-    --background: 224 71% 4%; /* #090d16 Deep luxury dark */
+    /* Event / Immersion Theme — #31376B (primary), #6A84B7 (secondary), #5BB7D0 (accent) */
+    --background: 234 37% 31%; /* #31376B Deep Navy Primary */
     --foreground: 210 40% 98%; /* #f8fafc Bright light */
 
-    --card: 222 47% 8%; /* #0d1424 Dark elevated card */
+    --card: 234 40% 24%; /* Elevated dark navy card */
     --card-foreground: 210 40% 98%;
 
-    --popover: 222 47% 8%;
+    --popover: 234 40% 24%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 38 92% 50%; /* #f59e0b Vibrant Golden Amber */
-    --primary-foreground: 224 71% 4%;
+    --primary: 234 37% 31%; /* #31376B Primary Deep Navy */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 24 94% 53%; /* #f97316 Warm Orange accent */
+    --secondary: 219 36% 57%; /* #6A84B7 Secondary Slate Blue */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 222 35% 15%; /* #192238 */
-    --muted-foreground: 215 20% 65%; /* #94a3b8 */
+    --muted: 234 30% 22%;
+    --muted-foreground: 219 30% 75%;
 
-    --accent: 38 92% 50%;
-    --accent-foreground: 224 71% 4%;
+    --accent: 192 56% 59%; /* #5BB7D0 Cyan Accent */
+    --accent-foreground: 234 37% 20%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 222 30% 18%; /* Dark subtle border */
-    --input: 222 30% 18%;
-    --ring: 38 92% 50%;
+    --border: 219 36% 40%;
+    --input: 219 36% 40%;
+    --ring: 192 56% 59%;
 
     --radius: 0.75rem;
 
@@ -60,11 +60,11 @@
 
     --sidebar-ring: 222.2 84% 4.9%;
 
-    --chart-1: 34 100% 44%;
-    --chart-2: 189 100% 38%;
-    --chart-3: 209 100% 32%;
-    --chart-4: 42 100% 50%;
-    --chart-5: 33 100% 50%;
+    --chart-1: 192 56% 59%;
+    --chart-2: 219 36% 57%;
+    --chart-3: 234 37% 31%;
+    --chart-4: 192 70% 45%;
+    --chart-5: 219 45% 45%;
   }
 
   .dark {

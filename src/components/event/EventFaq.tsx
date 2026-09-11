@@ -10,18 +10,18 @@ export function EventFaq() {
   }
 
   return (
-    <section id="faq" className="py-20 sm:py-28 bg-slate-900/60 relative border-t border-slate-800">
+    <section id="faq" className="py-20 sm:py-28 bg-[#1e2348] relative border-t border-[#6A84B7]/25">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-black uppercase tracking-widest text-amber-400 bg-amber-400/10 px-3.5 py-1.5 rounded-full border border-amber-400/30 inline-flex items-center gap-1.5 mb-4">
-            <HelpCircle className="w-3.5 h-3.5 text-amber-400" />
+          <span className="text-xs font-black uppercase tracking-widest text-[#5BB7D0] bg-[#5BB7D0]/15 px-3.5 py-1.5 rounded-full border border-[#5BB7D0]/30 inline-flex items-center gap-1.5 mb-4">
+            <HelpCircle className="w-3.5 h-3.5 text-[#5BB7D0]" />
             {eventContent.faq.badge}
           </span>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
             {eventContent.faq.title}
           </h2>
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
+          <p className="text-slate-200 text-base sm:text-lg leading-relaxed">
             {eventContent.faq.subtitle}
           </p>
         </div>
@@ -35,8 +35,8 @@ export function EventFaq() {
                 key={idx}
                 className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
                   isOpen
-                    ? 'bg-slate-950 border-amber-500/50 shadow-lg shadow-amber-500/5'
-                    : 'bg-slate-950/70 border-slate-800 hover:border-slate-700'
+                    ? 'bg-[#31376B] border-[#5BB7D0]/60 shadow-lg shadow-[#5BB7D0]/10'
+                    : 'bg-[#31376B]/70 border-[#6A84B7]/30 hover:border-[#6A84B7]/60'
                 }`}
               >
                 <button
@@ -51,8 +51,8 @@ export function EventFaq() {
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
                       isOpen
-                        ? 'bg-amber-400 text-slate-950 rotate-180'
-                        : 'bg-slate-900 text-slate-400'
+                        ? 'bg-[#5BB7D0] text-[#31376B] rotate-180'
+                        : 'bg-[#1e2348] text-slate-300'
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />
@@ -60,7 +60,7 @@ export function EventFaq() {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-slate-300 leading-relaxed border-t border-slate-900/60 animate-fade-in">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-slate-200 leading-relaxed border-t border-[#6A84B7]/20 animate-fade-in">
                     {item.answer}
                   </div>
                 )}
@@ -70,7 +70,7 @@ export function EventFaq() {
         </div>
 
         {/* 7 Days Guarantee Box */}
-        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-950 to-slate-950 border border-emerald-500/30 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-[#31376B] to-[#1e2348] border border-emerald-500/30 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
           <div className="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/40">
             <ShieldCheck className="w-6 h-6" />
           </div>
