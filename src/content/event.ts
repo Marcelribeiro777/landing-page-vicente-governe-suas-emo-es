@@ -166,7 +166,7 @@ export const eventContent: EventData = {
   event: {
     brandName: 'GOVERNE SUAS EMOÇÕES',
     name: 'Governe suas emoções',
-    logoUrl: '/src/assets/image-767f4.png',
+    logoUrl: '/logo-jvc.png',
     logoAlt: 'Logo José Vicente Carnero - Governe suas emoções',
     editionBadge: 'Edição Fortaleza • Presencial',
     subheadlineTag: 'A MAIOR IMERSÃO DE INTELIGÊNCIA EMOCIONAL & GOVERNANÇA PESSOAL DO BRASIL',

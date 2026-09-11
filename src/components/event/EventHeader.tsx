@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Sparkles, Ticket } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Ticket } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { eventContent } from '@/content/event'
 
@@ -93,7 +93,7 @@ export function EventHeader() {
                 src={eventContent.event.logoUrl}
                 alt={eventContent.event.logoAlt || eventContent.event.name}
                 onError={() => setImageError(true)}
-                className="h-9 sm:h-11 w-auto max-w-[120px] sm:max-w-[160px] object-contain group-hover:brightness-110 transition-all duration-200"
+                className="h-9 sm:h-11 w-auto max-w-[140px] sm:max-w-[180px] object-contain group-hover:brightness-110 transition-all duration-200 drop-shadow-sm"
               />
             </div>
           ) : (
