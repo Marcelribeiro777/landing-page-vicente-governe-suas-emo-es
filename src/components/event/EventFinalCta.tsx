@@ -43,11 +43,11 @@ export function EventFinalCta() {
           <Button
             size="lg"
             onClick={scrollToPricing}
-            className="relative overflow-hidden w-full h-16 px-8 sm:px-10 bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black rounded-xl uppercase tracking-wider text-base sm:text-lg shadow-[0_0_35px_rgba(232,160,32,0.4)] hover:shadow-[0_0_50px_rgba(245,184,61,0.65)] hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center justify-center gap-2 border-2 border-[#F5B83D]"
+            className="relative overflow-hidden w-full h-16 px-8 sm:px-10 bg-[#228B22] hover:bg-[#2FA32B] text-white font-black rounded-xl uppercase tracking-wider text-base sm:text-lg shadow-[0_0_35px_rgba(34,139,34,0.45)] hover:shadow-[0_0_50px_rgba(47,163,43,0.7)] hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center justify-center gap-2 border-2 border-[#2FA32B]"
           >
-            <span className="absolute inset-0 w-1/3 bg-white/25 blur-sm animate-cta-shimmer pointer-events-none" />
+            <span className="absolute inset-0 w-1/3 bg-white/20 blur-sm animate-cta-shimmer pointer-events-none" />
             <span className="relative z-10 font-black">{eventContent.finalCta.ctaText}</span>
-            <ArrowRight className="w-5 h-5 text-[#0D0D0D] stroke-[2.5] relative z-10" />
+            <ArrowRight className="w-5 h-5 text-white stroke-[2.5] relative z-10" />
           </Button>
 
           <div className="flex items-center gap-2 text-xs text-[#CFC9B8] font-medium">
