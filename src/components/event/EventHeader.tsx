@@ -117,10 +117,11 @@ export function EventHeader() {
           <Button
             size="sm"
             onClick={() => scrollToAnchor('#precos')}
-            className="bg-gradient-to-r from-[#E8A020] to-[#F5B83D] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-extrabold shadow-lg shadow-[#E8A020]/25 px-3 sm:px-5 h-8 sm:h-10 rounded-lg text-[11px] sm:text-sm uppercase tracking-wider hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 border border-[#F5B83D]/40"
+            className="relative overflow-hidden bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black shadow-[0_0_20px_rgba(232,160,32,0.35)] hover:shadow-[0_0_28px_rgba(245,184,61,0.6)] px-3.5 sm:px-5 h-8 sm:h-10 rounded-lg text-[11px] sm:text-sm uppercase tracking-wider hover:scale-[1.04] active:scale-[0.98] transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 border-2 border-[#F5B83D]"
           >
-            <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#0D0D0D] text-[#0D0D0D]" />
-            <span>Ingressos</span>
+            <span className="absolute inset-0 w-1/3 bg-white/25 blur-sm animate-cta-shimmer pointer-events-none" />
+            <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#0D0D0D] text-[#0D0D0D] relative z-10" />
+            <span className="relative z-10 font-black">Ingressos</span>
           </Button>
         </div>
       </div>

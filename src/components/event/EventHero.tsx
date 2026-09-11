@@ -70,15 +70,18 @@ export function EventHero() {
           {eventContent.event.subheadline}
         </p>
 
-        {/* Primary Hero CTA Button with Pulse */}
+        {/* Primary Hero CTA Button with Pulse & Shimmer */}
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center max-w-md mb-8">
           <Button
             size="lg"
             onClick={scrollToPricing}
-            className="w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-10 bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black rounded-xl shadow-xl shadow-[#E8A020]/30 hover:shadow-[#E8A020]/50 hover:scale-[1.03] active:scale-[0.98] transition-all text-base sm:text-lg uppercase tracking-wider flex items-center justify-center gap-3 border border-[#F5B83D]/60"
+            className="relative overflow-hidden w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-10 bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black rounded-xl shadow-[0_0_30px_rgba(232,160,32,0.35)] hover:shadow-[0_0_40px_rgba(245,184,61,0.6)] hover:scale-[1.03] active:scale-[0.98] transition-all text-base sm:text-lg uppercase tracking-wider flex items-center justify-center gap-3 border-2 border-[#F5B83D]"
           >
-            <span>{eventContent.event.heroCtaText}</span>
-            <ArrowRight className="w-5 h-5 text-[#0D0D0D]" />
+            <span className="absolute inset-0 w-1/3 bg-white/25 blur-sm animate-cta-shimmer pointer-events-none" />
+            <span className="relative z-10 font-black tracking-wider text-[#0D0D0D]">
+              {eventContent.event.heroCtaText}
+            </span>
+            <ArrowRight className="w-5 h-5 text-[#0D0D0D] stroke-[2.5] relative z-10" />
           </Button>
         </div>
 

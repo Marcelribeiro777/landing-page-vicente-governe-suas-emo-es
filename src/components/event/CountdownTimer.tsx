@@ -76,10 +76,10 @@ export function CountdownTimer({
         >
           {/* Subtle top glow */}
           <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#E8A020] to-transparent opacity-75" />
-          <span className="text-2xl sm:text-4xl md:text-5xl font-black font-mono text-white tracking-tight drop-shadow">
+          <span className="text-2xl sm:text-4xl md:text-5xl font-black font-mono text-[#F5B83D] tracking-tight drop-shadow-[0_2px_8px_rgba(232,160,32,0.3)]">
             {formatNumber(unit.value)}
           </span>
-          <span className="text-[10px] sm:text-xs font-semibold text-[#E8A020] tracking-wider uppercase mt-1">
+          <span className="text-[10px] sm:text-xs font-bold text-[#F2EFE6] tracking-wider uppercase mt-1">
             {unit.label}
           </span>
         </div>

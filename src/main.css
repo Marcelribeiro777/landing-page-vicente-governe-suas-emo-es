@@ -307,7 +307,7 @@
         0 0 18px 0 rgba(232, 160, 32, 0.25);
     }
     50% {
-      transform: scale(1.05);
+      transform: scale(1.03);
       box-shadow:
         0 0 0 8px rgba(232, 160, 32, 0),
         0 0 28px 5px rgba(232, 160, 32, 0.5);
@@ -318,8 +318,24 @@
     animation: pulse-subtle-glow 2s ease-in-out infinite;
   }
 
+  /* Shimmer de conversão suave para os botões de ação dourados */
+  @keyframes cta-shimmer {
+    0% {
+      transform: translateX(-150%) skewX(-20deg);
+    }
+    50%,
+    100% {
+      transform: translateX(250%) skewX(-20deg);
+    }
+  }
+
+  .animate-cta-shimmer {
+    animation: cta-shimmer 3.5s ease-in-out infinite;
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .animate-urgency-pulse {
+    .animate-urgency-pulse,
+    .animate-cta-shimmer {
       animation: none !important;
       transform: none !important;
     }

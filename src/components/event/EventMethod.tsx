@@ -51,8 +51,9 @@ export function EventMethod() {
                   </span>
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-black text-white mb-3 group-hover:text-[#E8A020] transition-colors leading-snug">
-                  ✔ {item.title}
+                <h3 className="text-lg sm:text-xl font-black text-white mb-3 group-hover:text-[#E8A020] transition-colors leading-snug flex items-start gap-2">
+                  <span className="text-[#E8A020] font-black shrink-0">✔</span>
+                  <span>{item.title}</span>
                 </h3>
 
                 <p className="text-sm text-[#CFC9B8] leading-relaxed">{item.description}</p>
@@ -87,10 +88,11 @@ export function EventMethod() {
           <Button
             size="lg"
             onClick={scrollToPricing}
-            className="h-14 px-8 bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black rounded-xl uppercase tracking-wider text-sm shadow-lg shadow-[#E8A020]/25 hover:scale-[1.02] active:scale-[0.98] transition-all border border-[#F5B83D]/60"
+            className="relative overflow-hidden h-14 sm:h-16 px-8 sm:px-10 bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black rounded-xl uppercase tracking-wider text-sm sm:text-base shadow-[0_0_25px_rgba(232,160,32,0.35)] hover:shadow-[0_0_35px_rgba(245,184,61,0.55)] hover:scale-[1.03] active:scale-[0.98] transition-all border-2 border-[#F5B83D]"
           >
-            <span>Quero Viver Essa Transformação</span>
-            <ArrowRight className="w-4 h-4 ml-2 text-[#0D0D0D]" />
+            <span className="absolute inset-0 w-1/3 bg-white/25 blur-sm animate-cta-shimmer pointer-events-none" />
+            <span className="relative z-10 font-black">Quero Viver Essa Transformação</span>
+            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 text-[#0D0D0D] stroke-[2.5] relative z-10" />
           </Button>
         </div>
       </div>

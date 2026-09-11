@@ -47,15 +47,16 @@ export function EventUrgencyBanner() {
           {eventContent.urgency.lotNotice}
         </div>
 
-        {/* Action Button */}
+        {/* Action Button with Price Anchor */}
         <div>
           <Button
             size="lg"
             onClick={scrollToPricing}
-            className="h-14 sm:h-16 px-8 sm:px-12 bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black rounded-xl uppercase tracking-wider text-sm sm:text-base shadow-xl shadow-[#E8A020]/30 hover:scale-[1.03] active:scale-[0.98] transition-all border border-[#F5B83D]/60"
+            className="relative overflow-hidden h-14 sm:h-16 px-8 sm:px-12 bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black rounded-xl uppercase tracking-wider text-sm sm:text-base shadow-[0_0_30px_rgba(232,160,32,0.35)] hover:shadow-[0_0_40px_rgba(245,184,61,0.6)] hover:scale-[1.03] active:scale-[0.98] transition-all border-2 border-[#F5B83D]"
           >
-            <span>{eventContent.urgency.ctaText}</span>
-            <ArrowRight className="w-5 h-5 ml-2 text-[#0D0D0D]" />
+            <span className="absolute inset-0 w-1/3 bg-white/25 blur-sm animate-cta-shimmer pointer-events-none" />
+            <span className="relative z-10 font-black">{eventContent.urgency.ctaText}</span>
+            <ArrowRight className="w-5 h-5 ml-2 text-[#0D0D0D] stroke-[2.5] relative z-10" />
           </Button>
         </div>
       </div>

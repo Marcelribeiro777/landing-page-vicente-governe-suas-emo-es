@@ -119,14 +119,15 @@ export function EventPricing() {
                 <div className="space-y-3 pt-4 border-t border-[#2E2B25]">
                   <Button
                     onClick={() => handleCheckout(card.checkoutUrl)}
-                    className={`w-full h-12 uppercase tracking-wider font-extrabold text-xs sm:text-sm rounded-xl transition-all shadow-lg ${
+                    className={`relative overflow-hidden w-full h-13 py-3 uppercase tracking-wider font-black text-xs sm:text-sm rounded-xl transition-all shadow-lg ${
                       card.isPopular
-                        ? 'bg-gradient-to-r from-[#39FF14] via-[#57FF38] to-[#39FF14] hover:from-[#57FF38] hover:to-[#39FF14] text-[#0D0D0D] shadow-[#39FF14]/30 hover:scale-[1.02] active:scale-[0.98] border border-[#57FF38]/80'
-                        : 'bg-[#39FF14] hover:bg-[#57FF38] text-[#0D0D0D] hover:scale-[1.02] active:scale-[0.98] shadow-[#39FF14]/20 border border-[#39FF14]'
+                        ? 'bg-gradient-to-r from-[#39FF14] via-[#57FF38] to-[#39FF14] hover:from-[#57FF38] hover:to-[#39FF14] text-[#0D0D0D] shadow-[0_0_25px_rgba(57,255,20,0.4)] hover:shadow-[0_0_35px_rgba(57,255,20,0.6)] hover:scale-[1.03] active:scale-[0.98] border-2 border-[#57FF38]'
+                        : 'bg-[#39FF14] hover:bg-[#57FF38] text-[#0D0D0D] hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_18px_rgba(57,255,20,0.3)] hover:shadow-[0_0_25px_rgba(57,255,20,0.5)] border-2 border-[#39FF14]'
                     }`}
                   >
-                    <span>{card.ctaText}</span>
-                    <ArrowRight className="w-4 h-4 ml-1.5 stroke-[2.5]" />
+                    <span className="absolute inset-0 w-1/3 bg-white/20 blur-sm animate-cta-shimmer pointer-events-none" />
+                    <span className="relative z-10 font-black">{card.ctaText}</span>
+                    <ArrowRight className="w-4 h-4 ml-1.5 stroke-[3] relative z-10 text-[#0D0D0D]" />
                   </Button>
 
                   <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#CFC9B8]">
