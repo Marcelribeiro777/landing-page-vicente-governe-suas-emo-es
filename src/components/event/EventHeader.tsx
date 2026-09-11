@@ -111,19 +111,18 @@ export function EventHeader() {
             </span>
           </div>
         </a>
-
         {/* Botão de Destaque Ingressos à direita */}
         <div className="flex items-center shrink-0 ml-2">
           <Button
             size="sm"
             onClick={() => scrollToAnchor('#precos')}
-            className="relative overflow-hidden bg-gradient-to-r from-[#E8A020] via-[#F5B83D] to-[#E8A020] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-black shadow-[0_0_20px_rgba(232,160,32,0.35)] hover:shadow-[0_0_28px_rgba(245,184,61,0.6)] px-3.5 sm:px-5 h-8 sm:h-10 rounded-lg text-[11px] sm:text-sm uppercase tracking-wider hover:scale-[1.04] active:scale-[0.98] transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 border-2 border-[#F5B83D]"
+            className="relative overflow-hidden bg-[#228B22] hover:bg-[#2FA32B] text-white font-black shadow-[0_0_20px_rgba(34,139,34,0.4)] hover:shadow-[0_0_28px_rgba(47,163,43,0.65)] px-3.5 sm:px-5 h-8 sm:h-10 rounded-lg text-[11px] sm:text-sm uppercase tracking-wider hover:scale-[1.04] active:scale-[0.98] transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 border-2 border-[#2FA32B]"
           >
-            <span className="absolute inset-0 w-1/3 bg-white/25 blur-sm animate-cta-shimmer pointer-events-none" />
-            <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#0D0D0D] text-[#0D0D0D] relative z-10" />
-            <span className="relative z-10 font-black">Ingressos</span>
+            <span className="absolute inset-0 w-1/3 bg-white/20 blur-sm animate-cta-shimmer pointer-events-none" />
+            <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-white text-white relative z-10" />
+            <span className="relative z-10 font-black">INGRESSOS</span>
           </Button>
-        </div>
+        </div>{' '}
       </div>
     </header>
   )
