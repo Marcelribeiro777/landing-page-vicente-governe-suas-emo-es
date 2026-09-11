@@ -60,10 +60,7 @@ export function EventHero() {
             {eventContent.event.name}
           </span>
           <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl block font-extrabold text-slate-100 leading-snug">
-            <span className="text-[#5BB7D0] font-black">A MELHOR</span>{' '}
-            <span>imersão presencial de</span>{' '}
-            <span className="text-[#5BB7D0] font-black">AUTOGOVERNO EMOCIONAL</span>{' '}
-            <span>do ano</span>
+            {eventContent.event.headline}
           </span>
         </h1>
 
