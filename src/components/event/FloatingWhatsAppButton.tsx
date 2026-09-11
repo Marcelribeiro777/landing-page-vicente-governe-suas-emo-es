@@ -37,7 +37,7 @@ export function FloatingWhatsAppButton() {
         aria-label="Fale conosco via WhatsApp"
         className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-2xl shadow-[#25D366]/40 hover:scale-110 active:scale-95 transition-all duration-200 border-2 border-white/20 relative"
       >
-        <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#5BB7D0] text-[10px] text-[#31376B] font-black flex items-center justify-center shadow">
+        <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#E8A020] text-[10px] text-[#0D0D0D] font-black flex items-center justify-center shadow">
           1
         </span>
         <MessageCircle className="w-7 h-7 fill-white text-white" />

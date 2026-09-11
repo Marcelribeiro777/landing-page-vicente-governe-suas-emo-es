@@ -51,11 +51,11 @@ export function CountdownTimer({
 
   if (variant === 'compact') {
     return (
-      <div className={`inline-flex items-center gap-1.5 font-mono text-[#5BB7D0] ${className}`}>
+      <div className={`inline-flex items-center gap-1.5 font-mono text-[#E8A020] ${className}`}>
         <span className="font-bold">{formatNumber(timeLeft.days)}d</span>:
         <span className="font-bold">{formatNumber(timeLeft.hours)}h</span>:
         <span className="font-bold">{formatNumber(timeLeft.minutes)}m</span>:
-        <span className="font-bold text-cyan-200">{formatNumber(timeLeft.seconds)}s</span>
+        <span className="font-bold text-[#F5B83D]">{formatNumber(timeLeft.seconds)}s</span>
       </div>
     )
   }
@@ -72,14 +72,14 @@ export function CountdownTimer({
       {units.map((unit) => (
         <div
           key={unit.label}
-          className="flex flex-col items-center justify-center p-2.5 sm:p-4 rounded-xl bg-[#1e2348]/90 border border-[#5BB7D0]/30 shadow-lg shadow-[#5BB7D0]/10 backdrop-blur-md relative overflow-hidden group"
+          className="flex flex-col items-center justify-center p-2.5 sm:p-4 rounded-xl bg-[#141414]/90 border border-[#E8A020]/30 shadow-lg shadow-[#E8A020]/10 backdrop-blur-md relative overflow-hidden group"
         >
           {/* Subtle top glow */}
-          <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#5BB7D0] to-transparent opacity-75" />
+          <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#E8A020] to-transparent opacity-75" />
           <span className="text-2xl sm:text-4xl md:text-5xl font-black font-mono text-white tracking-tight drop-shadow">
             {formatNumber(unit.value)}
           </span>
-          <span className="text-[10px] sm:text-xs font-semibold text-[#5BB7D0] tracking-wider uppercase mt-1">
+          <span className="text-[10px] sm:text-xs font-semibold text-[#E8A020] tracking-wider uppercase mt-1">
             {unit.label}
           </span>
         </div>

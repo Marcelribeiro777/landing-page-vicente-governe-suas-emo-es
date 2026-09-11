@@ -7,10 +7,10 @@ export function EventAuthority() {
   return (
     <section
       id="autoridade"
-      className="py-20 sm:py-28 bg-[#31376B] relative border-t border-[#6A84B7]/25 overflow-hidden"
+      className="py-20 sm:py-28 bg-[#0D0D0D] relative border-t border-[#2E2B25] overflow-hidden"
     >
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-10 w-96 h-96 bg-[#5BB7D0]/10 rounded-full blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/3 left-10 w-96 h-96 bg-[#E8A020]/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Mentor Introduction Grid */}
@@ -18,10 +18,10 @@ export function EventAuthority() {
           {/* Mentor Photo Column */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative group max-w-sm w-full">
-              {/* Outer Border & Glow */}
-              <div className="absolute -inset-1 bg-gradient-to-tr from-[#31376B] via-[#6A84B7] to-[#5BB7D0] rounded-3xl blur-md opacity-70 group-hover:opacity-100 transition duration-500" />
+              {/* Outer Border & Glow (Golden warm gradient) */}
+              <div className="absolute -inset-1 bg-gradient-to-tr from-[#0D0D0D] via-[#E8A020]/60 to-[#F5B83D] rounded-3xl blur-md opacity-70 group-hover:opacity-100 transition duration-500" />
 
-              <div className="relative rounded-2xl overflow-hidden bg-[#1e2348] border border-[#6A84B7]/40 shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden bg-[#141414] border border-[#2E2B25] shadow-2xl">
                 <img
                   src={eventContent.authority.mentorImage}
                   alt={eventContent.authority.mentorName}
@@ -29,14 +29,14 @@ export function EventAuthority() {
                 />
 
                 {/* Photo Badge overlay */}
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#1e2348] via-[#1e2348]/85 to-transparent p-6 pt-12">
-                  <span className="text-xs font-black uppercase tracking-wider text-[#5BB7D0] bg-[#5BB7D0]/20 px-2.5 py-1 rounded-md border border-[#5BB7D0]/40 inline-block mb-1">
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/85 to-transparent p-6 pt-12">
+                  <span className="text-xs font-black uppercase tracking-wider text-[#E8A020] bg-[#E8A020]/15 px-2.5 py-1 rounded-md border border-[#E8A020]/40 inline-block mb-1">
                     Condução Presencial
                   </span>
                   <h3 className="text-2xl font-black text-white">
                     {eventContent.authority.mentorName}
                   </h3>
-                  <p className="text-xs text-slate-200">{eventContent.authority.mentorRole}</p>
+                  <p className="text-xs text-[#CFC9B8]">{eventContent.authority.mentorRole}</p>
                 </div>
               </div>
             </div>
@@ -44,8 +44,8 @@ export function EventAuthority() {
 
           {/* Mentor Bio & Details Column */}
           <div className="lg:col-span-7 flex flex-col justify-center">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BB7D0]/15 border border-[#5BB7D0]/30 text-[#5BB7D0] text-xs font-bold uppercase tracking-widest mb-4 w-fit">
-              <Award className="w-4 h-4 text-[#5BB7D0]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E8A020]/15 border border-[#E8A020]/30 text-[#E8A020] text-xs font-bold uppercase tracking-widest mb-4 w-fit">
+              <Award className="w-4 h-4 text-[#E8A020]" />
               <span>{eventContent.authority.sectionTitle}</span>
             </div>
 
@@ -53,24 +53,24 @@ export function EventAuthority() {
               {eventContent.authority.mentorName}
             </h2>
 
-            <p className="text-[#5BB7D0] font-semibold text-base sm:text-lg mb-6">
+            <p className="text-[#E8A020] font-semibold text-base sm:text-lg mb-6">
               {eventContent.authority.mentorRole}
             </p>
 
-            <p className="text-slate-100 text-base sm:text-lg leading-relaxed mb-6 font-normal">
+            <p className="text-[#F2EFE6] text-base sm:text-lg leading-relaxed mb-6 font-normal">
               {eventContent.authority.mentorBio}
             </p>
 
-            <div className="p-4 rounded-xl bg-[#1e2348]/80 border border-[#6A84B7]/40 mb-6">
-              <p className="text-sm sm:text-base font-semibold text-cyan-200 italic">
+            <div className="p-4 rounded-xl bg-[#141414] border border-[#2E2B25] mb-6">
+              <p className="text-sm sm:text-base font-semibold text-[#F2EFE6] italic">
                 “{eventContent.authority.highlightPhrase}”
               </p>
             </div>
 
-            <div className="space-y-3 pt-4 border-t border-[#6A84B7]/30 text-sm text-slate-200">
+            <div className="space-y-3 pt-4 border-t border-[#2E2B25] text-sm text-[#CFC9B8]">
               {eventContent.authority.credentials.map((cred, idx) => (
                 <div key={idx} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#5BB7D0] shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-[#E8A020] shrink-0" />
                   <span>{cred}</span>
                 </div>
               ))}
@@ -78,11 +78,11 @@ export function EventAuthority() {
           </div>
         </div>
 
-        {/* Animated Numerical Counters Grid — Somente dados reais com respaldo */}
+        {/* Animated Numerical Counters Grid */}
         {eventContent.authority.stats.length > 0 && (
-          <div className="pt-8 border-t border-[#6A84B7]/30 max-w-xl mx-auto">
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#1e2348]/90 border border-[#6A84B7]/30 text-center hover:border-[#5BB7D0]/60 transition-colors shadow-lg">
-              <div className="text-4xl sm:text-6xl font-black text-[#5BB7D0] font-mono tracking-tight mb-2">
+          <div className="pt-8 border-t border-[#2E2B25] max-w-xl mx-auto">
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#141414] border border-[#2E2B25] text-center hover:border-[#E8A020]/60 transition-colors shadow-lg">
+              <div className="text-4xl sm:text-6xl font-black text-[#E8A020] font-mono tracking-tight mb-2">
                 <AnimatedCounter
                   value={eventContent.authority.stats[0].value}
                   prefix={eventContent.authority.stats[0].prefix}
@@ -93,7 +93,7 @@ export function EventAuthority() {
               <h4 className="text-base sm:text-lg font-bold text-white uppercase tracking-wider mb-2">
                 {eventContent.authority.stats[0].label}
               </h4>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md mx-auto">
+              <p className="text-xs sm:text-sm text-[#CFC9B8] leading-relaxed max-w-md mx-auto">
                 {eventContent.authority.stats[0].helper}
               </p>
             </div>

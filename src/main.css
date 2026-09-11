@@ -14,58 +14,58 @@
   }
 
   :root {
-    /* Event / Immersion Theme — #31376B (primary), #6A84B7 (secondary), #5BB7D0 (accent) */
-    --background: 234 37% 31%; /* #31376B Deep Navy Primary */
-    --foreground: 210 40% 98%; /* #f8fafc Bright light */
+    /* Event / Immersion Theme — Banner Oficial: Fundo Preto (#0D0D0D), Off-White Quente (#F2EFE6), Dourado Âmbar (#E8A020) */
+    --background: 0 0% 5%; /* #0D0D0D Preto profundo quase puro */
+    --foreground: 43 30% 93%; /* #F2EFE6 Creme / off-white quente */
 
-    --card: 234 40% 24%; /* Elevated dark navy card */
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 10%; /* #1A1A1A Card preto elevado */
+    --card-foreground: 43 30% 93%;
 
-    --popover: 234 40% 24%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 43 30% 93%;
 
-    --primary: 234 37% 31%; /* #31376B Primary Deep Navy */
-    --primary-foreground: 0 0% 100%;
+    --primary: 38 82% 52%; /* #E8A020 Dourado Âmbar Oficial */
+    --primary-foreground: 0 0% 5%; /* Preto no topo do dourado para contraste perfeito */
 
-    --secondary: 219 36% 57%; /* #6A84B7 Secondary Slate Blue */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 40 10% 20%; /* #383530 Cinza quente escuro */
+    --secondary-foreground: 43 30% 93%;
 
-    --muted: 234 30% 22%;
-    --muted-foreground: 219 30% 75%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 10% 70%;
 
-    --accent: 192 56% 59%; /* #5BB7D0 Cyan Accent */
-    --accent-foreground: 234 37% 20%;
+    --accent: 38 82% 52%; /* #E8A020 Dourado Âmbar */
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 219 36% 40%;
-    --input: 219 36% 40%;
-    --ring: 192 56% 59%;
+    --border: 40 10% 22%;
+    --input: 40 10% 22%;
+    --ring: 38 82% 52%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 0 0% 7%;
 
-    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-foreground: 43 30% 93%;
 
-    --sidebar-primary: 222.2 84% 4.9%;
+    --sidebar-primary: 38 82% 52%;
 
-    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 5%;
 
-    --sidebar-accent: 210 40% 98%;
+    --sidebar-accent: 0 0% 12%;
 
-    --sidebar-accent-foreground: 222.2 84% 4.9%;
+    --sidebar-accent-foreground: 43 30% 93%;
 
-    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-border: 40 10% 20%;
 
-    --sidebar-ring: 222.2 84% 4.9%;
+    --sidebar-ring: 38 82% 52%;
 
-    --chart-1: 192 56% 59%;
-    --chart-2: 219 36% 57%;
-    --chart-3: 234 37% 31%;
-    --chart-4: 192 70% 45%;
-    --chart-5: 219 45% 45%;
+    --chart-1: 38 82% 52%;
+    --chart-2: 43 92% 58%;
+    --chart-3: 0 0% 15%;
+    --chart-4: 38 70% 40%;
+    --chart-5: 40 15% 60%;
   }
 
   .dark {
@@ -298,14 +298,14 @@
     100% {
       transform: scale(1);
       box-shadow:
-        0 0 0 0 rgba(91, 183, 208, 0.4),
-        0 0 15px 0 rgba(91, 183, 208, 0.2);
+        0 0 0 0 rgba(232, 160, 32, 0.4),
+        0 0 18px 0 rgba(232, 160, 32, 0.25);
     }
     50% {
       transform: scale(1.05);
       box-shadow:
-        0 0 0 8px rgba(91, 183, 208, 0),
-        0 0 25px 4px rgba(91, 183, 208, 0.45);
+        0 0 0 8px rgba(232, 160, 32, 0),
+        0 0 28px 5px rgba(232, 160, 32, 0.5);
     }
   }
 

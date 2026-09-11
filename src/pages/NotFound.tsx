@@ -10,16 +10,16 @@ const NotFound = () => {
   }, [location.pathname])
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#31376B] text-white px-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#0D0D0D] text-[#F2EFE6] px-4">
       <div className="text-center max-w-md">
-        <h1 className="text-6xl font-black text-[#5BB7D0] mb-4 font-mono">404</h1>
+        <h1 className="text-6xl font-black text-[#E8A020] mb-4 font-mono">404</h1>
         <p className="text-xl font-bold mb-2">Página não encontrada</p>
-        <p className="text-slate-300 text-sm mb-6">
+        <p className="text-[#CFC9B8] text-sm mb-6">
           O link acessado não está disponível ou foi movido.
         </p>
         <a
           href="/"
-          className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-[#5BB7D0] to-[#6A84B7] text-[#31376B] font-bold uppercase tracking-wider text-xs hover:scale-105 transition-transform"
+          className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-[#E8A020] to-[#F5B83D] text-[#0D0D0D] font-bold uppercase tracking-wider text-xs hover:scale-105 transition-transform border border-[#F5B83D]/60"
         >
           Voltar para a Página Inicial
         </a>

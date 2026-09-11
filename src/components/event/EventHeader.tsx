@@ -9,9 +9,9 @@ function LogoPlaceholder() {
     <svg viewBox="0 0 100 100" className="w-full h-full object-contain" aria-hidden="true">
       <defs>
         <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#31376B" />
-          <stop offset="50%" stopColor="#6A84B7" />
-          <stop offset="100%" stopColor="#5BB7D0" />
+          <stop offset="0%" stopColor="#1A1A1A" />
+          <stop offset="50%" stopColor="#C88210" />
+          <stop offset="100%" stopColor="#E8A020" />
         </linearGradient>
       </defs>
       {/* Círculo externo / globo */}
@@ -23,9 +23,9 @@ function LogoPlaceholder() {
         rx="26"
         ry="44"
         fill="none"
-        stroke="#5BB7D0"
+        stroke="#E8A020"
         strokeWidth="2"
-        opacity="0.75"
+        opacity="0.85"
       />
       <ellipse
         cx="50"
@@ -33,13 +33,13 @@ function LogoPlaceholder() {
         rx="44"
         ry="20"
         fill="none"
-        stroke="#6A84B7"
+        stroke="#F5B83D"
         strokeWidth="2"
         opacity="0.6"
       />
       {/* Silhueta humana centralizada */}
       {/* Cabeça */}
-      <circle cx="50" cy="34" r="6.5" fill="#5BB7D0" />
+      <circle cx="50" cy="34" r="6.5" fill="#E8A020" />
       {/* Tronco e braços */}
       <path
         d="M50 43 C43 43 38 48 38 55 L38 65 C38 66.5 39.5 67 41 67 C42.5 67 43 65.5 43 64 L43 57 C43 56 44 55 45 55 L45 78 C45 79.5 46.5 80 48 80 C49.5 80 50 78.5 50 77 L50 63 L50 77 C50 78.5 50.5 80 52 80 C53.5 80 55 79.5 55 78 L55 55 C56 55 57 56 57 57 L57 64 C57 65.5 57.5 67 59 67 C60.5 67 62 66.5 62 65 L62 55 C62 48 57 43 50 43 Z"
@@ -72,7 +72,7 @@ export function EventHeader() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#31376B]/95 backdrop-blur-md border-b border-[#6A84B7]/30 py-3 shadow-xl shadow-black/40'
+          ? 'bg-[#0D0D0D]/95 backdrop-blur-md border-b border-[#2E2B25] py-3 shadow-xl shadow-black/60'
           : 'bg-transparent py-4 sm:py-5 border-b border-white/5'
       }`}
     >
@@ -97,29 +97,29 @@ export function EventHeader() {
               />
             </div>
           ) : (
-            <div className="w-10 h-10 sm:w-11 sm:h-11 flex-shrink-0 rounded-xl bg-[#31376B]/40 p-1 border border-[#6A84B7]/30 shadow-md shadow-[#5BB7D0]/20 group-hover:scale-105 transition-transform duration-200 flex items-center justify-center">
+            <div className="w-10 h-10 sm:w-11 sm:h-11 flex-shrink-0 rounded-xl bg-[#141414] p-1 border border-[#2E2B25] shadow-md shadow-[#E8A020]/15 group-hover:scale-105 transition-transform duration-200 flex items-center justify-center">
               <LogoPlaceholder />
             </div>
           )}
 
           <div className="flex flex-col min-w-0">
-            <span className="font-afacad font-black text-sm sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-white leading-tight truncate drop-shadow-sm">
+            <span className="font-afacad font-black text-sm sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-[#F2EFE6] leading-tight truncate drop-shadow-sm">
               {eventContent.event.name}
             </span>
-            <span className="text-[9px] sm:text-xs font-semibold text-[#5BB7D0] tracking-wider uppercase truncate mt-0.5 sm:mt-1 font-sans">
+            <span className="text-[9px] sm:text-xs font-semibold text-[#E8A020] tracking-wider uppercase truncate mt-0.5 sm:mt-1 font-sans">
               {eventContent.event.editionBadge}
             </span>
           </div>
         </a>
 
-        {/* Botão de Destaque Ingressos à direita (sem itens de menu) */}
+        {/* Botão de Destaque Ingressos à direita */}
         <div className="flex items-center shrink-0 ml-2">
           <Button
             size="sm"
             onClick={() => scrollToAnchor('#precos')}
-            className="bg-gradient-to-r from-[#5BB7D0] to-[#6A84B7] hover:from-[#6A84B7] hover:to-[#5BB7D0] text-[#31376B] hover:text-white font-extrabold shadow-lg shadow-[#5BB7D0]/25 px-3 sm:px-5 h-8 sm:h-10 rounded-lg text-[11px] sm:text-sm uppercase tracking-wider hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-1.5 sm:gap-2 shrink-0"
+            className="bg-gradient-to-r from-[#E8A020] to-[#F5B83D] hover:from-[#F5B83D] hover:to-[#E8A020] text-[#0D0D0D] font-extrabold shadow-lg shadow-[#E8A020]/25 px-3 sm:px-5 h-8 sm:h-10 rounded-lg text-[11px] sm:text-sm uppercase tracking-wider hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 border border-[#F5B83D]/40"
           >
-            <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" />
+            <Ticket className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#0D0D0D] text-[#0D0D0D]" />
             <span>Ingressos</span>
           </Button>
         </div>

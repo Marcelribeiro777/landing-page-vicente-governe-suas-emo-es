@@ -10,18 +10,18 @@ export function EventFaq() {
   }
 
   return (
-    <section id="faq" className="py-20 sm:py-28 bg-[#1e2348] relative border-t border-[#6A84B7]/25">
+    <section id="faq" className="py-20 sm:py-28 bg-[#111111] relative border-t border-[#2E2B25]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-black uppercase tracking-widest text-[#5BB7D0] bg-[#5BB7D0]/15 px-3.5 py-1.5 rounded-full border border-[#5BB7D0]/30 inline-flex items-center gap-1.5 mb-4">
-            <HelpCircle className="w-3.5 h-3.5 text-[#5BB7D0]" />
+          <span className="text-xs font-black uppercase tracking-widest text-[#E8A020] bg-[#E8A020]/15 px-3.5 py-1.5 rounded-full border border-[#E8A020]/30 inline-flex items-center gap-1.5 mb-4">
+            <HelpCircle className="w-3.5 h-3.5 text-[#E8A020]" />
             {eventContent.faq.badge}
           </span>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
             {eventContent.faq.title}
           </h2>
-          <p className="text-slate-200 text-base sm:text-lg leading-relaxed">
+          <p className="text-[#CFC9B8] text-base sm:text-lg leading-relaxed">
             {eventContent.faq.subtitle}
           </p>
         </div>
@@ -35,8 +35,8 @@ export function EventFaq() {
                 key={idx}
                 className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
                   isOpen
-                    ? 'bg-[#31376B] border-[#5BB7D0]/60 shadow-lg shadow-[#5BB7D0]/10'
-                    : 'bg-[#31376B]/70 border-[#6A84B7]/30 hover:border-[#6A84B7]/60'
+                    ? 'bg-[#1A1A1A] border-[#E8A020]/60 shadow-lg shadow-[#E8A020]/10'
+                    : 'bg-[#141414] border-[#2E2B25] hover:border-[#E8A020]/40'
                 }`}
               >
                 <button
@@ -51,8 +51,8 @@ export function EventFaq() {
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
                       isOpen
-                        ? 'bg-[#5BB7D0] text-[#31376B] rotate-180'
-                        : 'bg-[#1e2348] text-slate-300'
+                        ? 'bg-[#E8A020] text-[#0D0D0D] rotate-180'
+                        : 'bg-[#1F1E1B] text-[#CFC9B8]'
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />
@@ -60,7 +60,7 @@ export function EventFaq() {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-slate-200 leading-relaxed border-t border-[#6A84B7]/20 animate-fade-in">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-[#CFC9B8] leading-relaxed border-t border-[#2E2B25] animate-fade-in">
                     {item.answer}
                   </div>
                 )}
@@ -70,7 +70,7 @@ export function EventFaq() {
         </div>
 
         {/* 7 Days Guarantee Box */}
-        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-[#31376B] to-[#1e2348] border border-emerald-500/30 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-[#1A1A1A] to-[#141414] border border-emerald-500/30 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
           <div className="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/40">
             <ShieldCheck className="w-6 h-6" />
           </div>
@@ -78,7 +78,7 @@ export function EventFaq() {
             <h4 className="text-base font-bold text-white mb-1">
               Garantia Incondicional de 7 Dias
             </h4>
-            <p className="text-xs sm:text-sm text-slate-300">
+            <p className="text-xs sm:text-sm text-[#CFC9B8]">
               Seu investimento está 100% protegido. Se por qualquer motivo você decidir não
               participar dentro de 7 dias após a compra, seu dinheiro será integralmente
               reembolsado.
