@@ -103,10 +103,10 @@ export function EventHeader() {
           )}
 
           <div className="flex flex-col min-w-0">
-            <span className="text-sm sm:text-lg md:text-xl font-extrabold tracking-tight text-white leading-tight truncate">
+            <span className="font-display text-sm sm:text-lg md:text-xl font-extrabold tracking-tight text-white leading-tight truncate">
               {eventContent.event.name}
             </span>
-            <span className="text-[10px] sm:text-xs font-bold text-[#5BB7D0] tracking-wider uppercase truncate mt-0.5">
+            <span className="text-[10px] sm:text-xs font-bold text-[#5BB7D0] tracking-wider uppercase truncate mt-0.5 font-sans">
               {eventContent.event.editionBadge}
             </span>
           </div>

@@ -50,11 +50,16 @@ export function EventHero() {
 
         {/* Main Headline */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 max-w-4xl leading-[1.12] drop-shadow-md">
-          O passo definitivo para{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5BB7D0] via-cyan-200 to-[#6A84B7]">
-            romper bloqueios
+          <span className="block font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl mb-3 text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-cyan-100 drop-shadow-sm tracking-tight">
+            {eventContent.event.name}
           </span>
-          , ter clareza e transformar sua vida.
+          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl block font-extrabold text-slate-100">
+            O passo definitivo para{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5BB7D0] via-cyan-200 to-[#6A84B7]">
+              romper bloqueios
+            </span>
+            , ter clareza e transformar sua vida.
+          </span>
         </h1>
 
         {/* Subheadline description */}

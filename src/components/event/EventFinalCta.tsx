@@ -24,7 +24,11 @@ export function EventFinalCta() {
         </div>
 
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight mb-6 leading-tight">
-          {eventContent.finalCta.title}
+          Pronto para{' '}
+          <span className="font-display text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-[#5BB7D0]">
+            Governar Suas Emoções
+          </span>
+          ?
         </h2>
 
         <p className="text-slate-200 text-base sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-normal">

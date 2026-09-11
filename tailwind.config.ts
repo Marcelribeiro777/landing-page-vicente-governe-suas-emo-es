@@ -28,7 +28,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'Inter var', 'system-ui', 'sans-serif'],
-        display: ['Plus Jakarta Sans', 'Inter var', 'system-ui', 'sans-serif'],
+        display: ['Afacad', 'Afacad Flux', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        afacad: ['Afacad', 'Afacad Flux', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',

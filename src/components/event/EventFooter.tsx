@@ -13,7 +13,7 @@ export function EventFooter() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#31376B] to-[#5BB7D0] text-white font-black flex items-center justify-center">
                 <Sparkles className="w-4 h-4" />
               </div>
-              <span className="text-xl font-black tracking-tight text-white">
+              <span className="font-display text-xl font-black tracking-tight text-white">
                 {eventContent.event.name}
               </span>
             </div>

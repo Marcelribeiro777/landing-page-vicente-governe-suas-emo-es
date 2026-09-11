@@ -1,5 +1,6 @@
 /* Global styles - Theme, font, utilities, animations and global components */
 
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Afacad+Flux:wght@100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @tailwind base;
@@ -290,5 +291,9 @@
 
   .animate-spotlight {
     animation: spotlight 2s ease forwards;
+  }
+
+  .font-afacad {
+    font-family: 'Afacad', 'Afacad Flux', 'Plus Jakarta Sans', system-ui, sans-serif;
   }
 }
