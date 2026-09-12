@@ -38,15 +38,12 @@ export interface EventData {
     }[]
   }
   normalization: {
-    badge: string
     title: string
     lead: string
-    explanation: string
-    repeatHighlight: string
-    costHeadline: string
-    costItems: {
+    costHighlight: string
+    quoteCards: {
       title: string
-      description: string
+      text: string
     }[]
   }
   authority: {
@@ -250,27 +247,21 @@ export const eventContent: EventData = {
   },
 
   normalization: {
-    badge: 'NORMALIZAÇÃO & ORIGEM',
     title: 'Isso não quer dizer que você tem um defeito.',
-    lead: 'Quando você era mais jovem, aprendeu um jeito de se proteger. Era o único jeito que existia naquela hora, e funcionou.',
-    explanation:
-      'Esse jeito ficou gravado no seu corpo e continua ligado hoje, em situações que não têm nada a ver. Por isso você não consegue controlar o que sente na hora.',
-    repeatHighlight: 'Naquele momento você não escolhe. Você repete.',
-    costHeadline: 'E isso custa caro.',
-    costItems: [
+    lead: 'Mas essas reações causam um impacto real na sua vida.',
+    costHighlight: 'E isso custa caro.',
+    quoteCards: [
       {
         title: 'O sócio que virou ex-sócio.',
-        description:
-          'Parcerias e sociedades desfeitas por reações que poderiam ter sido governadas.',
+        text: 'Parcerias e sociedades são desfeitas por reações que poderiam ter sido governadas.',
       },
       {
         title: 'A conversa que você adiou por anos.',
-        description:
-          'Tópicos cruciais não enfrentados pelo desconforto de lidar com a carga emocional.',
+        text: 'Tópicos cruciais não enfrentados pelo desconforto de lidar com a carga emocional.',
       },
       {
         title: 'A distância que foi crescendo dentro de casa.',
-        description: 'O afastamento silencioso de pessoas essenciais na sua convivência diária.',
+        text: 'Qual dor maior que o afastamento silencioso de pessoas essenciais na sua convivência diária?',
       },
     ],
   },
