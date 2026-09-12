@@ -36,10 +36,6 @@ export interface EventData {
       elaboration: string
       tag?: string
     }[]
-    transitionPunchline: {
-      highlight: string
-      description: string
-    }
   }
   normalization: {
     badge: string
@@ -251,11 +247,6 @@ export const eventContent: EventData = {
         tag: 'O CUSTO NAS RELAÇÕES',
       },
     ],
-    transitionPunchline: {
-      highlight: 'POR QUE VOCÊ NÃO CONSEGUE CONTROLAR O QUE SENTE NA HORA?',
-      description:
-        'Naquele momento você não escolhe. Você repete. E isso custa caro para a sua vida, para os seus negócios e para as relações que você mais valoriza.',
-    },
   },
 
   normalization: {

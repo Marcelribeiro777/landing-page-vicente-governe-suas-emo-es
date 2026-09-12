@@ -1,5 +1,5 @@
 import React from 'react'
-import { AlertCircle, Sparkles } from 'lucide-react'
+import { AlertCircle } from 'lucide-react'
 import { eventContent } from '@/content/event'
 
 export function EventPainMirroring() {
@@ -20,7 +20,7 @@ export function EventPainMirroring() {
         </div>
 
         {/* Quote Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {eventContent.painMirroring.quoteCards.map((card, idx) => (
             <div
               key={idx}
@@ -45,24 +45,6 @@ export function EventPainMirroring() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Closing Emotional Transition Box */}
-        <div className="rounded-2xl bg-gradient-to-br from-[#1A1A1A] via-[#221F1A] to-[#141414] border-2 border-[#E8A020]/50 p-8 sm:p-12 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
-          <div className="absolute -top-10 -left-10 w-40 h-40 bg-[#E8A020]/15 rounded-full blur-3xl pointer-events-none" />
-
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E8A020]/15 text-[#E8A020] text-xs font-bold uppercase tracking-wider mb-4 border border-[#E8A020]/30">
-            <Sparkles className="w-3.5 h-3.5 text-[#E8A020]" />
-            <span>A Virada de Consciência</span>
-          </div>
-
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-[#E8A020] tracking-tight mb-4 uppercase">
-            {eventContent.painMirroring.transitionPunchline.highlight}
-          </h3>
-
-          <p className="text-sm sm:text-base md:text-lg text-[#F2EFE6] leading-relaxed max-w-2xl mx-auto font-normal">
-            {eventContent.painMirroring.transitionPunchline.description}
-          </p>
         </div>
       </div>
     </section>
