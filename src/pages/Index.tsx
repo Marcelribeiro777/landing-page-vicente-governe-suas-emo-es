@@ -7,7 +7,6 @@ import { EventMethod } from '@/components/event/EventMethod'
 import { EventLogistics } from '@/components/event/EventLogistics'
 import { EventPricing } from '@/components/event/EventPricing'
 import { EventFaq } from '@/components/event/EventFaq'
-import { EventUrgencyBanner } from '@/components/event/EventUrgencyBanner'
 import { EventFinalCta } from '@/components/event/EventFinalCta'
 import { EventHealthNotice } from '@/components/event/EventHealthNotice'
 
@@ -41,22 +40,19 @@ export default function Index() {
       {/* 5. Entregáveis & Método: "No GOVERNE SUAS EMOÇÕES, você vai:" + Redefinição de autogoverno */}
       <EventMethod />
 
-      {/* 8. Logística do Evento (07 de novembro de 2026 · das 14h às 20:30h · Fortaleza/CE) */}
+      {/* 6. Logística do Evento (07 de novembro de 2026 · das 14h às 20:30h · Fortaleza/CE) */}
       <EventLogistics />
 
-      {/* 9. Ingressos / Preços */}
+      {/* 7. Ingressos / Preços */}
       <EventPricing />
 
-      {/* 10. FAQ — Dúvidas Frequentes */}
+      {/* 8. FAQ — Dúvidas Frequentes */}
       <EventFaq />
 
-      {/* 11. Barra de Urgência + Contador Regressivo Real (07/11/2026) */}
-      <EventUrgencyBanner />
-
-      {/* 12. CTA Final Emocional com Hook */}
+      {/* 9. CTA Final Emocional com Hook */}
       <EventFinalCta />
 
-      {/* 13. Aviso Ético / Saúde */}
+      {/* 10. Aviso Ético / Saúde */}
       <EventHealthNotice />
     </div>
   )

@@ -127,13 +127,6 @@ export interface EventData {
       answer: string
     }[]
   }
-  urgency: {
-    badge: string
-    title: string
-    subtitle: string
-    lotNotice: string
-    ctaText: string
-  }
   finalCta: {
     badge: string
     title: string
@@ -472,15 +465,6 @@ export const eventContent: EventData = {
         answer: 'Esta informação será divulgada em breve.',
       },
     ],
-  },
-
-  urgency: {
-    badge: 'Vagas Limitadas pela Capacidade da Sala',
-    title: 'O tempo está acabando para garantir no lote atual',
-    subtitle:
-      'A sala possui capacidade restrita para garantir a qualidade da condução prática de Vicente Carnero.',
-    lotNotice: 'LOTE ATUAL VIGENTE • VAGAS LIMITADAS PELA SALA EM FORTALEZA',
-    ctaText: 'Garantir Minha Vaga Antes do Término do Lote',
   },
 
   finalCta: {
