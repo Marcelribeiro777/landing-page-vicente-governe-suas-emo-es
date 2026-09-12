@@ -37,7 +37,7 @@ export default function Index() {
       {/* 3. Normalização / Explicação (Quebra com fundo branco): "Isso não quer dizer que você tem um defeito..." + O Custo */}
       <EventNormalization />
 
-      {/* 4. Quem conduz (Autoridade do Mentor Vicente Carneiro) */}
+      {/* 4. Quem conduz (Autoridade do Mentor Vicente Carnero) */}
       <EventAuthority />
 
       {/* 5. Entregáveis & Método: "No GOVERNE SUAS EMOÇÕES, você vai:" + Redefinição de autogoverno */}

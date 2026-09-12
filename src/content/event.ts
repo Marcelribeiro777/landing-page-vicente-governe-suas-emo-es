@@ -3,7 +3,7 @@
  *
  * Todos os textos, números, datas, logística, entregáveis e links da página
  * estão centralizados aqui, com base na copy verbatim do evento conduzido por
- * Vicente Carneiro em Fortaleza/CE.
+ * Vicente Carnero em Fortaleza/CE.
  */
 
 export interface EventData {
@@ -69,17 +69,17 @@ export interface EventData {
     credentials: string[]
   }
   method: {
-    badge: string
+    badge?: string
     title: string
-    description: string
+    introPrefix: string
+    introText: string
     deliverables: {
+      num: string
       title: string
       description: string
     }[]
-    quoteRedefinition: {
-      quote: string
-      complement: string
-    }
+    reinforcementLine: string
+    closingParagraphs: string[]
   }
   valueBanner: {
     badge: string
@@ -193,7 +193,7 @@ export const eventContent: EventData = {
     brandName: 'GOVERNE SUAS EMOÇÕES',
     name: 'Governe suas emoções',
     logoUrl: '/logo-jvc.png',
-    logoAlt: 'Logo Vicente Carneiro - Governe suas emoções',
+    logoAlt: 'Logo Vicente Carnero - Governe suas emoções',
     editionBadge: '07 de novembro de 2026 · Fortaleza/CE · Presencial',
     subheadlineTag: 'A MELHOR imersão presencial de AUTOGOVERNO EMOCIONAL do ano',
     headline: 'Você se autogoverna na medida em que entende o que governa você.',
@@ -274,12 +274,12 @@ export const eventContent: EventData = {
 
   authority: {
     sectionTitle: 'Quem conduz',
-    mentorName: 'Vicente Carneiro',
+    mentorName: 'Vicente Carnero',
     mentorRole: 'Master Trainer',
     mentorInstagram: '@vicente_carnero',
     mentorImage: '/vicente-carneiro-banner.jpeg',
     presentationParagraphs: {
-      p1: 'Vicente Carneiro é Doutor em Psicologia, mentor, palestrante e escritor, com mais de 20 anos de prática clínica, docência universitária e supervisão.',
+      p1: 'Vicente Carnero é Doutor em Psicologia, mentor, palestrante e escritor, com mais de 20 anos de prática clínica, docência universitária e supervisão.',
       p2Highlight:
         'Acredita numa ideia simples e exigente: seus padrões não precisam ser o seu destino — o corpo sabe o caminho antes da mente admitir.',
       p3: 'No Governe Suas Emoções, ele leva essa ideia da teoria para a prática, com você, na sala.',
@@ -304,38 +304,41 @@ export const eventContent: EventData = {
   },
 
   method: {
-    badge: 'ENTREGÁVEIS & PRÁTICA',
-    title: 'No GOVERNE SUAS EMOÇÕES, você vai:',
-    description:
-      'Uma experiência presencial desenhada para ir direto à raiz do que governa seu comportamento e abrir um novo espaço de escolha.',
+    title: 'O que é o Governe Suas Emoções',
+    introPrefix: 'No GOVERNE SUAS EMOÇÕES, você vai:',
+    introText:
+      'Em seis horas viver uma experiência presencial desenhada para ir direto à raiz do que governa seu comportamento e abrir um novo espaço de escolha.',
     deliverables: [
       {
+        num: '01',
         title: 'Identificar as emoções básicas e senti-las no corpo, uma a uma.',
         description:
           'Entender a geografia das suas emoções primárias no próprio corpo físico, aprendendo a reconhecer o sinal antes da reação desgovernada.',
       },
       {
+        num: '02',
         title: 'Reconhecer as proteções que um dia você precisou e hoje te atrapalham.',
         description:
-          'Mapear com exatidão as defesas antigas que você criou quando jovem e que continuam sendo disparadas em momentos que não têm nada a ver.',
+          'Mapear com exatidão as defesas antigas que você criou quando jovem — e que continuam sendo disparadas em momentos que não têm nada a ver.',
       },
       {
+        num: '03',
         title: 'Expandir o que você consegue sentir, pensar e decidir.',
         description:
-          'Aumentar a sua capacidade de suportar e processar estados internos complexos sem recorrer à fuga, à agressividade ou à paralisia.',
+          'Aumentar sua capacidade de suportar e processar estados internos complexos, sem recorrer à fuga, à agressividade ou à paralisia.',
       },
       {
+        num: '04',
         title: 'Praticar, guiado na sala, seu primeiro exercício de governar o que você sente.',
         description:
-          'Vivenciar no ambiente seguro da sala a prática orientada por Vicente Carneiro de como conduzir a emoção no momento em que ela surge.',
+          'Vivenciar, em ambiente seguro, a prática orientada por Vicente Carnero para conduzir a emoção no momento exato em que ela surge.',
       },
     ],
-    quoteRedefinition: {
-      quote:
-        '“Governar não é controlar o que você sente. É ter mais opções na hora em que você sente, pensa e decide.”',
-      complement:
-        'E é exatamente essa opção que faltou nas vezes em que você repetiu algo que te custou caro.',
-    },
+    reinforcementLine: 'Prática presencial guiada na sala, do início ao fim.',
+    closingParagraphs: [
+      'Isso não é sobre parar de sentir, fingir estar bem ou virar outra pessoa. Você não vai sair controlando tudo que sente — vai sair sabendo o que fazer com o que sente.',
+      'O Governe Suas Emoções será como aprender a dirigir: você não elimina o trânsito à sua volta, mas passa a ter as mãos no volante.',
+    ],
   },
 
   valueBanner: {
@@ -352,7 +355,7 @@ export const eventContent: EventData = {
     badge: 'RELATOS DA EXPERIÊNCIA',
     title: 'O que dizem os participantes',
     subtitle:
-      'Relatos de quem já esteve sob a supervisão clínica e metodológica de Vicente Carneiro.',
+      'Relatos de quem já esteve sob a supervisão clínica e metodológica de Vicente Carnero.',
     items: [
       {
         id: '1',
@@ -425,11 +428,11 @@ export const eventContent: EventData = {
         icon: 'sparkles',
         label: 'FORMATO',
         value: '100% Presencial',
-        subtext: 'Conduzido diretamente por Vicente Carneiro',
+        subtext: 'Conduzido diretamente por Vicente Carnero',
       },
     ],
     included: [
-      'Acesso presencial à imersão com Vicente Carneiro',
+      'Acesso presencial à imersão com Vicente Carnero',
       'Exercícios práticos guiados na sala para sentir e governar as emoções',
       'Material de apoio oficial do evento para acompanhamento dos exercícios',
       'Ambiente reservado com vagas estritamente limitadas para garantir a profundidade',
@@ -452,7 +455,7 @@ export const eventContent: EventData = {
         name: 'Ingresso Individual',
         tag: 'Lote Atual',
         isPopular: false,
-        description: 'Acesso presencial completo à imersão com Vicente Carneiro em Fortaleza/CE.',
+        description: 'Acesso presencial completo à imersão com Vicente Carnero em Fortaleza/CE.',
         cashPrice: 197,
         installments: {
           times: 12,
@@ -460,7 +463,7 @@ export const eventContent: EventData = {
         },
         features: [
           'Acesso presencial à imersão',
-          'Condução direta com Vicente Carneiro',
+          'Condução direta com Vicente Carnero',
           'Primeiro exercício prático guiado na sala',
           'Material de apoio oficial do evento',
           'Certificado de participação',
@@ -499,7 +502,7 @@ export const eventContent: EventData = {
         tag: 'Vagas Restritas',
         isPopular: false,
         description:
-          'Para quem deseja máxima proximidade na condução e momento reservado com Vicente Carneiro.',
+          'Para quem deseja máxima proximidade na condução e momento reservado com Vicente Carnero.',
         cashPrice: 497,
         installments: {
           times: 12,
@@ -532,7 +535,7 @@ export const eventContent: EventData = {
       {
         question: 'Governar é controlar ou reprimir o que sinto?',
         answer:
-          'Não. Como Vicente Carneiro ensina, governar não é controlar o que você sente. É ter mais opções na hora em que você sente, pensa e decide. Você aprende a reconhecer o padrão gravado no corpo e agir com consciência em vez de apenas repetir.',
+          'Não. Como Vicente Carnero ensina, governar não é controlar o que você sente. É ter mais opções na hora em que você sente, pensa e decide. Você aprende a reconhecer o padrão gravado no corpo e agir com consciência em vez de apenas repetir.',
       },
       {
         question: 'Preciso ter formação em psicologia ou conhecimento prévio?',
@@ -557,7 +560,7 @@ export const eventContent: EventData = {
       {
         question: 'Por que o número de vagas é limitado?',
         answer:
-          'Como o trabalho envolve exercícios práticos guiados na sala e acompanhamento próximo de Vicente Carneiro, o número de vagas é estritamente limitado pela capacidade da sala.',
+          'Como o trabalho envolve exercícios práticos guiados na sala e acompanhamento próximo de Vicente Carnero, o número de vagas é estritamente limitado pela capacidade da sala.',
       },
     ],
   },
@@ -566,7 +569,7 @@ export const eventContent: EventData = {
     badge: 'Vagas Limitadas pela Capacidade da Sala',
     title: 'O tempo está acabando para garantir no lote atual',
     subtitle:
-      'A sala possui capacidade restrita para garantir a qualidade da condução prática de Vicente Carneiro.',
+      'A sala possui capacidade restrita para garantir a qualidade da condução prática de Vicente Carnero.',
     lotNotice: 'LOTE ATUAL VIGENTE • VAGAS LIMITADAS PELA SALA EM FORTALEZA',
     ctaText: 'Garantir Minha Vaga Antes do Término do Lote',
   },
@@ -578,13 +581,13 @@ export const eventContent: EventData = {
     description:
       'Você sai daqui com o que levaria anos para aprender por tentativa e erro: a consciência de como conduzir o que você sente. 07 de novembro de 2026 · das 14h às 20:30h · Fortaleza/CE · Presencial.',
     ctaText: 'Quero Garantir Minha Vaga Presencial',
-    ctaSubtext: 'Pagamento 100% Seguro • Condução Direta de Vicente Carneiro • Garantia de 7 Dias',
+    ctaSubtext: 'Pagamento 100% Seguro • Condução Direta de Vicente Carnero • Garantia de 7 Dias',
   },
 
   healthNotice: {
     title: 'Aviso Importante e Ética do Treinamento',
     description:
-      'A imersão Governe suas emoções é um treinamento presencial de desenvolvimento pessoal e autogoverno emocional conduzido por Vicente Carneiro. Embora baseado em mais de 20 anos de prática clínica e acadêmica, o evento tem caráter educativo e vivencial de grupo, não substituindo psicoterapia individual ou acompanhamento psiquiátrico quando clinicamente indicado.',
+      'A imersão Governe suas emoções é um treinamento presencial de desenvolvimento pessoal e autogoverno emocional conduzido por Vicente Carnero. Embora baseado em mais de 20 anos de prática clínica e acadêmica, o evento tem caráter educativo e vivencial de grupo, não substituindo psicoterapia individual ou acompanhamento psiquiátrico quando clinicamente indicado.',
     conditions: [
       'Pessoas com quadros psiquiátricos graves ou em crise aguda',
       'Transtornos psicóticos ou episódios de descompensação recente',
@@ -594,7 +597,7 @@ export const eventContent: EventData = {
     medicalClearance:
       'Caso esteja em tratamento para condições psiquiátricas graves ou utilize medicação de uso controlado para quadros agudos, consulte seu médico ou psicólogo assistente.',
     purposeNote:
-      'Este aviso reflete o compromisso ético e a responsabilidade profissional que norteiam o trabalho de Vicente Carneiro.',
+      'Este aviso reflete o compromisso ético e a responsabilidade profissional que norteiam o trabalho de Vicente Carnero.',
   },
 
   support: {
@@ -602,7 +605,7 @@ export const eventContent: EventData = {
     whatsappMessage:
       'Olá! Vim da página do Governe suas emoções e gostaria de tirar uma dúvida sobre a imersão em Fortaleza.',
     supportHours: 'Atendimento de Segunda a Sexta, das 09h às 19h',
-    companyName: 'Governe suas emoções — Vicente Carneiro',
+    companyName: 'Governe suas emoções — Vicente Carnero',
     cnpj: '12.345.678/0001-90',
     address: 'Fortaleza – CE, Brasil',
     copyrightYear: new Date().getFullYear(),

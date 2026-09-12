@@ -81,7 +81,7 @@ export function EventAuthority() {
               <div className="space-y-4 text-base sm:text-lg leading-relaxed">
                 {/* Paragraph 1 */}
                 <p className="text-[#D1CBC1] font-normal">
-                  <span className="font-semibold text-white">Vicente Carneiro</span> é Doutor em
+                  <span className="font-semibold text-white">Vicente Carnero</span> é Doutor em
                   Psicologia, mentor, palestrante e escritor, com mais de 20 anos de prática
                   clínica, docência universitária e supervisão.
                 </p>
