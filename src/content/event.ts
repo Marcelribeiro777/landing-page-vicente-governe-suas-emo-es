@@ -81,20 +81,6 @@ export interface EventData {
     reinforcementLine: string
     closingParagraphs: string[]
   }
-  testimonials: {
-    badge: string
-    title: string
-    subtitle: string
-    items: {
-      id: string
-      name: string
-      city: string
-      role: string
-      avatar: string
-      quote: string
-      rating: number
-    }[]
-  }
   logistics: {
     badge: string
     title: string
@@ -332,55 +318,6 @@ export const eventContent: EventData = {
       'Isso não é sobre parar de sentir, fingir estar bem ou virar outra pessoa. Você não vai sair controlando tudo que sente — vai sair sabendo o que fazer com o que sente.',
       'O Governe Suas Emoções será como aprender a dirigir: você não elimina o trânsito à sua volta, mas passa a ter as mãos no volante.',
       'Imagine como você vai se sentir depois: não uma pessoa diferente, mas você mesmo — com mais espaço entre o que sente e o que faz com isso.',
-    ],
-  },
-
-  testimonials: {
-    badge: 'RELATOS DA EXPERIÊNCIA',
-    title: 'O que dizem os participantes',
-    subtitle:
-      'Relatos de quem já esteve sob a supervisão clínica e metodológica de Vicente Carnero.',
-    items: [
-      {
-        id: '1',
-        name: 'Felipe Martiniano',
-        city: 'Fortaleza – CE',
-        role: 'Empresário',
-        avatar: 'https://img.usecurling.com/ppl/medium?gender=male&seed=12',
-        quote:
-          '“Entender o que governa minhas reações mudou a forma como lidero e tomo decisões difíceis. A clareza adquirida no presencial foi imediata.”',
-        rating: 5,
-      },
-      {
-        id: '2',
-        name: 'Gabriela Cardoso',
-        city: 'Fortaleza – CE',
-        role: 'Executiva de Recursos Humanos',
-        avatar: 'https://img.usecurling.com/ppl/medium?gender=female&seed=27',
-        quote:
-          '“A condução do Dr. Vicente é cirúrgica e segura. Consegui reconhecer proteções antigas que me travavam há mais de uma década.”',
-        rating: 5,
-      },
-      {
-        id: '3',
-        name: 'Rodrigo Medeiros',
-        city: 'Fortaleza – CE',
-        role: 'Médico & Gestor',
-        avatar: 'https://img.usecurling.com/ppl/medium?gender=male&seed=44',
-        quote:
-          '“Eu achava que autogoverno era segurar a raiva ou engolir o sentimento. Aprendi na sala que governar é ter opções reais de escolha.”',
-        rating: 5,
-      },
-      {
-        id: '4',
-        name: 'Iva Barbosa',
-        city: 'Fortaleza – CE',
-        role: 'Arquiteta',
-        avatar: 'https://img.usecurling.com/ppl/medium?gender=female&seed=58',
-        quote:
-          '“Em poucas horas você compreende coisas sobre o próprio corpo que anos de tentativa e erro não ensinam. Recomendo de olhos fechados.”',
-        rating: 5,
-      },
     ],
   },
 

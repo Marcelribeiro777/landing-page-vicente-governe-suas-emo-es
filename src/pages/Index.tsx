@@ -4,7 +4,6 @@ import { EventPainMirroring } from '@/components/event/EventPainMirroring'
 import { EventNormalization } from '@/components/event/EventNormalization'
 import { EventAuthority } from '@/components/event/EventAuthority'
 import { EventMethod } from '@/components/event/EventMethod'
-import { EventTestimonials } from '@/components/event/EventTestimonials'
 import { EventLogistics } from '@/components/event/EventLogistics'
 import { EventPricing } from '@/components/event/EventPricing'
 import { EventFaq } from '@/components/event/EventFaq'
@@ -41,9 +40,6 @@ export default function Index() {
 
       {/* 5. Entregáveis & Método: "No GOVERNE SUAS EMOÇÕES, você vai:" + Redefinição de autogoverno */}
       <EventMethod />
-
-      {/* 6. Depoimentos / Prova Social */}
-      <EventTestimonials />
 
       {/* 8. Logística do Evento (07 de novembro de 2026 · das 14h às 20:30h · Fortaleza/CE) */}
       <EventLogistics />
