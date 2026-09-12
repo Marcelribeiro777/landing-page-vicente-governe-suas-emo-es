@@ -16,8 +16,8 @@ export function EventFinalCta() {
 
   return (
     <section className="py-20 sm:py-28 bg-[#0B0A09] relative border-t border-[#2A251E] overflow-hidden">
-      {/* Transição suave vindo do FAQ */}
-      <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-[#151310] to-transparent pointer-events-none" />
+      {/* Transição suave vindo do FAQ (fundo creme #FAF6EE) */}
+      <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-[#FAF6EE]/15 to-transparent pointer-events-none" />
 
       {/* Leve gradiente dourado bem sutil e elegante no fundo */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#E8A020]/16 via-[#F5B83D]/8 to-transparent rounded-full blur-[140px] pointer-events-none" />
