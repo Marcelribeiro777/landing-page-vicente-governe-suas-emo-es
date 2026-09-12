@@ -386,8 +386,6 @@ export const eventContent: EventData = {
           'Acesso presencial à imersão',
           'Condução direta com Vicente Carnero',
           'Primeiro exercício prático guiado na sala',
-          'Material de apoio oficial do evento',
-          'Certificado de participação',
           'Garantia incondicional de 7 dias',
         ],
         ctaText: 'Garantir Ingresso Individual',
