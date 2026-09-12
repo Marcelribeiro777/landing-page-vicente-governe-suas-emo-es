@@ -407,9 +407,7 @@ export const eventContent: EventData = {
         features: [
           '2 ingressos presenciais completos (6 horas)',
           'Cadeiras reservadas lado a lado na sala',
-          '2 kits de material oficial de acompanhamento',
           'Prática conjunta de autogoverno para relações próximas',
-          '2 Certificados de participação',
           'Garantia incondicional de 7 dias',
         ],
         ctaText: 'Garantir Ingresso Dupla',
