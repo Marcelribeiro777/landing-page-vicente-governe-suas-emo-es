@@ -413,29 +413,6 @@ export const eventContent: EventData = {
         ctaText: 'Garantir Ingresso Dupla',
         checkoutUrl: 'https://exemplo.checkout.com/governe-dupla',
       },
-      {
-        id: 'vip',
-        name: 'Experiência VIP',
-        tag: 'Vagas Restritas',
-        isPopular: false,
-        description:
-          'Para quem deseja máxima proximidade na condução e momento reservado com Vicente Carnero.',
-        cashPrice: 497,
-        installments: {
-          times: 12,
-          value: 49.65,
-        },
-        features: [
-          'Acesso completo às 6 horas na primeira fileira',
-          'Momento reservado de dúvidas com o Dr. Vicente',
-          'Kit VIP de materiais do evento',
-          'Acesso prioritário à sala',
-          'Certificado VIP em alta resolução',
-          'Garantia incondicional de 7 dias',
-        ],
-        ctaText: 'Garantir Ingresso VIP',
-        checkoutUrl: 'https://exemplo.checkout.com/governe-vip',
-      },
     ],
   },
 
