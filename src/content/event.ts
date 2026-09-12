@@ -3,7 +3,7 @@
  *
  * Todos os textos, números, datas, logística, entregáveis e links da página
  * estão centralizados aqui, com base na copy verbatim do evento conduzido por
- * Vicente Carnero em Fortaleza/CE.
+ * Vicente Carneiro em Fortaleza/CE.
  */
 
 export interface EventData {
@@ -51,6 +51,7 @@ export interface EventData {
     mentorRole: string
     mentorBio: string
     mentorImage: string
+    mentorInstagram?: string
     sectionTitle: string
     highlightPhrase: string
     stats: {
@@ -179,7 +180,7 @@ export interface EventData {
   }
 }
 
-// Data real do evento: 07/11/2026 das 14h00 às 20h00 (horário de Fortaleza / Brasília -03:00)
+// Data real do evento: 07/11/2026 das 14h00 às 20h30 (horário de Fortaleza / Brasília -03:00)
 const eventTargetDate = new Date('2026-11-07T14:00:00-03:00')
 
 export const eventContent: EventData = {
@@ -187,7 +188,7 @@ export const eventContent: EventData = {
     brandName: 'GOVERNE SUAS EMOÇÕES',
     name: 'Governe suas emoções',
     logoUrl: '/logo-jvc.png',
-    logoAlt: 'Logo Vicente Carnero - Governe suas emoções',
+    logoAlt: 'Logo Vicente Carneiro - Governe suas emoções',
     editionBadge: '07 de novembro de 2026 · Fortaleza/CE · Presencial',
     subheadlineTag: 'A MELHOR imersão presencial de AUTOGOVERNO EMOCIONAL do ano',
     headline: 'Você se autogoverna na medida em que entende o que governa você.',
@@ -197,7 +198,7 @@ export const eventContent: EventData = {
     locationDisplay: 'Fortaleza/CE',
     venueName: 'Local a divulgar – Fortaleza/CE',
     venueAddress: 'Local a divulgar – Fortaleza, CE (Presencial)',
-    schedule: '14h às 20h',
+    schedule: 'das 14h às 20:30h',
     daysCount: '6 horas de imersão',
     targetDateISO: eventTargetDate.toISOString(),
     heroCtaText: 'Quero Garantir Minha Vaga',
@@ -268,11 +269,12 @@ export const eventContent: EventData = {
 
   authority: {
     sectionTitle: 'Quem conduz',
-    mentorName: 'Vicente Carnero',
-    mentorRole: 'Psicólogo e Doutor em Psicologia',
+    mentorName: 'Vicente Carneiro',
+    mentorRole: 'Master Trainer',
     mentorBio:
-      'Vicente Carnero, psicólogo e doutor em psicologia, com mais de 20 anos de prática clínica, docência universitária e supervisão. Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam. É a esse trabalho que ele irá se dedicar com você na sala.',
-    mentorImage: '/vicente-carneiro.jpg',
+      'Vicente Carneiro, psicólogo e doutor em psicologia, com mais de 20 anos de prática clínica, docência universitária e supervisão. Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam. É a esse trabalho que ele irá se dedicar com você na sala.',
+    mentorImage: '/vicente-carneiro-banner.jpeg',
+    mentorInstagram: '@vicente_carnero',
     highlightPhrase:
       'Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam.',
     stats: [
@@ -316,7 +318,7 @@ export const eventContent: EventData = {
       {
         title: 'Praticar, guiado na sala, seu primeiro exercício de governar o que você sente.',
         description:
-          'Vivenciar no ambiente seguro da sala a prática orientada pelo Dr. Vicente Carnero de como conduzir a emoção no momento em que ela surge.',
+          'Vivenciar no ambiente seguro da sala a prática orientada por Vicente Carneiro de como conduzir a emoção no momento em que ela surge.',
       },
     ],
     quoteRedefinition: {
@@ -341,7 +343,7 @@ export const eventContent: EventData = {
     badge: 'RELATOS DA EXPERIÊNCIA',
     title: 'O que dizem os participantes',
     subtitle:
-      'Relatos de quem já esteve sob a supervisão clínica e metodológica do Dr. Vicente Carnero.',
+      'Relatos de quem já esteve sob a supervisão clínica e metodológica de Vicente Carneiro.',
     items: [
       {
         id: '1',
@@ -401,8 +403,8 @@ export const eventContent: EventData = {
       {
         icon: 'clock',
         label: 'HORÁRIO',
-        value: '14h às 20h',
-        subtext: '6 horas de imersão e prática direta',
+        value: 'das 14h às 20:30h',
+        subtext: 'Imersão e prática direta',
       },
       {
         icon: 'map-pin',
@@ -414,11 +416,11 @@ export const eventContent: EventData = {
         icon: 'sparkles',
         label: 'FORMATO',
         value: '100% Presencial',
-        subtext: 'Conduzido diretamente pelo Dr. Vicente Carnero',
+        subtext: 'Conduzido diretamente por Vicente Carneiro',
       },
     ],
     included: [
-      'Acesso presencial às 6 horas de imersão com o Dr. Vicente Carnero',
+      'Acesso presencial à imersão com Vicente Carneiro',
       'Exercícios práticos guiados na sala para sentir e governar as emoções',
       'Material de apoio oficial do evento para acompanhamento dos exercícios',
       'Ambiente reservado com vagas estritamente limitadas para garantir a profundidade',
@@ -441,16 +443,15 @@ export const eventContent: EventData = {
         name: 'Ingresso Individual',
         tag: 'Lote Atual',
         isPopular: false,
-        description:
-          'Acesso presencial completo às 6 horas de imersão com o Dr. Vicente Carnero em Fortaleza/CE.',
+        description: 'Acesso presencial completo à imersão com Vicente Carneiro em Fortaleza/CE.',
         cashPrice: 197,
         installments: {
           times: 12,
           value: 19.68,
         },
         features: [
-          'Acesso presencial às 6 horas de imersão',
-          'Condução direta com o Dr. Vicente Carnero',
+          'Acesso presencial à imersão',
+          'Condução direta com Vicente Carneiro',
           'Primeiro exercício prático guiado na sala',
           'Material de apoio oficial do evento',
           'Certificado de participação',
@@ -489,7 +490,7 @@ export const eventContent: EventData = {
         tag: 'Vagas Restritas',
         isPopular: false,
         description:
-          'Para quem deseja máxima proximidade na condução e momento reservado com o Dr. Vicente Carnero.',
+          'Para quem deseja máxima proximidade na condução e momento reservado com Vicente Carneiro.',
         cashPrice: 497,
         installments: {
           times: 12,
@@ -517,12 +518,12 @@ export const eventContent: EventData = {
       {
         question: 'Quando e onde acontecerá a imersão Governe suas emoções?',
         answer:
-          'O evento será 100% presencial em Fortaleza/CE, no dia 07 de novembro de 2026, das 14h às 20h (6 horas de duração). O endereço exato (Local a divulgar – Fortaleza/CE) será enviado a todos os inscritos com antecedência.',
+          'O evento será 100% presencial em Fortaleza/CE, no dia 07 de novembro de 2026, das 14h às 20:30h. O endereço exato (Local a divulgar – Fortaleza/CE) será enviado a todos os inscritos com antecedência.',
       },
       {
         question: 'Governar é controlar ou reprimir o que sinto?',
         answer:
-          'Não. Como o Dr. Vicente ensina, governar não é controlar o que você sente. É ter mais opções na hora em que você sente, pensa e decide. Você aprende a reconhecer o padrão gravado no corpo e agir com consciência em vez de apenas repetir.',
+          'Não. Como Vicente Carneiro ensina, governar não é controlar o que você sente. É ter mais opções na hora em que você sente, pensa e decide. Você aprende a reconhecer o padrão gravado no corpo e agir com consciência em vez de apenas repetir.',
       },
       {
         question: 'Preciso ter formação em psicologia ou conhecimento prévio?',
@@ -532,7 +533,7 @@ export const eventContent: EventData = {
       {
         question: 'Qual é a duração da imersão?',
         answer:
-          'São 6 horas de imersão direta e prática (das 14h às 20h), um período concentrado para você sair com o que levaria anos para aprender por tentativa e erro.',
+          'Imersão direta e prática das 14h às 20:30h, um período concentrado para você sair com o que levaria anos para aprender por tentativa e erro.',
       },
       {
         question: 'Como funciona a garantia de 7 dias?',
@@ -547,7 +548,7 @@ export const eventContent: EventData = {
       {
         question: 'Por que o número de vagas é limitado?',
         answer:
-          'Como o trabalho envolve exercícios práticos guiados na sala e acompanhamento próximo do Dr. Vicente Carnero, o número de vagas é estritamente limitado pela capacidade da sala.',
+          'Como o trabalho envolve exercícios práticos guiados na sala e acompanhamento próximo de Vicente Carneiro, o número de vagas é estritamente limitado pela capacidade da sala.',
       },
     ],
   },
@@ -556,7 +557,7 @@ export const eventContent: EventData = {
     badge: 'Vagas Limitadas pela Capacidade da Sala',
     title: 'O tempo está acabando para garantir no lote atual',
     subtitle:
-      'A sala possui capacidade restrita para garantir a qualidade da condução prática do Dr. Vicente Carnero.',
+      'A sala possui capacidade restrita para garantir a qualidade da condução prática de Vicente Carneiro.',
     lotNotice: 'LOTE ATUAL VIGENTE • VAGAS LIMITADAS PELA SALA EM FORTALEZA',
     ctaText: 'Garantir Minha Vaga Antes do Término do Lote',
   },
@@ -566,15 +567,15 @@ export const eventContent: EventData = {
     title: 'Governe suas emoções',
     hook: 'Você se autogoverna na medida em que entende o que governa você.',
     description:
-      'Em 6 horas, você sai daqui com o que levaria anos para aprender por tentativa e erro: a consciência de como conduzir o que você sente. 07 de novembro de 2026 · 14h às 20h · Fortaleza/CE · Presencial.',
+      'Você sai daqui com o que levaria anos para aprender por tentativa e erro: a consciência de como conduzir o que você sente. 07 de novembro de 2026 · das 14h às 20:30h · Fortaleza/CE · Presencial.',
     ctaText: 'Quero Garantir Minha Vaga Presencial',
-    ctaSubtext: 'Pagamento 100% Seguro • Condução Direta de Vicente Carnero • Garantia de 7 Dias',
+    ctaSubtext: 'Pagamento 100% Seguro • Condução Direta de Vicente Carneiro • Garantia de 7 Dias',
   },
 
   healthNotice: {
     title: 'Aviso Importante e Ética do Treinamento',
     description:
-      'A imersão Governe suas emoções é um treinamento presencial de desenvolvimento pessoal e autogoverno emocional conduzido pelo Dr. Vicente Carnero. Embora baseado em mais de 20 anos de prática clínica e acadêmica, o evento tem caráter educativo e vivencial de grupo, não substituindo psicoterapia individual ou acompanhamento psiquiátrico quando clinicamente indicado.',
+      'A imersão Governe suas emoções é um treinamento presencial de desenvolvimento pessoal e autogoverno emocional conduzido por Vicente Carneiro. Embora baseado em mais de 20 anos de prática clínica e acadêmica, o evento tem caráter educativo e vivencial de grupo, não substituindo psicoterapia individual ou acompanhamento psiquiátrico quando clinicamente indicado.',
     conditions: [
       'Pessoas com quadros psiquiátricos graves ou em crise aguda',
       'Transtornos psicóticos ou episódios de descompensação recente',
@@ -584,7 +585,7 @@ export const eventContent: EventData = {
     medicalClearance:
       'Caso esteja em tratamento para condições psiquiátricas graves ou utilize medicação de uso controlado para quadros agudos, consulte seu médico ou psicólogo assistente.',
     purposeNote:
-      'Este aviso reflete o compromisso ético e a responsabilidade profissional que norteiam o trabalho do Dr. Vicente Carnero.',
+      'Este aviso reflete o compromisso ético e a responsabilidade profissional que norteiam o trabalho de Vicente Carneiro.',
   },
 
   support: {
@@ -592,7 +593,7 @@ export const eventContent: EventData = {
     whatsappMessage:
       'Olá! Vim da página do Governe suas emoções e gostaria de tirar uma dúvida sobre a imersão em Fortaleza.',
     supportHours: 'Atendimento de Segunda a Sexta, das 09h às 19h',
-    companyName: 'Governe suas emoções — Vicente Carnero',
+    companyName: 'Governe suas emoções — Vicente Carneiro',
     cnpj: '12.345.678/0001-90',
     address: 'Fortaleza – CE, Brasil',
     copyrightYear: new Date().getFullYear(),

@@ -37,7 +37,7 @@ export default function Index() {
       {/* 3. Normalização / Explicação (Quebra com fundo branco): "Isso não quer dizer que você tem um defeito..." + O Custo */}
       <EventNormalization />
 
-      {/* 4. Quem conduz (Autoridade do Mentor Dr. Vicente Carnero) */}
+      {/* 4. Quem conduz (Autoridade do Mentor Vicente Carneiro) */}
       <EventAuthority />
 
       {/* 5. Entregáveis & Método: "No GOVERNE SUAS EMOÇÕES, você vai:" + Redefinição de autogoverno */}
@@ -49,7 +49,7 @@ export default function Index() {
       {/* 7. Depoimentos / Prova Social */}
       <EventTestimonials />
 
-      {/* 8. Logística do Evento (07 de novembro de 2026 · 14h às 20h · Fortaleza/CE) */}
+      {/* 8. Logística do Evento (07 de novembro de 2026 · das 14h às 20:30h · Fortaleza/CE) */}
       <EventLogistics />
 
       {/* 9. Ingressos / Preços */}

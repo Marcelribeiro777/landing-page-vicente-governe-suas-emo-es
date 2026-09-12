@@ -25,9 +25,8 @@ export function EventAuthority() {
                 <img
                   src={eventContent.authority.mentorImage}
                   alt={eventContent.authority.mentorName}
-                  className="w-full h-96 sm:h-[440px] object-cover object-top filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-96 sm:h-[460px] object-cover object-[78%_20%] filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-500"
                 />
-
                 {/* Photo Badge overlay */}
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/85 to-transparent p-6 pt-12">
                   <span className="text-xs font-black uppercase tracking-wider text-[#E8A020] bg-[#E8A020]/15 px-2.5 py-1 rounded-md border border-[#E8A020]/40 inline-block mb-1">
@@ -53,9 +52,16 @@ export function EventAuthority() {
               {eventContent.authority.mentorName}
             </h2>
 
-            <p className="text-[#E8A020] font-semibold text-base sm:text-lg mb-6">
-              {eventContent.authority.mentorRole}
-            </p>
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <p className="text-[#E8A020] font-semibold text-base sm:text-lg">
+                {eventContent.authority.mentorRole}
+              </p>
+              {eventContent.authority.mentorInstagram && (
+                <span className="text-xs font-medium text-[#CFC9B8] px-2.5 py-1 rounded-md bg-[#1A1A1A] border border-[#2E2B25]">
+                  {eventContent.authority.mentorInstagram}
+                </span>
+              )}
+            </div>
 
             <p className="text-[#F2EFE6] text-base sm:text-lg leading-relaxed mb-6 font-normal">
               {eventContent.authority.mentorBio}

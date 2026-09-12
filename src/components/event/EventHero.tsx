@@ -101,7 +101,7 @@ export function EventHero() {
           </div>
           <div className="flex items-center gap-2">
             <Users2 className="w-4 h-4 text-[#E8A020]" />
-            <span>Condução presencial com Vicente Carnero</span>
+            <span>Condução presencial com Vicente Carneiro</span>
           </div>
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4 text-[#E8A020]" />
