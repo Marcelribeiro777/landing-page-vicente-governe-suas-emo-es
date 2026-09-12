@@ -199,7 +199,7 @@ export const eventContent: EventData = {
     subheadlineTag: 'A MELHOR imersão presencial de AUTOGOVERNO EMOCIONAL do ano',
     headline: 'Você se autogoverna na medida em que entende o que governa você.',
     subheadline:
-      'Governar não é controlar o que você sente. É ter mais opções na hora em que sente, pensa e decide. Em 6 horas, você aprende a fazer isso.',
+      'Governar suas emoções não muda o que você sente — muda quem você é com quem você ama. Em 6 horas, você aprende a trocar reações automáticas por escolhas conscientes.',
     dateDisplay: '07 de Novembro de 2026',
     locationDisplay: 'Fortaleza/CE',
     venueName: 'Local a divulgar – Fortaleza/CE',
