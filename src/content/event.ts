@@ -456,6 +456,21 @@ export const eventContent: EventData = {
         answer:
           'Como o trabalho envolve exercícios práticos guiados na sala e acompanhamento próximo de Vicente Carnero, o número de vagas é estritamente limitado pela capacidade da sala.',
       },
+      {
+        question: 'Isso substitui terapia ou acompanhamento psicológico?',
+        answer:
+          'Não. É uma experiência educativa e prática, não um atendimento clínico individual. Quem já está em acompanhamento pode e deve continuar — o evento é um complemento, não uma substituição.',
+      },
+      {
+        // Resposta provisória: conteúdo depende de definição do Vicente
+        question: 'O que eu preciso levar?',
+        answer: 'Em breve: a lista do que levar será divulgada aqui.',
+      },
+      {
+        // Resposta provisória: conteúdo clínico depende de definição do Vicente
+        question: 'Existe alguma contraindicação de saúde para participar?',
+        answer: 'Esta informação será divulgada em breve.',
+      },
     ],
   },
 
