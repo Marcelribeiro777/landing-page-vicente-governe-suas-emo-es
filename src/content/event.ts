@@ -128,10 +128,11 @@ export interface EventData {
     }[]
   }
   finalCta: {
-    badge: string
-    title: string
-    hook: string
-    description: string
+    badge?: string
+    title?: string
+    hook?: string
+    description?: string
+    paragraphs: string[]
     ctaText: string
     ctaSubtext: string
   }
@@ -468,13 +469,12 @@ export const eventContent: EventData = {
   },
 
   finalCta: {
-    badge: 'A SUA DECISÃO',
-    title: 'Governe suas emoções',
-    hook: 'Você se autogoverna na medida em que entende o que governa você.',
-    description:
-      'Você sai daqui com o que levaria anos para aprender por tentativa e erro: a consciência de como conduzir o que você sente. 07 de novembro de 2026 · das 14h às 20:30h · Fortaleza/CE · Presencial.',
+    paragraphs: [
+      'Você já sabe o que esse padrão está custando. A pergunta é: por quanto tempo mais?',
+      'Seis horas presenciais. Um psicólogo com mais de 20 anos de prática guiando você até a raiz do que reage por você — e devolvendo a escolha pra suas mãos.',
+    ],
     ctaText: 'Quero Garantir Minha Vaga Presencial',
-    ctaSubtext: 'Pagamento 100% Seguro • Condução Direta de Vicente Carnero • Garantia de 7 Dias',
+    ctaSubtext: 'Vagas limitadas pela capacidade da sala',
   },
 
   healthNotice: {
