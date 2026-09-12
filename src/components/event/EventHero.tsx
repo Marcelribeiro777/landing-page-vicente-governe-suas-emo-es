@@ -86,7 +86,7 @@ export function EventHero() {
         </div>
 
         {/* Scarcity / Limited spots banner marquee-like */}
-        <div className="w-full max-w-3xl py-2.5 sm:py-3.5 md:py-4 px-3 sm:px-6 md:px-8 rounded-2xl bg-[#FFA500] border-2 border-[#FFA500] backdrop-blur-md flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 animate-urgency-pulse motion-reduce:animate-none">
+        <div className="w-full max-w-3xl py-2.5 sm:py-3.5 md:py-4 px-3 sm:px-6 md:px-8 rounded-2xl bg-[#FF0000] border-2 border-[#FF0000] backdrop-blur-md flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 animate-urgency-pulse motion-reduce:animate-none">
           <span className="flex h-2.5 w-2.5 sm:h-3.5 sm:w-3.5 rounded-full bg-white animate-ping motion-reduce:animate-none" />
           <span className="font-afacad uppercase tracking-wider font-extrabold flex items-center justify-center gap-1.5 sm:gap-2 md:gap-3 text-white text-sm sm:text-lg md:text-2xl lg:text-3xl drop-shadow-sm text-center">
             <span>{eventContent.event.limitedSpotsBadge}</span>
