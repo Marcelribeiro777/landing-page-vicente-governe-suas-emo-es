@@ -81,13 +81,6 @@ export interface EventData {
     reinforcementLine: string
     closingParagraphs: string[]
   }
-  valueBanner: {
-    badge: string
-    hoursHighlight: string
-    headline: string
-    description: string
-    ctaText: string
-  }
   testimonials: {
     badge: string
     title: string
@@ -340,16 +333,6 @@ export const eventContent: EventData = {
       'O Governe Suas Emoções será como aprender a dirigir: você não elimina o trânsito à sua volta, mas passa a ter as mãos no volante.',
       'Imagine como você vai se sentir depois: não uma pessoa diferente, mas você mesmo — com mais espaço entre o que sente e o que faz com isso.',
     ],
-  },
-
-  valueBanner: {
-    badge: 'VALOR DE 6 HORAS',
-    hoursHighlight: '6 Horas de Imersão Presencial',
-    headline:
-      'Em 6 horas, você sai daqui com o que levaria anos para aprender por tentativa e erro: a consciência de como conduzir o que você sente.',
-    description:
-      'Não é teoria nem motivação passageira. É a experiência prática de autogoverno para você nunca mais ser refém daquilo que não escolheu repetir.',
-    ctaText: 'Quero Minha Vaga na Imersão',
   },
 
   testimonials: {
