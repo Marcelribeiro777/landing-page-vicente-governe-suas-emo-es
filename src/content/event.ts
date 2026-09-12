@@ -270,6 +270,8 @@ export const eventContent: EventData = {
   authority: {
     sectionTitle: 'Quem conduz',
     mentorName: 'Vicente Carneiro',
+    mentorRole: 'Master Trainer',
+    mentorInstagram: '@vicente_carnero',
     mentorImage: '/vicente-carneiro-banner.jpeg',
     highlightPhrase:
       'Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam.',

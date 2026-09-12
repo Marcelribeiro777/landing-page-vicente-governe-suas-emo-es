@@ -1,8 +1,12 @@
 import React from 'react'
-import { Award } from 'lucide-react'
+import { Award, Instagram } from 'lucide-react'
 import { eventContent } from '@/content/event'
 
 export function EventAuthority() {
+  const instagramUrl = eventContent.authority.mentorInstagram
+    ? `https://instagram.com/${eventContent.authority.mentorInstagram.replace('@', '')}`
+    : 'https://instagram.com/vicente_carnero'
+
   return (
     <section
       id="autoridade"
@@ -24,7 +28,7 @@ export function EventAuthority() {
           </h2>
         </div>
 
-        {/* Mentor Presentation: Centralized Photo + Name */}
+        {/* Mentor Presentation: Centralized Photo + Details */}
         <div className="flex flex-col items-center justify-center">
           <div className="relative group max-w-md w-full">
             {/* Outer Border & Glow (Golden warm gradient) */}
@@ -36,14 +40,37 @@ export function EventAuthority() {
                 alt={eventContent.authority.mentorName}
                 className="w-full h-[420px] sm:h-[480px] object-cover object-[78%_20%] filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-500"
               />
-              {/* Photo Overlay with Name */}
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/85 to-transparent p-6 pt-16 text-center">
+              {/* Photo Overlay with Name, Role & Instagram */}
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/90 to-transparent p-6 pt-16 text-center">
                 <span className="text-xs font-black uppercase tracking-wider text-[#E8A020] bg-[#E8A020]/15 px-3 py-1 rounded-md border border-[#E8A020]/40 inline-block mb-2">
                   Condução Presencial
                 </span>
+
                 <h3 className="text-2xl sm:text-3xl font-black text-white">
                   {eventContent.authority.mentorName}
                 </h3>
+
+                {/* Cargo (Master Trainer) */}
+                {eventContent.authority.mentorRole && (
+                  <p className="text-[#E8A020] text-sm sm:text-base font-bold tracking-wide mt-1">
+                    {eventContent.authority.mentorRole}
+                  </p>
+                )}
+
+                {/* Instagram (@vicente_carnero) */}
+                {eventContent.authority.mentorInstagram && (
+                  <div className="mt-3 flex items-center justify-center">
+                    <a
+                      href={instagramUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1A1A1A]/80 border border-[#E8A020]/40 text-[#E8A020] hover:text-white hover:border-[#E8A020] text-xs font-semibold transition-colors duration-200"
+                    >
+                      <Instagram className="w-3.5 h-3.5 text-[#E8A020]" />
+                      <span>{eventContent.authority.mentorInstagram}</span>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
