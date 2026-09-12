@@ -338,6 +338,7 @@ export const eventContent: EventData = {
     closingParagraphs: [
       'Isso não é sobre parar de sentir, fingir estar bem ou virar outra pessoa. Você não vai sair controlando tudo que sente — vai sair sabendo o que fazer com o que sente.',
       'O Governe Suas Emoções será como aprender a dirigir: você não elimina o trânsito à sua volta, mas passa a ter as mãos no volante.',
+      'Imagine como você vai se sentir depois: não uma pessoa diferente, mas você mesmo — com mais espaço entre o que sente e o que faz com isso.',
     ],
   },
 

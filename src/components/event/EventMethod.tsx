@@ -79,7 +79,7 @@ export function EventMethod() {
           </div>
         </div>
 
-        {/* Dois parágrafos de fechamento em destaque */}
+        {/* Parágrafos de fechamento em destaque */}
         <div className="rounded-3xl bg-gradient-to-br from-[#1A1A1A] via-[#221F1A] to-[#141414] text-[#F2EFE6] p-8 sm:p-12 mb-12 shadow-2xl border-2 border-[#E8A020]/50 relative overflow-hidden">
           <div className="space-y-6 max-w-4xl">
             <p className="text-lg sm:text-xl md:text-2xl font-bold text-white leading-relaxed border-l-4 border-[#E8A020] pl-4 sm:pl-6">
@@ -88,6 +88,25 @@ export function EventMethod() {
             <p className="text-base sm:text-lg md:text-xl text-[#CFC9B8] font-medium leading-relaxed pl-4 sm:pl-6">
               {eventContent.method.closingParagraphs[1]}
             </p>
+            {eventContent.method.closingParagraphs[2] && (
+              <p className="text-base sm:text-lg md:text-xl text-[#CFC9B8] font-medium leading-relaxed pl-4 sm:pl-6 border-t border-[#2E2B25]/80 pt-6">
+                {(() => {
+                  const text = eventContent.method.closingParagraphs[2]
+                  const highlight = 'você mesmo'
+                  const parts = text.split(highlight)
+                  if (parts.length === 2) {
+                    return (
+                      <>
+                        {parts[0]}
+                        <span className="text-[#F5B83D] font-semibold">{highlight}</span>
+                        {parts[1]}
+                      </>
+                    )
+                  }
+                  return text
+                })()}
+              </p>
+            )}
           </div>
         </div>
 
