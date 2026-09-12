@@ -54,6 +54,11 @@ export interface EventData {
     mentorInstagram?: string
     sectionTitle: string
     highlightPhrase?: string
+    presentationParagraphs?: {
+      p1: string
+      p2Highlight: string
+      p3: string
+    }
     stats: {
       value: number
       prefix?: string
@@ -273,6 +278,12 @@ export const eventContent: EventData = {
     mentorRole: 'Master Trainer',
     mentorInstagram: '@vicente_carnero',
     mentorImage: '/vicente-carneiro-banner.jpeg',
+    presentationParagraphs: {
+      p1: 'Vicente Carneiro é Doutor em Psicologia, mentor, palestrante e escritor, com mais de 20 anos de prática clínica, docência universitária e supervisão.',
+      p2Highlight:
+        'Acredita numa ideia simples e exigente: seus padrões não precisam ser o seu destino — o corpo sabe o caminho antes da mente admitir.',
+      p3: 'No Governe Suas Emoções, ele leva essa ideia da teoria para a prática, com você, na sala.',
+    },
     highlightPhrase:
       'Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam.',
     stats: [

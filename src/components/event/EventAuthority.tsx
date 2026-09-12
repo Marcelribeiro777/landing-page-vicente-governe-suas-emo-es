@@ -74,6 +74,35 @@ export function EventAuthority() {
               </div>
             </div>
           </div>
+
+          {/* Presentation Text below the photo */}
+          {eventContent.authority.presentationParagraphs && (
+            <div className="mt-8 max-w-2xl w-full text-center px-4 sm:px-6">
+              <div className="space-y-4 text-base sm:text-lg leading-relaxed">
+                {/* Paragraph 1 */}
+                <p className="text-[#D1CBC1] font-normal">
+                  <span className="font-semibold text-white">Vicente Carneiro</span> é Doutor em
+                  Psicologia, mentor, palestrante e escritor, com mais de 20 anos de prática
+                  clínica, docência universitária e supervisão.
+                </p>
+
+                {/* Paragraph 2 - Core idea highlighted */}
+                <p className="text-[#F5B83D] italic font-medium border-y border-[#E8A020]/20 py-3 sm:py-4 px-2 sm:px-4 bg-[#E8A020]/5 rounded-xl">
+                  Acredita numa ideia simples e exigente:{' '}
+                  <span className="text-white not-italic font-semibold">
+                    “seus padrões não precisam ser o seu destino — o corpo sabe o caminho antes da
+                    mente admitir.”
+                  </span>
+                </p>
+
+                {/* Paragraph 3 */}
+                <p className="text-[#D1CBC1] font-normal">
+                  No <span className="font-semibold text-white">Governe Suas Emoções</span>, ele
+                  leva essa ideia da teoria para a prática, com você, na sala.
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>
