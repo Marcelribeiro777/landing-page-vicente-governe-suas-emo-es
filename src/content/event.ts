@@ -272,7 +272,7 @@ export const eventContent: EventData = {
     mentorRole: 'Psicólogo e Doutor em Psicologia',
     mentorBio:
       'Vicente Carnero, psicólogo e doutor em psicologia, com mais de 20 anos de prática clínica, docência universitária e supervisão. Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam. É a esse trabalho que ele irá se dedicar com você na sala.',
-    mentorImage: 'https://img.usecurling.com/ppl/large?gender=male&seed=68',
+    mentorImage: '/vicente-carneiro.png',
     highlightPhrase:
       'Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam.',
     stats: [
