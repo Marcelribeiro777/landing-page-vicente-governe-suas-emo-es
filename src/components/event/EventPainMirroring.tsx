@@ -1,5 +1,5 @@
 import React from 'react'
-import { HelpCircle, AlertCircle, Sparkles } from 'lucide-react'
+import { AlertCircle, Sparkles } from 'lucide-react'
 import { eventContent } from '@/content/event'
 
 export function EventPainMirroring() {
@@ -11,10 +11,6 @@ export function EventPainMirroring() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-extrabold uppercase tracking-widest text-[#E8A020] bg-[#E8A020]/10 px-3.5 py-1.5 rounded-full border border-[#E8A020]/30 inline-flex items-center gap-1.5 mb-4">
-            <HelpCircle className="w-3.5 h-3.5 text-[#E8A020]" />
-            {eventContent.painMirroring.eyebrow}
-          </span>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-6">
             {eventContent.painMirroring.title}
           </h2>

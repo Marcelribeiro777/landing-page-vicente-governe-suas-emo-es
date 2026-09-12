@@ -27,7 +27,7 @@ export interface EventData {
     limitedSpotsBadge: string
   }
   painMirroring: {
-    eyebrow: string
+    eyebrow?: string
     title: string
     subtitle: string
     contextParagraphs: string[]
@@ -212,10 +212,9 @@ export const eventContent: EventData = {
   },
 
   painMirroring: {
-    eyebrow: 'A REALIDADE EMOCIONAL',
-    title: 'Por que você reage de um jeito que não combina com quem você é?',
+    title: 'O padrão que decide por você antes que você perceba',
     subtitle:
-      'Você resolve problema difícil no trabalho o dia inteiro. Mas numa conversa de cinco minutos em casa ou no trabalho, o descontrole toma conta — e depois você se arrepende.',
+      'Se você ainda perde a paciência com quem mais importa, depois de resolver o dia inteiro os problemas mais difíceis do trabalho, é porque aprendeu, quando jovem, um jeito de se proteger — e esse jeito ficou gravado no corpo, decidindo por você até hoje',
     contextParagraphs: [
       'Você resolve problema difícil no trabalho o dia inteiro. Mas numa conversa de cinco minutos com a esposa, o marido, com a mãe ou com o sócio, você perde a paciência e depois se arrepende.',
       'Naquele momento você não escolhe. Você repete.',
