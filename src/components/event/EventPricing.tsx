@@ -12,10 +12,13 @@ export function EventPricing() {
   return (
     <section
       id="precos"
-      className="py-20 sm:py-28 bg-[#0D0D0D] relative border-t border-[#2E2B25] overflow-hidden"
+      className="py-20 sm:py-28 bg-[#090909] relative border-t border-[#26231E] overflow-hidden"
     >
+      {/* Transição suave vindo da seção de logística */}
+      <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-[#141210] to-transparent pointer-events-none" />
+
       {/* Background radial spotlight in neon green */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#39FF14]/15 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#39FF14]/12 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -51,8 +54,8 @@ export function EventPricing() {
                 key={card.id}
                 className={`rounded-2xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 relative ${
                   card.isPopular
-                    ? 'bg-gradient-to-b from-[#1A1A1A] to-[#121212] border-2 border-[#FF4500] shadow-2xl shadow-[#FF4500]/20 md:-translate-y-2 ring-1 ring-[#FF4500]/30 hover:border-[#FF4500]/60 hover:shadow-xl hover:shadow-[#FF4500]/10'
-                    : 'bg-[#141414] border border-[#2E2B25] hover:border-[#32CD32]/60 hover:shadow-xl hover:shadow-[#32CD32]/10'
+                    ? 'bg-gradient-to-b from-[#1C1A17] to-[#12110E] border-2 border-[#FF4500] shadow-2xl shadow-[#FF4500]/25 md:-translate-y-2 ring-1 ring-[#FF4500]/30 hover:border-[#FF4500]/80 hover:shadow-2xl hover:shadow-[#FF4500]/20'
+                    : 'bg-[#151311] border border-[#302A22] hover:border-[#32CD32]/70 hover:shadow-xl hover:shadow-[#32CD32]/10'
                 }`}
               >
                 {/* Popular Ribbon */}
@@ -84,10 +87,10 @@ export function EventPricing() {
 
                   {/* Price Box */}
                   <div
-                    className={`p-4 rounded-xl bg-[#0D0D0D] mb-6 transition-colors ${
+                    className={`p-4 rounded-xl bg-[#0B0A08] mb-6 transition-colors ${
                       card.isPopular
                         ? 'border border-[#FF4500]/40 shadow-[0_0_15px_rgba(255,69,0,0.1)]'
-                        : 'border border-[#2E2B25] hover:border-[#32CD32]/30'
+                        : 'border border-[#2E2820] hover:border-[#32CD32]/30'
                     }`}
                   >
                     <div className="text-xs text-[#A89F91] uppercase font-semibold mb-1">
@@ -108,7 +111,7 @@ export function EventPricing() {
                     </div>
 
                     <div
-                      className={`text-xs font-semibold mt-2 pt-2 border-t border-[#2E2B25] ${
+                      className={`text-xs font-semibold mt-2 pt-2 border-t border-[#25211B] ${
                         isIndividual ? 'text-[#32CD32]' : 'text-[#FF4500]'
                       }`}
                     >
@@ -139,7 +142,7 @@ export function EventPricing() {
                 </div>
 
                 {/* Card Action Button */}
-                <div className="space-y-3 pt-4 border-t border-[#2E2B25]">
+                <div className="space-y-3 pt-4 border-t border-[#25211A]">
                   <Button
                     onClick={() => handleCheckout(card.checkoutUrl)}
                     className={`relative overflow-hidden w-full h-13 py-3 uppercase tracking-wider font-black text-xs sm:text-sm rounded-xl transition-all shadow-lg ${

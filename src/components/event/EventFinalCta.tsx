@@ -15,19 +15,25 @@ export function EventFinalCta() {
   const { paragraphs, ctaText, ctaSubtext } = eventContent.finalCta
 
   return (
-    <section className="py-20 sm:py-28 bg-[#0D0D0D] relative border-t border-[#2E2B25] overflow-hidden">
-      {/* Ambient spotlight backdrop */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-[#E8A020]/20 via-[#F5B83D]/10 to-[#E8A020]/20 rounded-full blur-[140px] pointer-events-none" />
+    <section className="py-20 sm:py-28 bg-[#0B0A09] relative border-t border-[#2A251E] overflow-hidden">
+      {/* Transição suave vindo do FAQ */}
+      <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-[#151310] to-transparent pointer-events-none" />
+
+      {/* Leve gradiente dourado bem sutil e elegante no fundo */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#E8A020]/16 via-[#F5B83D]/8 to-transparent rounded-full blur-[140px] pointer-events-none" />
+
+      {/* Subtle warm rim glow */}
+      <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E8A020]/25 to-transparent pointer-events-none" />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {paragraphs[0] && (
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-6 leading-snug">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-6 leading-snug drop-shadow-sm">
             {paragraphs[0]}
           </h2>
         )}
 
         {paragraphs[1] && (
-          <p className="text-[#CFC9B8] text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+          <p className="text-[#D6CFC1] text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
             {paragraphs[1]}
           </p>
         )}
