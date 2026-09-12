@@ -48,12 +48,12 @@ export interface EventData {
   }
   authority: {
     mentorName: string
-    mentorRole: string
-    mentorBio: string
+    mentorRole?: string
+    mentorBio?: string
     mentorImage: string
     mentorInstagram?: string
     sectionTitle: string
-    highlightPhrase: string
+    highlightPhrase?: string
     stats: {
       value: number
       prefix?: string
@@ -270,11 +270,7 @@ export const eventContent: EventData = {
   authority: {
     sectionTitle: 'Quem conduz',
     mentorName: 'Vicente Carneiro',
-    mentorRole: 'Master Trainer',
-    mentorBio:
-      'Vicente Carneiro, psicólogo e doutor em psicologia, com mais de 20 anos de prática clínica, docência universitária e supervisão. Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam. É a esse trabalho que ele irá se dedicar com você na sala.',
     mentorImage: '/vicente-carneiro-banner.jpeg',
-    mentorInstagram: '@vicente_carnero',
     highlightPhrase:
       'Duas décadas ajudando pessoas a sentirem mais profundamente e se libertarem de tensões que as aprisionam.',
     stats: [
