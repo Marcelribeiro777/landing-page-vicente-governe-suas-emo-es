@@ -74,6 +74,14 @@ export function EventFooter() {
           </p>
           <div className="flex items-center gap-4 text-[#A89F91] text-[11px]">
             <span>Este site não faz parte do Facebook, Instagram ou Meta Inc.</span>
+            <span className="text-[#3E3A33]">·</span>
+            <a
+              href="/conteudo"
+              className="text-[#5A544A] hover:text-[#A89F91] transition-colors"
+              title="Acessar documento completo de cópia e impressão"
+            >
+              Documento de conteúdo
+            </a>
           </div>
         </div>
       </div>

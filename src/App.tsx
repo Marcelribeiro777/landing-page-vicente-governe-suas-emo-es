@@ -5,6 +5,7 @@ import { Toaster as Sonner } from '@/components/ui/sonner'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import Index from './pages/Index'
 import NotFound from './pages/NotFound'
+import Conteudo from './pages/Conteudo'
 import Layout from './components/Layout'
 
 // ONLY IMPORT AND RENDER WORKING PAGES, NEVER ADD PLACEHOLDER COMPONENTS OR PAGES IN THIS FILE
@@ -20,6 +21,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES MUST BE ADDED HERE */}
         </Route>
+        {/* Rota de documento de conteúdo fora do layout com fundo preto e header da landing */}
+        <Route path="/conteudo" element={<Conteudo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>
