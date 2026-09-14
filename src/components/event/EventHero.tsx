@@ -50,8 +50,9 @@ export function EventHero() {
 
         {/* Subtitle tag / Eyebrow */}
         <span className="inline-block text-xs sm:text-base md:text-xl lg:text-2xl font-extrabold tracking-wide text-[#F2EFE6] mb-5 px-3 sm:px-4 py-1.5 max-w-3xl leading-snug drop-shadow-sm">
-          <span className="text-[#E8A020]">A MELHOR</span> imersão presencial de{' '}
-          <span className="text-[#E8A020]">AUTOGOVERNO EMOCIONAL</span> do ano
+          <span className="text-[#E8A020]">A ÚNICA</span> imersão presencial de{' '}
+          <span className="text-[#E8A020]">AUTOGOVERNO EMOCIONAL</span> que te ensina a ter firmeza
+          sem autoritarismo e sem desgaste
         </span>
 
         {/* Main Headline */}

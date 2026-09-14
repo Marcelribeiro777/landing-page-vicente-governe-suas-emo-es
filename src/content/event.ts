@@ -168,7 +168,8 @@ export const eventContent: EventData = {
     logoUrl: '/logo-jvc.png',
     logoAlt: 'Logo Vicente Carnero - Governe suas emoções',
     editionBadge: '07 de novembro de 2026 · Fortaleza/CE · Presencial',
-    subheadlineTag: 'A MELHOR imersão presencial de AUTOGOVERNO EMOCIONAL do ano',
+    subheadlineTag:
+      'A ÚNICA imersão presencial de AUTOGOVERNO EMOCIONAL que te ensina a ter firmeza sem autoritarismo e sem desgaste',
     headline: 'Você se autogoverna na medida em que entende o que governa você.',
     subheadline:
       'Governar suas emoções não muda o que você sente — muda quem você é com quem você ama. Em 6 horas, você aprende a trocar reações automáticas por escolhas conscientes.',
