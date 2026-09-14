@@ -144,10 +144,7 @@ export default function Conteudo() {
     lines.push(`Subtítulo: ${e.faq.subtitle}`)
     e.faq.items.forEach((item, idx) => {
       const isPending =
-        idx === 8 ||
-        idx === 9 ||
-        item.answer.includes('Em breve:') ||
-        item.answer.includes('divulgada em breve')
+        idx === 8 || item.answer.includes('Em breve:') || item.answer.includes('divulgada em breve')
       const tag = isPending ? ' [⚠️ AGUARDANDO CONTEÚDO DEFINITIVO]' : ''
       lines.push(`  Pergunta ${idx + 1}${tag}: ${item.question}`)
       lines.push(`  Resposta: ${item.answer}\n`)
@@ -787,7 +784,6 @@ export default function Conteudo() {
                 {e.faq.items.map((item, idx) => {
                   const isPending =
                     idx === 8 ||
-                    idx === 9 ||
                     item.answer.includes('Em breve:') ||
                     item.answer.includes('divulgada em breve')
 

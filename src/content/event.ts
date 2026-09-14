@@ -380,7 +380,7 @@ export const eventContent: EventData = {
         features: [
           'Acesso presencial à imersão',
           'Condução direta com Vicente Carnero',
-          'Primeiro exercício prático guiado na sala',
+          'Exercicios práticos Guiados na Sala',
           'Garantia incondicional de 7 dias',
         ],
         ctaText: 'Garantir Ingresso Individual',
@@ -417,7 +417,7 @@ export const eventContent: EventData = {
     subtitle: 'Informações claras para você garantir sua vaga com total segurança.',
     items: [
       {
-        question: 'Quando e onde acontecerá a imersão Governe suas emoções?',
+        question: 'Quando e Onde Acontecerá a Imersão Governe Suas Emoções?',
         answer:
           'O evento será 100% presencial em Fortaleza/CE, no dia 07 de novembro de 2026, das 14h às 20:30h. O endereço exato (Local a divulgar – Fortaleza/CE) será enviado a todos os inscritos com antecedência.',
       },
@@ -454,17 +454,12 @@ export const eventContent: EventData = {
       {
         question: 'Isso substitui terapia ou acompanhamento psicológico?',
         answer:
-          'Não. É uma experiência educativa e prática, não um atendimento clínico individual. Quem já está em acompanhamento pode e deve continuar — o evento é um complemento, não uma substituição.',
+          'Não. É uma experiência educativa e prática, não um atendimento clínico individual. Se você já faz terapia, o evento irá complementar. Se você não faz, você receberá ferramentas práticas para seu autogoverno interno',
       },
       {
         // Resposta provisória: conteúdo depende de definição do Vicente
         question: 'O que eu preciso levar?',
         answer: 'Em breve: a lista do que levar será divulgada aqui.',
-      },
-      {
-        // Resposta provisória: conteúdo clínico depende de definição do Vicente
-        question: 'Existe alguma contraindicação de saúde para participar?',
-        answer: 'Esta informação será divulgada em breve.',
       },
     ],
   },
@@ -485,7 +480,7 @@ export const eventContent: EventData = {
     conditions: [
       'Pessoas com quadros psiquiátricos graves ou em crise aguda',
       'Transtornos psicóticos ou episódios de descompensação recente',
-      'Quadros de pânico agudo ativo sem acompanhamento',
+      'Quadros de pânico  ativo sem acompanhamento',
       'Condições de saúde física que impeçam a permanência na sala',
     ],
     medicalClearance:
