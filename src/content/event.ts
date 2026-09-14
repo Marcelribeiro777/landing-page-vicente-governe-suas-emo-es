@@ -172,7 +172,7 @@ export const eventContent: EventData = {
       'A ÚNICA imersão presencial de AUTOGOVERNO EMOCIONAL que te ensina a ter firmeza sem autoritarismo e sem desgaste',
     headline: 'Você se autogoverna na medida em que entende o que governa você.',
     subheadline:
-      'Governar suas emoções não muda o que você sente — muda quem você é com quem você ama. Em 6 horas, você aprende a trocar reações automáticas por escolhas conscientes.',
+      'Governar suas emoções não muda o que você sente — muda quem você é com quem você se importa. Em 6 horas, você aprende a trocar reações automáticas por escolhas conscientes.',
     dateDisplay: '07 de Novembro de 2026',
     locationDisplay: 'Fortaleza/CE',
     venueName: 'Local a divulgar – Fortaleza/CE',
@@ -187,7 +187,7 @@ export const eventContent: EventData = {
   painMirroring: {
     title: 'O padrão que decide por você antes que você perceba',
     subtitle:
-      'Se você ainda perde a paciência com quem mais importa, depois de resolver o dia inteiro os problemas mais difíceis do trabalho, é porque aprendeu, quando jovem, um jeito de se proteger — e esse jeito ficou gravado no corpo, decidindo por você até hoje',
+      'Se você ainda perde a paciência com pessoas importantes, depois de resolver o dia inteiro os problemas mais difíceis do trabalho, é porque aprendeu, quando jovem, um jeito de se proteger — e esse jeito ficou gravado no corpo, decidindo por você até hoje',
     contextParagraphs: [
       'Você resolve problema difícil no trabalho o dia inteiro. Mas numa conversa de cinco minutos com a esposa, o marido, com a mãe ou com o sócio, você perde a paciência e depois se arrepende.',
       'Naquele momento você não escolhe. Você repete.',
