@@ -281,13 +281,13 @@ export const eventContent: EventData = {
     title: 'O que é o Governe Suas Emoções',
     introPrefix: 'No GOVERNE SUAS EMOÇÕES, você vai:',
     introText:
-      'Em seis horas viver uma experiência presencial desenhada para ir direto à raiz do que governa seu comportamento e abrir um novo espaço de escolha.',
+      'Em seis horas viver uma experiência presencial desenhada para ir direto à raiz do que governa seu comportamento e abrir novos espaços de escolha.',
     deliverables: [
       {
         num: '01',
         title: 'Identificar as emoções básicas e senti-las no corpo, uma a uma.',
         description:
-          'Entender a geografia das suas emoções primárias no próprio corpo físico, aprendendo a reconhecer o sinal antes da reação desgovernada.',
+          'Entender o propósito das suas emoções primárias no próprio corpo, aprendendo a reconhecer o sinal antes da reação desgovernada.',
       },
       {
         num: '02',
@@ -299,7 +299,7 @@ export const eventContent: EventData = {
         num: '03',
         title: 'Expandir o que você consegue sentir, pensar e decidir.',
         description:
-          'Aumentar sua capacidade de suportar e processar estados internos complexos, sem recorrer à fuga, à agressividade ou à paralisia.',
+          'Aumentar sua capacidade de sustentar e processar estados internos complexos, sem recorrer à fuga, à agressividade ou à paralisia.',
       },
       {
         num: '04',
@@ -308,7 +308,7 @@ export const eventContent: EventData = {
           'Vivenciar, em ambiente seguro, a prática orientada por Vicente Carnero para conduzir a emoção no momento exato em que ela surge.',
       },
     ],
-    reinforcementLine: 'Prática presencial guiada na sala, do início ao fim.',
+    reinforcementLine: 'Práticas presenciais guiadas na sala, do início ao fim.',
     closingParagraphs: [
       'Isso não é sobre parar de sentir, fingir estar bem ou virar outra pessoa. Você não vai sair controlando tudo que sente — vai sair sabendo o que fazer com o que sente.',
       'O Governe Suas Emoções será como aprender a dirigir: você não elimina o trânsito à sua volta, mas passa a ter as mãos no volante.',

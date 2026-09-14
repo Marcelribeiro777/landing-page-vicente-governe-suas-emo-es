@@ -28,7 +28,21 @@ export function EventMethod() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#FAF7F0] tracking-tight mb-6 leading-tight">
-            {eventContent.method.title}
+            {(() => {
+              const title = eventContent.method.title
+              const highlight = 'Governe Suas Emoções'
+              const parts = title.split(highlight)
+              if (parts.length === 2) {
+                return (
+                  <>
+                    {parts[0]}
+                    <span className="text-[#E8A020]">{highlight}</span>
+                    {parts[1]}
+                  </>
+                )
+              }
+              return title
+            })()}
           </h2>
 
           <div className="space-y-3">
