@@ -85,9 +85,9 @@ export function EventAuthority() {
               <div className="space-y-4 text-base sm:text-lg leading-relaxed">
                 {/* Paragraph 1 */}
                 <p className="text-[#D4CEC2] font-normal">
-                  <span className="font-semibold text-white">Vicente Carnero</span> é Doutor em
-                  Psicologia, mentor, palestrante e escritor, com mais de 20 anos de prática
-                  clínica, docência universitária e supervisão.
+                  <span className="font-semibold text-white">Vicente Carnero</span> é Master
+                  Trainer, Doutor em Psicologia, mentor, palestrante e escritor, com mais de 20 anos
+                  de prática clínica, docência universitária e supervisão.
                 </p>
 
                 {/* Paragraph 2 - Core idea highlighted */}
@@ -95,7 +95,7 @@ export function EventAuthority() {
                   Acredita numa ideia simples e exigente:{' '}
                   <span className="text-white not-italic font-semibold">
                     “seus padrões não precisam ser o seu destino — o corpo sabe o caminho antes da
-                    mente admitir.”
+                    mente entender”
                   </span>
                 </p>
 

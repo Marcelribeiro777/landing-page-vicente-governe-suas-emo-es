@@ -237,7 +237,7 @@ export const eventContent: EventData = {
       },
       {
         title: 'A conversa que você adiou por anos.',
-        text: 'Tópicos cruciais não enfrentados pelo desconforto de lidar com a carga emocional.',
+        text: 'Tópicos cruciais não enfrentados pelo desconforto de não saber lidar com a carga emocional.',
       },
       {
         title: 'A distância que foi crescendo dentro de casa.',
@@ -253,9 +253,9 @@ export const eventContent: EventData = {
     mentorInstagram: '@vicente_carnero',
     mentorImage: '/vicente-carneiro-banner.jpeg',
     presentationParagraphs: {
-      p1: 'Vicente Carnero é Doutor em Psicologia, mentor, palestrante e escritor, com mais de 20 anos de prática clínica, docência universitária e supervisão.',
+      p1: 'Vicente Carnero é Master Trainer, Doutor em Psicologia, mentor, palestrante e escritor, com mais de 20 anos de prática clínica, docência universitária e supervisão.',
       p2Highlight:
-        'Acredita numa ideia simples e exigente: seus padrões não precisam ser o seu destino — o corpo sabe o caminho antes da mente admitir.',
+        'Acredita numa ideia simples e exigente: seus padrões não precisam ser o seu destino — o corpo sabe o caminho antes da mente entender.',
       p3: 'No Governe Suas Emoções, ele leva essa ideia da teoria para a prática, com você, na sala.',
     },
     highlightPhrase:
